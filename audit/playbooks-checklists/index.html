@@ -1,0 +1,974 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="light dark" name="color-scheme"/>
+<title>Playbooks &amp; checklists · MM Scientific Software Development Methodology</title>
+<link href="../../assets/mm.css" rel="stylesheet"/>
+<meta content="MM Methodology v1.0.2 — Playbooks &amp; checklists. Controlled, non-normative scientific software documentation." name="description"/><meta content="#10293f" name="theme-color"/><meta content="strict-origin-when-cross-origin" name="referrer"/><meta content="default-src 'self'; script-src 'none'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; object-src 'none'; frame-src 'none'; base-uri 'none'; form-action 'none'" http-equiv="Content-Security-Policy"/></head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<header class="site-header">
+<div class="wrap">
+<p class="eyebrow">Module Minimum (MM)</p>
+<p class="site-title">MM Scientific Software Development Methodology</p>
+<p class="status">Controlled derivative · not normative authority · not runtime authorization</p>
+<p class="status"><strong>Author and Principal Investigator:</strong> Michael Allim Jorge · <a href="https://orcid.org/0000-0002-7288-2095" rel="me noopener">ORCID 0000-0002-7288-2095</a></p>
+</div>
+</header><details class="mobile-menu"><summary>Explore methodology sections</summary><nav aria-label="Mobile primary navigation"><ul><li><a href="../..">Methodology</a></li><li><a href="../../architecture-figure/">Architecture figure</a></li><li><a href="../../local-execution-adapter/">Local execution environment</a></li><li><a href="../index.html">Audit &amp; traceability</a><ul><li><a href="../">Overview</a></li><li><a href="../audience-pathways/">Audience pathways</a></li><li><a href="../glossary/">Glossary</a></li><li><a href="../source-reference-register/">Source &amp; reference register</a></li><li><a href="../conservation-crosswalk/">Content-conservation crosswalk</a></li><li><a href="../architecture-manual-crosswalk/">Architecture ↔ Manual crosswalk</a></li><li><a href="../manual-requirements/">Manual requirements</a></li><li><a aria-current="page" href="./">Playbooks &amp; checklists</a></li><li><a href="../certified-identities/">Certified identities &amp; hashes</a></li><li><a href="../evidence-overlay/">Evidence overlay</a></li><li><a href="../historical-assurance-lessons/">Historical assurance lessons</a></li><li><a href="../historical-build-qa/">Historical build / QA receipt</a></li></ul></li></ul></nav></details>
+<div class="layout wrap">
+<nav aria-label="Primary navigation" class="site-nav">
+<h2>Contents</h2>
+<ul><li><a href="../..">Methodology</a></li><li><a href="../../architecture-figure/">Architecture figure</a></li><li><a href="../../local-execution-adapter/">Local execution environment</a></li><li><a href="../index.html">Audit &amp; traceability</a><ul><li><a href="../">Overview</a></li><li><a href="../audience-pathways/">Audience pathways</a></li><li><a href="../glossary/">Glossary</a></li><li><a href="../source-reference-register/">Source &amp; reference register</a></li><li><a href="../conservation-crosswalk/">Content-conservation crosswalk</a></li><li><a href="../architecture-manual-crosswalk/">Architecture ↔ Manual crosswalk</a></li><li><a href="../manual-requirements/">Manual requirements</a></li><li><a aria-current="page" href="./">Playbooks &amp; checklists</a></li><li><a href="../certified-identities/">Certified identities &amp; hashes</a></li><li><a href="../evidence-overlay/">Evidence overlay</a></li><li><a href="../historical-assurance-lessons/">Historical assurance lessons</a></li><li><a href="../historical-build-qa/">Historical build / QA receipt</a></li></ul></li></ul>
+<h2>On this page</h2>
+<ul><li><a href="#playbooks-checklists">Playbooks &amp; checklists</a></li><li><a href="#operational-checklists">Operational checklists</a></li></ul>
+</nav>
+<main class="content" id="main-content" tabindex="-1"><nav aria-label="Breadcrumb" class="breadcrumbs"><a href="../../index.html">Methodology</a><span aria-hidden="true" class="sep">›</span><a href="../index.html">Audit &amp; traceability</a><span aria-hidden="true" class="sep">›</span><span>Playbooks &amp; checklists</span></nav><h1 id="playbooks-checklists">Playbooks &amp; checklists<a class="headerlink" href="#playbooks-checklists" title="Permanent link">¶</a></h1>
+<p>The historical Technical Reference carried seven playbooks and five checklists with reverse links to DM requirements.</p>
+<p><strong>Playbook rules:</strong> 84<br/>
+<strong>Checklist items:</strong> 67</p>
+<h2 id="pb-ai">PB-AI<a class="headerlink" href="#pb-ai" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th>Rule ID</th>
+<th>Rule</th>
+<th>DM links</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PB-AI-001</td>
+<td>A0 coordinates; A1 alone edits, writes or executes consequential actions.</td>
+<td>DM-0135, DM-0136, DM-0005</td>
+</tr>
+<tr>
+<td>PB-AI-002</td>
+<td>Specialists are read-only and report within competence.</td>
+<td>DM-0007, DM-0135</td>
+</tr>
+<tr>
+<td>PB-AI-003</td>
+<td>Material prompts, skill profiles and tool contracts are versioned.</td>
+<td>DM-0140</td>
+</tr>
+<tr>
+<td>PB-AI-004</td>
+<td>Critical authority is explicitly materialized; another chat, Work or memory is not assumed.</td>
+<td>DM-0141</td>
+</tr>
+<tr>
+<td>PB-AI-005</td>
+<td>Specialist findings should be frozen independently before synthesis when practical.</td>
+<td>DM-0137</td>
+</tr>
+<tr>
+<td>PB-AI-006</td>
+<td>A9 blind-audits high-materiality candidates and does not implement them first.</td>
+<td>DM-0138</td>
+</tr>
+<tr>
+<td>PB-AI-007</td>
+<td>Tool capability is least-privilege and default-deny.</td>
+<td>DM-0006, DM-0072</td>
+</tr>
+<tr>
+<td>PB-AI-008</td>
+<td>AI output is candidate work product, not scientific authority.</td>
+<td>DM-0139</td>
+</tr>
+<tr>
+<td>PB-AI-009</td>
+<td>Retries with scientific or external side effects require prospective authority.</td>
+<td>DM-0143</td>
+</tr>
+<tr>
+<td>PB-AI-010</td>
+<td>The behavioral profile remains experimental until its prospective DOE passes.</td>
+<td>DM-0010, DM-0144</td>
+</tr>
+<tr>
+<td>PB-AI-R11</td>
+<td>Validate conformance context semantically before profile derivation.</td>
+<td>DM-0175, DM-0176, DM-0177</td>
+</tr>
+<tr>
+<td>PB-AI-R12</td>
+<td>Represent conditional triggers and NOT_APPLICABLE with objective evidence.</td>
+<td>DM-0179, DM-0180</td>
+</tr>
+<tr>
+<td>PB-AI-R13</td>
+<td>Keep plan resolution distinct from evidence-based operational conformance.</td>
+<td>DM-0181, DM-0182, DM-0183</td>
+</tr>
+<tr>
+<td>PB-AI-R14</td>
+<td>Enforce tailoring uniqueness, evidence integrity and approval independence.</td>
+<td>DM-0184, DM-0185</td>
+</tr>
+<tr>
+<td>PB-AI-R15</td>
+<td>Bind and mutation-qualify the executable conformance engine and independent oracle.</td>
+<td>DM-0186, DM-0187, DM-0188</td>
+</tr>
+<tr>
+<td>PB-AI-R16</td>
+<td>Reject substantively empty assurance records and transient bundle artifacts.</td>
+<td>DM-0189, DM-0190, DM-0191</td>
+</tr>
+<tr>
+<td>PB-AI-R17</td>
+<td>Keep required artifacts and active roles internally consistent and lean.</td>
+<td>DM-0192, DM-0193</td>
+</tr>
+<tr>
+<td>PB-AI-R18</td>
+<td>Control living-source updates and evidence-overlay durability prospectively.</td>
+<td>DM-0195, DM-0196</td>
+</tr>
+<tr>
+<td>PB-AI-R19</td>
+<td>Require conjunctive evidence for every sub-obligation.</td>
+<td>DM-0197</td>
+</tr>
+<tr>
+<td>## PB-ANIMAL</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Rule ID</th>
+<th>Rule</th>
+<th>DM links</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PB-ANIMAL-001</td>
+<td>Biological and productivity assumptions use explicit IDs and sources.</td>
+<td>DM-0021, DM-0022</td>
+</tr>
+<tr>
+<td>PB-ANIMAL-002</td>
+<td>Units and temporal basis are explicit for all inputs and outputs.</td>
+<td>DM-0028, DM-0082</td>
+</tr>
+<tr>
+<td>PB-ANIMAL-003</td>
+<td>Scenario labels are structural states, not numerical substitutes.</td>
+<td>DM-0028, DM-0061</td>
+</tr>
+<tr>
+<td>PB-ANIMAL-004</td>
+<td>Stocking, performance and herd transformations have boundary tests.</td>
+<td>DM-0114, DM-0167</td>
+</tr>
+<tr>
+<td>PB-ANIMAL-005</td>
+<td>Invalid biological states fail explicitly.</td>
+<td>DM-0060</td>
+</tr>
+<tr>
+<td>PB-ANIMAL-006</td>
+<td>Correlated stochastic inputs preserve justified joint structure.</td>
+<td>DM-0101</td>
+</tr>
+<tr>
+<td>PB-ANIMAL-007</td>
+<td>Output contracts are versioned and integration-tested.</td>
+<td>DM-0078, DM-0110, DM-0167</td>
+</tr>
+<tr>
+<td>PB-ANIMAL-008</td>
+<td>Biological-equation changes trigger A2, A6 and A7 review as applicable.</td>
+<td>DM-0030, DM-0093, DM-0100</td>
+</tr>
+<tr>
+<td>## PB-DATA</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Rule ID</th>
+<th>Rule</th>
+<th>DM links</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PB-DATA-001</td>
+<td>A10 owns data-contract and data-quality process assurance.</td>
+<td>DM-0078, DM-0087</td>
+</tr>
+<tr>
+<td>PB-DATA-002</td>
+<td>DCAT 3 is catalog metadata, not the computational schema.</td>
+<td>DM-0090</td>
+</tr>
+<tr>
+<td>PB-DATA-003</td>
+<td>Certified products expose module, role, version, coverage, distributions, checksums and conformance/provenance pointers as applicable.</td>
+<td>DM-0085, DM-0086, DM-0090</td>
+</tr>
+<tr>
+<td>PB-DATA-004</td>
+<td>DatasetSeries semantics remain distinct from product version semantics.</td>
+<td>DM-0090</td>
+</tr>
+<tr>
+<td>PB-DATA-005</td>
+<td>PROV-O-compatible lineage may supplement project provenance.</td>
+<td>DM-0085</td>
+</tr>
+<tr>
+<td>PB-DATA-006</td>
+<td>SHACL validates the qualified MM-DCAT profile subset/toolchain.</td>
+<td>DM-0091</td>
+</tr>
+<tr>
+<td>PB-DATA-007</td>
+<td>DQV remains optional quality metadata and a W3C Working Group Note.</td>
+<td>DM-0092</td>
+</tr>
+<tr>
+<td>PB-DATA-008</td>
+<td>Checksums are paired with protected provenance; metadata alone is insufficient authority.</td>
+<td>DM-0086</td>
+</tr>
+<tr>
+<td>PB-DATA-009</td>
+<td>Schema/source drift, duplicates, missingness, units and CRS/support are quality-contract concerns.</td>
+<td>DM-0081, DM-0082, DM-0083, DM-0088, DM-0089</td>
+</tr>
+<tr>
+<td>## PB-DSSAT</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Rule ID</th>
+<th>Rule</th>
+<th>DM links</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PB-DSSAT-001</td>
+<td>Baseline climate, soil and management inputs are immutable authorities.</td>
+<td>DM-0053, DM-0165</td>
+</tr>
+<tr>
+<td>PB-DSSAT-002</td>
+<td>Before perturbation campaigns, rerun an unperturbed baseline using prospective criteria.</td>
+<td>DM-0117, DM-0166</td>
+</tr>
+<tr>
+<td>PB-DSSAT-003</td>
+<td>Every Sobol or perturbation sample receives an isolated run directory; baseline inputs are never overwritten.</td>
+<td>DM-0056, DM-0165</td>
+</tr>
+<tr>
+<td>PB-DSSAT-004</td>
+<td>Weather perturbations preserve units and physical constraints.</td>
+<td>DM-0063, DM-0084</td>
+</tr>
+<tr>
+<td>PB-DSSAT-005</td>
+<td>Soil-water perturbations preserve justified hydraulic ordering and validity constraints.</td>
+<td>DM-0084, DM-0094</td>
+</tr>
+<tr>
+<td>PB-DSSAT-006</td>
+<td>Nitrogen perturbation distinguishes structural scenario from within-scenario factor variation.</td>
+<td>DM-0028, DM-0105</td>
+</tr>
+<tr>
+<td>PB-DSSAT-007</td>
+<td>Record DSSAT/wrapper versions, context/sample IDs, input/output hashes, times and status.</td>
+<td>DM-0067, DM-0085, DM-0119</td>
+</tr>
+<tr>
+<td>PB-DSSAT-008</td>
+<td>Preserve daily outputs required for valid later temporal aggregation.</td>
+<td>DM-0028, DM-0085</td>
+</tr>
+<tr>
+<td>PB-DSSAT-009</td>
+<td>Model failures are explicit outcomes and are not silently discarded.</td>
+<td>DM-0060, DM-0120</td>
+</tr>
+<tr>
+<td>PB-DSSAT-010</td>
+<td>Plant-module output to MM uses a versioned contract.</td>
+<td>DM-0078</td>
+</tr>
+<tr>
+<td>## PB-ECON</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Rule ID</th>
+<th>Rule</th>
+<th>DM links</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PB-ECON-001</td>
+<td>Currency and nominal/real basis are explicit.</td>
+<td>DM-0168</td>
+</tr>
+<tr>
+<td>PB-ECON-002</td>
+<td>Base date, deflator, exchange-rate source/rule and conversion date are versioned assumptions.</td>
+<td>DM-0022, DM-0168</td>
+</tr>
+<tr>
+<td>PB-ECON-003</td>
+<td>Currencies are never mixed implicitly.</td>
+<td>DM-0063, DM-0168</td>
+</tr>
+<tr>
+<td>PB-ECON-004</td>
+<td>Cash-flow sign and timing conventions are documented.</td>
+<td>DM-0028, DM-0094</td>
+</tr>
+<tr>
+<td>PB-ECON-005</td>
+<td>Monte Carlo inputs define distributions, dependence, seeds/streams and truncation/bounds.</td>
+<td>DM-0101, DM-0104</td>
+</tr>
+<tr>
+<td>PB-ECON-006</td>
+<td>Financial outputs distinguish deterministic/numerical error from stochastic uncertainty.</td>
+<td>DM-0097, DM-0103</td>
+</tr>
+<tr>
+<td>PB-ECON-007</td>
+<td>Probability estimates report simulation size and precision/convergence diagnostics as applicable.</td>
+<td>DM-0104</td>
+</tr>
+<tr>
+<td>PB-ECON-008</td>
+<td>Economic-scenario and statistical-method changes use separate change IDs unless explicitly coupled.</td>
+<td>DM-0030, DM-0043</td>
+</tr>
+<tr>
+<td>PB-ECON-009</td>
+<td>Outputs to Integration Core are versioned and regression-tested.</td>
+<td>DM-0078, DM-0112, DM-0169</td>
+</tr>
+<tr>
+<td>## PB-GEE</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Rule ID</th>
+<th>Rule</th>
+<th>DM links</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PB-GEE-001</td>
+<td>Official Earth Engine documentation controls platform semantics.</td>
+<td>DM-0003, DM-0161</td>
+</tr>
+<tr>
+<td>PB-GEE-002</td>
+<td>Client-side and server-side objects/functions are not mixed in ways that alter intended evaluation.</td>
+<td>DM-0060, DM-0161</td>
+</tr>
+<tr>
+<td>PB-GEE-003</td>
+<td>reproject is avoided unless protocol-authorized; projection/scale/grid semantics are frozen prospectively.</td>
+<td>DM-0028, DM-0161</td>
+</tr>
+<tr>
+<td>PB-GEE-004</td>
+<td>Collections are filtered/selected early and unnecessary list materialization is avoided.</td>
+<td>DM-0055, DM-0121</td>
+</tr>
+<tr>
+<td>PB-GEE-005</td>
+<td>Mask operations are deliberate because masks can alter scientific support/estimand.</td>
+<td>DM-0028, DM-0083</td>
+</tr>
+<tr>
+<td>PB-GEE-006</td>
+<td>bestEffort, maxPixels, tileScale, sharding and batch export are prospective computational-policy parameters when material.</td>
+<td>DM-0027, DM-0164</td>
+</tr>
+<tr>
+<td>PB-GEE-007</td>
+<td>CRS representation, coordinate operation and affine/grid identity are distinct.</td>
+<td>DM-0028, DM-0083</td>
+</tr>
+<tr>
+<td>PB-GEE-008</td>
+<td>Categorical and continuous resampling policies are distinct.</td>
+<td>DM-0028</td>
+</tr>
+<tr>
+<td>PB-GEE-009</td>
+<td>Geodesic versus planar operations are explicit.</td>
+<td>DM-0028, DM-0094</td>
+</tr>
+<tr>
+<td>PB-GEE-010</td>
+<td>ErrorMargin is operation-specific and not a generic parser/CRS repair.</td>
+<td>DM-0028</td>
+</tr>
+<tr>
+<td>PB-GEE-011</td>
+<td>Expensive runs require pilot/resource evidence and run-specific authorization.</td>
+<td>DM-0121, DM-0164</td>
+</tr>
+<tr>
+<td>PB-GEE-012</td>
+<td>Code Editor state is not durable source authority; native/repository identity controls.</td>
+<td>DM-0056, DM-0123</td>
+</tr>
+<tr>
+<td>PB-GEE-013</td>
+<td>Every run records Cloud Project, source identity, count, result evidence and terminal status.</td>
+<td>DM-0067, DM-0119, DM-0126</td>
+</tr>
+<tr>
+<td>PB-GEE-014</td>
+<td>No Task, Export or Asset write occurs without the authorized execution class.</td>
+<td>DM-0072, DM-0134</td>
+</tr>
+<tr>
+<td>PB-GEE-R15</td>
+<td>Qualify the machine-readable GEE engineering profile with schema, semantic, negative and mutation tests.</td>
+<td>DM-0194</td>
+</tr>
+<tr>
+<td>## PB-R</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Rule ID</th>
+<th>Rule</th>
+<th>DM links</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PB-R-001</td>
+<td>The computational core remains separate from DSSAT and Shiny/UI layers.</td>
+<td>DM-0032, DM-0035, DM-0171</td>
+</tr>
+<tr>
+<td>PB-R-002</td>
+<td>Reusable core follows R package conventions when packaged.</td>
+<td>DM-0054, DM-0162</td>
+</tr>
+<tr>
+<td>PB-R-003</td>
+<td>Rproj.user, caches and user-local state are not committed.</td>
+<td>DM-0048</td>
+</tr>
+<tr>
+<td>PB-R-004</td>
+<td>File names are descriptive and machine-readable; final/final2 naming is avoided.</td>
+<td>DM-0054</td>
+</tr>
+<tr>
+<td>PB-R-005</td>
+<td>Tidyverse style is a consistency layer; R Core and scientific semantics control.</td>
+<td>DM-0054</td>
+</tr>
+<tr>
+<td>PB-R-006</td>
+<td>Public functions document inputs, outputs, units, missingness and side effects.</td>
+<td>DM-0028, DM-0157</td>
+</tr>
+<tr>
+<td>PB-R-007</td>
+<td>Explicit namespaces are preferred where ambiguity is material.</td>
+<td>DM-0054</td>
+</tr>
+<tr>
+<td>PB-R-008</td>
+<td>Hidden startup/library dependencies are prohibited.</td>
+<td>DM-0056, DM-0066</td>
+</tr>
+<tr>
+<td>PB-R-009</td>
+<td>renv or an equivalent lock/restore mechanism is used when appropriate.</td>
+<td>DM-0066, DM-0163</td>
+</tr>
+<tr>
+<td>PB-R-010</td>
+<td>R and package versions/session information are captured for certified runs.</td>
+<td>DM-0067</td>
+</tr>
+<tr>
+<td>PB-R-011</td>
+<td>Seeds/streams are fixed and recorded for reproducible stochastic workflows.</td>
+<td>DM-0062, DM-0104</td>
+</tr>
+<tr>
+<td>PB-R-012</td>
+<td>Refactoring uses regression baselines before renaming/translating internals.</td>
+<td>DM-0042, DM-0117</td>
+</tr>
+<tr>
+<td>PB-R-013</td>
+<td>Shiny/UI consumes core APIs and is not the scientific source of truth.</td>
+<td>DM-0035, DM-0171</td>
+</tr>
+<tr>
+<td>PB-R-014</td>
+<td>R CMD check or equivalent package checks are required when packaged.</td>
+<td>DM-0109, DM-0112, DM-0162</td>
+</tr>
+</tbody>
+</table>
+<h2 id="operational-checklists">Operational checklists<a class="headerlink" href="#operational-checklists" title="Permanent link">¶</a></h2>
+<h2 id="cl-dev">CL-DEV<a class="headerlink" href="#cl-dev" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th>Item ID</th>
+<th>Item</th>
+<th>DM links</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CL-DEV-001</td>
+<td>Authority/base commit identified.</td>
+<td>DM-0042, DM-0123</td>
+</tr>
+<tr>
+<td>CL-DEV-002</td>
+<td>Requirement/decision IDs identified.</td>
+<td>DM-0009, DM-0023</td>
+</tr>
+<tr>
+<td>CL-DEV-003</td>
+<td>Scope excludes unrelated edits.</td>
+<td>DM-0046</td>
+</tr>
+<tr>
+<td>CL-DEV-004</td>
+<td>Correct module/playbook selected.</td>
+<td>DM-0159</td>
+</tr>
+<tr>
+<td>CL-DEV-005</td>
+<td>A1 is the sole mutable actor.</td>
+<td>DM-0005</td>
+</tr>
+<tr>
+<td>CL-DEV-006</td>
+<td>Dependency/environment effects identified.</td>
+<td>DM-0066, DM-0067</td>
+</tr>
+<tr>
+<td>CL-DEV-007</td>
+<td>Data-contract changes classified.</td>
+<td>DM-0079</td>
+</tr>
+<tr>
+<td>CL-DEV-008</td>
+<td>Tests selected prospectively.</td>
+<td>DM-0107</td>
+</tr>
+<tr>
+<td>CL-DEV-009</td>
+<td>Required domain/mathematical/statistical reviewers activated.</td>
+<td>DM-0015, DM-0031, DM-0093, DM-0100</td>
+</tr>
+<tr>
+<td>CL-DEV-010</td>
+<td>Negative/off-nominal behavior defined.</td>
+<td>DM-0113, DM-0114</td>
+</tr>
+<tr>
+<td>CL-DEV-011</td>
+<td>Evidence to retain defined.</td>
+<td>DM-0126</td>
+</tr>
+<tr>
+<td>CL-DEV-012</td>
+<td>HOLD conditions defined.</td>
+<td>DM-0008, DM-0013</td>
+</tr>
+<tr>
+<td>## CL-INC</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Item ID</th>
+<th>Item</th>
+<th>DM links</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CL-INC-001</td>
+<td>Consequential actions stopped.</td>
+<td>DM-0145</td>
+</tr>
+<tr>
+<td>CL-INC-002</td>
+<td>Raw evidence preserved.</td>
+<td>DM-0147</td>
+</tr>
+<tr>
+<td>CL-INC-003</td>
+<td>Successful and attempted side effects enumerated.</td>
+<td>DM-0146, DM-0147</td>
+</tr>
+<tr>
+<td>CL-INC-004</td>
+<td>Symptom separated from supported root cause.</td>
+<td>DM-0148</td>
+</tr>
+<tr>
+<td>CL-INC-005</td>
+<td>Failure class assigned.</td>
+<td>DM-0146</td>
+</tr>
+<tr>
+<td>CL-INC-006</td>
+<td>Earliest affected Gate/requirement identified.</td>
+<td>DM-0149</td>
+</tr>
+<tr>
+<td>CL-INC-007</td>
+<td>Historical certified evidence remains immutable.</td>
+<td>DM-0150</td>
+</tr>
+<tr>
+<td>CL-INC-008</td>
+<td>Corrective action defined.</td>
+<td>DM-0151</td>
+</tr>
+<tr>
+<td>CL-INC-009</td>
+<td>Preventive action/manual update considered.</td>
+<td>DM-0151</td>
+</tr>
+<tr>
+<td>CL-INC-010</td>
+<td>Revalidation scope defined.</td>
+<td>DM-0149</td>
+</tr>
+<tr>
+<td>CL-INC-011</td>
+<td>A9/A0 closure review completed for material incidents.</td>
+<td>DM-0152</td>
+</tr>
+<tr>
+<td>## CL-MODREL</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Item ID</th>
+<th>Item</th>
+<th>DM links</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CL-MODREL-001</td>
+<td>Module repository/ref binding current.</td>
+<td>DM-0160</td>
+</tr>
+<tr>
+<td>CL-MODREL-002</td>
+<td>Module environment lock/manifest current.</td>
+<td>DM-0066, DM-0067</td>
+</tr>
+<tr>
+<td>CL-MODREL-003</td>
+<td>Module playbook applied.</td>
+<td>DM-0159</td>
+</tr>
+<tr>
+<td>CL-MODREL-004</td>
+<td>Inbound/outbound contracts current.</td>
+<td>DM-0078</td>
+</tr>
+<tr>
+<td>CL-MODREL-005</td>
+<td>Cross-module compatibility tests PASS.</td>
+<td>DM-0110, DM-0169</td>
+</tr>
+<tr>
+<td>CL-MODREL-006</td>
+<td>Data-quality checks PASS.</td>
+<td>DM-0087</td>
+</tr>
+<tr>
+<td>CL-MODREL-007</td>
+<td>Scientific/domain assurance PASS as applicable.</td>
+<td>DM-0031, DM-0161</td>
+</tr>
+<tr>
+<td>CL-MODREL-008</td>
+<td>Numerical/statistical assurance PASS as applicable.</td>
+<td>DM-0093, DM-0100</td>
+</tr>
+<tr>
+<td>CL-MODREL-009</td>
+<td>Catalog/provenance metadata current.</td>
+<td>DM-0085, DM-0090</td>
+</tr>
+<tr>
+<td>CL-MODREL-010</td>
+<td>End-to-end integration regression PASS where required.</td>
+<td>DM-0111, DM-0169</td>
+</tr>
+<tr>
+<td>CL-MODREL-I11</td>
+<td>Identify affected modules/interfaces and activate affected domain SMEs.</td>
+<td>DM-0178</td>
+</tr>
+<tr>
+<td>CL-MODREL-I12</td>
+<td>Validate GEE engineering profile when GEO is in scope.</td>
+<td>DM-0194</td>
+</tr>
+<tr>
+<td>## CL-PR</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Item ID</th>
+<th>Item</th>
+<th>DM links</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CL-PR-001</td>
+<td>Change traces to requirements/decisions.</td>
+<td>DM-0009, DM-0023</td>
+</tr>
+<tr>
+<td>CL-PR-002</td>
+<td>No orphan functionality or drive-by refactor.</td>
+<td>DM-0024, DM-0046</td>
+</tr>
+<tr>
+<td>CL-PR-003</td>
+<td>Scientific semantics are unchanged unless explicitly authorized.</td>
+<td>DM-0028, DM-0030</td>
+</tr>
+<tr>
+<td>CL-PR-004</td>
+<td>Interfaces/contracts are updated when required.</td>
+<td>DM-0026, DM-0079</td>
+</tr>
+<tr>
+<td>CL-PR-005</td>
+<td>Tests are added/updated and PASS.</td>
+<td>DM-0108, DM-0112</td>
+</tr>
+<tr>
+<td>CL-PR-006</td>
+<td>Regression baseline checked.</td>
+<td>DM-0117</td>
+</tr>
+<tr>
+<td>CL-PR-007</td>
+<td>Dependencies/lockfiles justified.</td>
+<td>DM-0066, DM-0069</td>
+</tr>
+<tr>
+<td>CL-PR-008</td>
+<td>No secrets, IDE state or machine-specific files.</td>
+<td>DM-0048, DM-0071</td>
+</tr>
+<tr>
+<td>CL-PR-009</td>
+<td>Generated files regenerate byte-identically where required.</td>
+<td>DM-0064, DM-0124</td>
+</tr>
+<tr>
+<td>CL-PR-010</td>
+<td>Data quality/provenance updated.</td>
+<td>DM-0085, DM-0087</td>
+</tr>
+<tr>
+<td>CL-PR-011</td>
+<td>Documentation/release notes updated.</td>
+<td>DM-0131, DM-0157</td>
+</tr>
+<tr>
+<td>CL-PR-012</td>
+<td>Reviewer independence matches materiality.</td>
+<td>DM-0031, DM-0122</td>
+</tr>
+<tr>
+<td>## CL-REL</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Item ID</th>
+<th>Item</th>
+<th>DM links</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CL-REL-001</td>
+<td>Frozen source commit/tree and toolchain identified.</td>
+<td>DM-0067, DM-0123</td>
+</tr>
+<tr>
+<td>CL-REL-002</td>
+<td>Requirements/traceability coverage complete.</td>
+<td>DM-0023, DM-0108</td>
+</tr>
+<tr>
+<td>CL-REL-003</td>
+<td>Required tests executed PASS.</td>
+<td>DM-0108, DM-0112</td>
+</tr>
+<tr>
+<td>CL-REL-004</td>
+<td>Unresolved material TBD count is zero.</td>
+<td>DM-0025</td>
+</tr>
+<tr>
+<td>CL-REL-005</td>
+<td>Dependency/environment restoration PASS.</td>
+<td>DM-0068</td>
+</tr>
+<tr>
+<td>CL-REL-006</td>
+<td>Release manifest generated.</td>
+<td>DM-0126</td>
+</tr>
+<tr>
+<td>CL-REL-007</td>
+<td>Binary/large-artifact transport prequalified.</td>
+<td>DM-0049, DM-0125</td>
+</tr>
+<tr>
+<td>CL-REL-008</td>
+<td>Readback method prequalified.</td>
+<td>DM-0125, DM-0127</td>
+</tr>
+<tr>
+<td>CL-REL-009</td>
+<td>Checksums/object identities generated.</td>
+<td>DM-0086, DM-0126</td>
+</tr>
+<tr>
+<td>CL-REL-010</td>
+<td>External destination/scope authorized.</td>
+<td>DM-0072</td>
+</tr>
+<tr>
+<td>CL-REL-011</td>
+<td>Content A persisted.</td>
+<td>DM-0128</td>
+</tr>
+<tr>
+<td>CL-REL-012</td>
+<td>Raw/object readback PASS with zero mismatches.</td>
+<td>DM-0127, DM-0129</td>
+</tr>
+<tr>
+<td>CL-REL-013</td>
+<td>Certification Receipt B generated only after readback.</td>
+<td>DM-0128</td>
+</tr>
+<tr>
+<td>CL-REL-014</td>
+<td>Branch/default/production mutation scope verified.</td>
+<td>DM-0134</td>
+</tr>
+<tr>
+<td>CL-REL-015</td>
+<td>Rollback/safe-state ready for production mutation.</td>
+<td>DM-0132</td>
+</tr>
+<tr>
+<td>CL-REL-016</td>
+<td>Runtime authorization state explicitly recorded.</td>
+<td>DM-0123</td>
+</tr>
+<tr>
+<td>CL-REL-I17</td>
+<td>Confirm objective evidence registry and condition assessments are complete.</td>
+<td>DM-0180, DM-0181, DM-0182, DM-0183</td>
+</tr>
+<tr>
+<td>CL-REL-I18</td>
+<td>Confirm executable resolver/oracle binding and mutation qualification.</td>
+<td>DM-0186, DM-0187, DM-0188</td>
+</tr>
+<tr>
+<td>CL-REL-I19</td>
+<td>Confirm bundle hygiene and toolchain manifest.</td>
+<td>DM-0190, DM-0191</td>
+</tr>
+<tr>
+<td>CL-REL-I20</td>
+<td>Confirm Evidence Overlay remains non-durable until formal persistence Gate.</td>
+<td>DM-0196</td>
+</tr>
+</tbody>
+</table></main>
+</div>
+<footer class="site-footer"><div class="wrap"><span>MM methodology v1.0.2 · non-normative documentation derivative</span><span>Certified authorities prevail · no runtime authorization</span><nav aria-label="Site legal information" class="site-legal-nav"><a href="../../legal/privacy/index.html">Privacy notice</a><span aria-hidden="true">·</span><a href="../../legal/copyright-licensing/index.html">Copyright &amp; licensing</a></nav><div class="site-contact-links" role="group" aria-label="Contact channels"><div>Academic correspondence: <a href="mailto:rhallim.michael@usp.br">rhallim.michael@usp.br</a></div><div>Privacy &amp; legal inquiries: <a href="mailto:rhallim.michael@gmail.com">rhallim.michael@gmail.com</a></div></div></div></footer>
+</body>
+</html>

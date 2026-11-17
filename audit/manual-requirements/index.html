@@ -1,0 +1,3081 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="light dark" name="color-scheme"/>
+<title>Manual requirements · MM Scientific Software Development Methodology</title>
+<link href="../../assets/mm.css" rel="stylesheet"/>
+<meta content="MM Methodology v1.0.2 — Manual requirements. Controlled, non-normative scientific software documentation." name="description"/><meta content="#10293f" name="theme-color"/><meta content="strict-origin-when-cross-origin" name="referrer"/><meta content="default-src 'self'; script-src 'none'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; object-src 'none'; frame-src 'none'; base-uri 'none'; form-action 'none'" http-equiv="Content-Security-Policy"/></head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<header class="site-header">
+<div class="wrap">
+<p class="eyebrow">Module Minimum (MM)</p>
+<p class="site-title">MM Scientific Software Development Methodology</p>
+<p class="status">Controlled derivative · not normative authority · not runtime authorization</p>
+<p class="status"><strong>Author and Principal Investigator:</strong> Michael Allim Jorge · <a href="https://orcid.org/0000-0002-7288-2095" rel="me noopener">ORCID 0000-0002-7288-2095</a></p>
+</div>
+</header><details class="mobile-menu"><summary>Explore methodology sections</summary><nav aria-label="Mobile primary navigation"><ul><li><a href="../..">Methodology</a></li><li><a href="../../architecture-figure/">Architecture figure</a></li><li><a href="../../local-execution-adapter/">Local execution environment</a></li><li><a href="../index.html">Audit &amp; traceability</a><ul><li><a href="../">Overview</a></li><li><a href="../audience-pathways/">Audience pathways</a></li><li><a href="../glossary/">Glossary</a></li><li><a href="../source-reference-register/">Source &amp; reference register</a></li><li><a href="../conservation-crosswalk/">Content-conservation crosswalk</a></li><li><a href="../architecture-manual-crosswalk/">Architecture ↔ Manual crosswalk</a></li><li><a aria-current="page" href="./">Manual requirements</a></li><li><a href="../playbooks-checklists/">Playbooks &amp; checklists</a></li><li><a href="../certified-identities/">Certified identities &amp; hashes</a></li><li><a href="../evidence-overlay/">Evidence overlay</a></li><li><a href="../historical-assurance-lessons/">Historical assurance lessons</a></li><li><a href="../historical-build-qa/">Historical build / QA receipt</a></li></ul></li></ul></nav></details>
+<div class="layout wrap">
+<nav aria-label="Primary navigation" class="site-nav">
+<h2>Contents</h2>
+<ul><li><a href="../..">Methodology</a></li><li><a href="../../architecture-figure/">Architecture figure</a></li><li><a href="../../local-execution-adapter/">Local execution environment</a></li><li><a href="../index.html">Audit &amp; traceability</a><ul><li><a href="../">Overview</a></li><li><a href="../audience-pathways/">Audience pathways</a></li><li><a href="../glossary/">Glossary</a></li><li><a href="../source-reference-register/">Source &amp; reference register</a></li><li><a href="../conservation-crosswalk/">Content-conservation crosswalk</a></li><li><a href="../architecture-manual-crosswalk/">Architecture ↔ Manual crosswalk</a></li><li><a aria-current="page" href="./">Manual requirements</a></li><li><a href="../playbooks-checklists/">Playbooks &amp; checklists</a></li><li><a href="../certified-identities/">Certified identities &amp; hashes</a></li><li><a href="../evidence-overlay/">Evidence overlay</a></li><li><a href="../historical-assurance-lessons/">Historical assurance lessons</a></li><li><a href="../historical-build-qa/">Historical build / QA receipt</a></li></ul></li></ul>
+<h2>On this page</h2>
+<ul><li><a href="#manual-requirement-register-197-certified-dm-records">Manual requirement register — 197 certified DM records</a></li></ul>
+</nav>
+<main class="content" id="main-content" tabindex="-1"><nav aria-label="Breadcrumb" class="breadcrumbs"><a href="../../index.html">Methodology</a><span aria-hidden="true" class="sep">›</span><a href="../index.html">Audit &amp; traceability</a><span aria-hidden="true" class="sep">›</span><span>Manual requirements</span></nav><h1 id="manual-requirement-register-197-certified-dm-records">Manual requirement register — 197 certified DM records<a class="headerlink" href="#manual-requirement-register-197-certified-dm-records" title="Permanent link">¶</a></h1>
+<p>This page conserves the full requirement register reproduced by the historical Technical Reference.</p>
+<blockquote>
+<p><strong>Authority boundary:</strong> the certified Manual canonical source and Certification Commit B <code>01e9a94a7909af9436443ad016e5df06302576b4</code> control. Word/MkDocs wrapping does not change requirement semantics.</p>
+</blockquote>
+<h2 id="domain-counts">Domain counts<a class="headerlink" href="#domain-counts" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th>Domain</th>
+<th style="text-align: right;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AI</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr>
+<td>ARC</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr>
+<td>CODE</td>
+<td style="text-align: right;">12</td>
+</tr>
+<tr>
+<td>DATA</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr>
+<td>ENV</td>
+<td style="text-align: right;">13</td>
+</tr>
+<tr>
+<td>GOV</td>
+<td style="text-align: right;">25</td>
+</tr>
+<tr>
+<td>INC</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td>LC</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td>MOD</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr>
+<td>NUM</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td>REL</td>
+<td style="text-align: right;">12</td>
+</tr>
+<tr>
+<td>REQ</td>
+<td style="text-align: right;">18</td>
+</tr>
+<tr>
+<td>RSW</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td>STAT</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td>TEST</td>
+<td style="text-align: right;">16</td>
+</tr>
+<tr>
+<td>VCS</td>
+<td style="text-align: right;">14</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ai">AI<a class="headerlink" href="#ai" title="Permanent link">¶</a></h2>
+<details><summary><strong>DM-0135 — A0 coordinator read-only</strong> · SHALL</summary>
+
+**Directive**  
+A0 SHALL coordinate scope, authority and adjudication without acting as the editor/executor.
+
+**Applicability / condition**  
+{"legacy_label":"AI","operator":"ANY_OF","profiles":["AI"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A0","responsible":"A0","technical_approver":"A8"}
+
+**Verification / evidence / AR links**  
+Capability manifest check. | Evidence: Agent topology. | AR: AR-0003, AR-0015, AR-0034, AR-0035, AR-0036, AR-0037, AR-0040, AR-0045
+
+</details>
+<details><summary><strong>DM-0136 — A1 sole editor</strong> · SHALL</summary>
+
+**Directive**  
+A1 SHALL be the only agent permitted to edit governed artifacts or make authorized external writes.
+
+**Applicability / condition**  
+{"legacy_label":"AI","operator":"ANY_OF","profiles":["AI"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A1/A8","responsible":"A1","technical_approver":"A8"}
+
+**Verification / evidence / AR links**  
+Capability guard. | Evidence: Agent capability receipt. | AR: AR-0003, AR-0015, AR-0034, AR-0035, AR-0036, AR-0037, AR-0040, AR-0045
+
+</details>
+<details><summary><strong>DM-0137 — Independent findings freeze</strong> · SHOULD</summary>
+
+**Directive**  
+Specialist findings SHOULD be frozen before synthesis to reduce conformity/common-mode bias.
+
+**Applicability / condition**  
+{"legacy_label":"AI","operator":"ANY_OF","profiles":["AI"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A0/A9","responsible":"A0","technical_approver":"A9"}
+
+**Verification / evidence / AR links**  
+Finding timestamps/hashes. | Evidence: Independent findings package. | AR: AR-0003, AR-0015, AR-0034, AR-0035, AR-0036, AR-0037, AR-0040, AR-0045
+
+</details>
+<details><summary><strong>DM-0138 — A9 adversarial role</strong> · SHALL</summary>
+
+**Directive**  
+A9 SHALL not be used as the primary implementer of the artifact it later blind-audits.
+
+**Applicability / condition**  
+{"legacy_label":"AI","operator":"ANY_OF","profiles":["AI"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A0","responsible":"A0","technical_approver":"A8"}
+
+**Verification / evidence / AR links**  
+Assignment audit. | Evidence: Agent role record. | AR: AR-0003, AR-0015, AR-0034, AR-0035, AR-0036, AR-0037, AR-0040, AR-0045
+
+</details>
+<details><summary><strong>DM-0139 — AI output not authority</strong> · SHALL</summary>
+
+**Directive**  
+AI-generated prose/code/recommendations SHALL NOT become scientific or engineering authority without the required evidence/review path.
+
+**Applicability / condition**  
+{"legacy_label":"AI","operator":"ANY_OF","profiles":["AI"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A0/A5","responsible":"A0","technical_approver":"A5"}
+
+**Verification / evidence / AR links**  
+Authority-source review. | Evidence: Approval/evidence record. | AR: AR-0003, AR-0015, AR-0034, AR-0035, AR-0036, AR-0037, AR-0040, AR-0045
+
+</details>
+<details><summary><strong>DM-0140 — Prompt/version identity</strong> · SHALL</summary>
+
+**Directive**  
+Material multi-agent prompts, skill profiles and tool contracts SHALL be versioned/identifiable when they can affect output.
+
+**Applicability / condition**  
+{"legacy_label":"AI","operator":"ANY_OF","profiles":["AI"],"resolution":"Direct profile mapping."} | Condition: {"condition_id":"COND-DM-0140","description":"Assess the internal conditional trigger stated by DM-0140.","mode":"ASSESSMENT_REQUIRED"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A5/A8","responsible":"A5","technical_approver":"A8"}
+
+**Verification / evidence / AR links**  
+Prompt/skill manifest. | Evidence: Prompt authority record. | AR: AR-0003, AR-0015, AR-0034, AR-0035, AR-0036, AR-0037, AR-0040, AR-0045
+
+</details>
+<details><summary><strong>DM-0141 — Context materialization</strong> · SHALL</summary>
+
+**Directive**  
+Critical authorities needed by an agent SHALL be explicitly materialized/attached rather than assumed to exist in another Work/chat/memory.
+
+**Applicability / condition**  
+{"legacy_label":"AI","operator":"ANY_OF","profiles":["AI"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A0/A5","responsible":"A0","technical_approver":"A5"}
+
+**Verification / evidence / AR links**  
+Input manifest check. | Evidence: Authority bundle. | AR: AR-0003, AR-0015, AR-0034, AR-0035, AR-0036, AR-0037, AR-0040, AR-0045
+
+</details>
+<details><summary><strong>DM-0142 — Tool diversity for critical assurance</strong> · SHOULD</summary>
+
+**Directive**  
+Where practical, critical PASS conclusions SHOULD be cross-checked by an independent method/tool or adversarial fixture rather than one validator only.
+
+**Applicability / condition**  
+{"legacy_label":"AI/CERT","operator":"ANY_OF","profiles":["AI","CERT"],"resolution":"Prospective explicit ANY_OF; no retroactive semantics claimed."} | Condition: {"condition_id":"COND-DM-0142","description":"Assess the internal conditional trigger stated by DM-0142.","mode":"ASSESSMENT_REQUIRED"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A3/A9","responsible":"A3","technical_approver":"A9"}
+
+**Verification / evidence / AR links**  
+Cross-check evidence. | Evidence: Tool qualification receipt. | AR: AR-0003, AR-0015, AR-0034, AR-0035, AR-0036, AR-0037, AR-0040, AR-0045
+
+</details>
+<details><summary><strong>DM-0143 — No hidden retry</strong> · SHALL</summary>
+
+**Directive**  
+Agent retries that can alter scientific evidence or external state SHALL require prospective retry authority.
+
+**Applicability / condition**  
+{"legacy_label":"AI","operator":"ANY_OF","profiles":["AI"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A0/A8","responsible":"A0","technical_approver":"A8"}
+
+**Verification / evidence / AR links**  
+Run/attempt audit. | Evidence: Retry contract. | AR: AR-0003, AR-0015, AR-0034, AR-0035, AR-0036, AR-0037, AR-0040, AR-0045
+
+</details>
+<details><summary><strong>DM-0144 — Behavioral profile evidence</strong> · SHALL</summary>
+
+**Directive**  
+The adapted behavioral execution profile SHALL only become mandatory after prospective DOE evidence and shall never override hard barriers.
+
+**Applicability / condition**  
+{"legacy_label":"AI","operator":"ANY_OF","profiles":["AI"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A2/A8","responsible":"A2","technical_approver":"A8"}
+
+**Verification / evidence / AR links**  
+DOE acceptance check. | Evidence: Profile qualification receipt. | AR: AR-0003, AR-0015, AR-0034, AR-0035, AR-0036, AR-0037, AR-0040, AR-0045
+
+</details>
+<h2 id="arc">ARC<a class="headerlink" href="#arc" title="Permanent link">¶</a></h2>
+<details><summary><strong>DM-0032 — Bounded module repositories</strong> · SHALL</summary>
+
+**Directive**  
+ENVIRONMENT, PLANT, ANIMAL, ECONOMIC and INTEGRATION SHALL remain bounded modules with independent repository/environment lifecycles before runtime.
+
+**Applicability / condition**  
+{"legacy_label":"MODULE","operator":"ANY_OF","profiles":["MODULE"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A0/A8","responsible":"A0","technical_approver":"A8"}
+
+**Verification / evidence / AR links**  
+Module registry review. | Evidence: Module manifest. | AR: AR-0021, AR-0022, AR-0023, AR-0024, AR-0042
+
+</details>
+<details><summary><strong>DM-0033 — No implicit shared mutable state</strong> · SHALL</summary>
+
+**Directive**  
+Cross-module integration SHALL NOT depend on undocumented shared mutable filesystems, databases or workspace state.
+
+**Applicability / condition**  
+{"legacy_label":"INTEGRATION","operator":"ANY_OF","profiles":["INTEGRATION"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A8/A10","responsible":"A8","technical_approver":"A10"}
+
+**Verification / evidence / AR links**  
+Dependency/interface audit. | Evidence: Interface dependency graph. | AR: AR-0021, AR-0022, AR-0023, AR-0024, AR-0042
+
+</details>
+<details><summary><strong>DM-0034 — Integration by contract</strong> · SHALL</summary>
+
+**Directive**  
+A consumer SHALL ingest a producer only through a versioned contract/artifact/service explicitly exposed by the producer.
+
+**Applicability / condition**  
+{"legacy_label":"INTEGRATION","operator":"ANY_OF","profiles":["INTEGRATION"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A10","responsible":"A10","technical_approver":"A8"}
+
+**Verification / evidence / AR links**  
+Interface contract check. | Evidence: Consumer binding record. | AR: AR-0021, AR-0022, AR-0023, AR-0024, AR-0042
+
+</details>
+<details><summary><strong>DM-0035 — Integration Core boundary</strong> · SHALL</summary>
+
+**Directive**  
+MM-INTEGRATION-CORE SHALL NOT import or manipulate private internals of domain modules.
+
+**Applicability / condition**  
+{"legacy_label":"INTEGRATION","operator":"ANY_OF","profiles":["INTEGRATION"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A8/A10","responsible":"A8","technical_approver":"A10"}
+
+**Verification / evidence / AR links**  
+Static/import audit. | Evidence: Boundary report. | AR: AR-0021, AR-0022, AR-0023, AR-0024, AR-0042
+
+</details>
+<details><summary><strong>DM-0036 — Interface compatibility</strong> · SHALL</summary>
+
+**Directive**  
+Contract changes SHALL declare INITIAL, BACKWARD_COMPATIBLE or BREAKING and SHALL include migration/consumer impact when breaking.
+
+**Applicability / condition**  
+{"legacy_label":"INTEGRATION","operator":"ANY_OF","profiles":["INTEGRATION"],"resolution":"Direct profile mapping."} | Condition: {"condition_id":"COND-DM-0036","description":"Assess the internal conditional trigger stated by DM-0036.","mode":"ASSESSMENT_REQUIRED"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A10","responsible":"A10","technical_approver":"A8"}
+
+**Verification / evidence / AR links**  
+Contract diff check. | Evidence: Compatibility receipt. | AR: AR-0021, AR-0022, AR-0023, AR-0024, AR-0042
+
+</details>
+<details><summary><strong>DM-0037 — Dependency direction</strong> · SHALL</summary>
+
+**Directive**  
+Module dependencies SHALL follow the approved architecture graph; cycles require explicit architecture review.
+
+**Applicability / condition**  
+{"legacy_label":"MODULE","operator":"ANY_OF","profiles":["MODULE"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A8/A3","responsible":"A8","technical_approver":"A3"}
+
+**Verification / evidence / AR links**  
+Dependency-graph cycle check. | Evidence: Dependency graph. | AR: AR-0021, AR-0022, AR-0023, AR-0024, AR-0042
+
+</details>
+<details><summary><strong>DM-0038 — Fault isolation</strong> · SHALL</summary>
+
+**Directive**  
+Module failures SHALL be classifiable without silently corrupting upstream authority or unrelated module outputs.
+
+**Applicability / condition**  
+{"legacy_label":"MODULE","operator":"ANY_OF","profiles":["MODULE"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A8/A9","responsible":"A8","technical_approver":"A9"}
+
+**Verification / evidence / AR links**  
+Failure-injection test. | Evidence: Fault-boundary report. | AR: AR-0021, AR-0022, AR-0023, AR-0024, AR-0042
+
+</details>
+<details><summary><strong>DM-0039 — Interface testing</strong> · SHALL</summary>
+
+**Directive**  
+Model-of-models interfaces SHALL be tested independently before integrated-system acceptance.
+
+**Applicability / condition**  
+{"legacy_label":"INTEGRATION","operator":"ANY_OF","profiles":["INTEGRATION"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A2/A10/A9","responsible":"A2","technical_approver":"A10"}
+
+**Verification / evidence / AR links**  
+Interface test suite. | Evidence: Interface verification receipt. | AR: AR-0021, AR-0022, AR-0023, AR-0024, AR-0042
+
+</details>
+<details><summary><strong>DM-0040 — Architecture decision records</strong> · SHALL</summary>
+
+**Directive**  
+Changes to module boundaries, persistent interfaces or technology ownership SHALL have an ADR/engineering decision record.
+
+**Applicability / condition**  
+{"legacy_label":"ALL","operator":"ALWAYS","profiles":[]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A0/A8","responsible":"A0","technical_approver":"A8"}
+
+**Verification / evidence / AR links**  
+ADR presence check. | Evidence: ADR. | AR: AR-0021, AR-0022, AR-0023, AR-0024, AR-0042
+
+</details>
+<details><summary><strong>DM-0041 — Configuration externalization</strong> · SHALL</summary>
+
+**Directive**  
+Environment-specific values SHALL be explicit configuration, not hard-coded local paths or user-specific state.
+
+**Applicability / condition**  
+{"legacy_label":"ALL","operator":"ALWAYS","profiles":[]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A8","responsible":"A8","technical_approver":"A0"}
+
+**Verification / evidence / AR links**  
+Static scan. | Evidence: Configuration manifest. | AR: AR-0021, AR-0022, AR-0023, AR-0024, AR-0042
+
+</details>
+<h2 id="code">CODE<a class="headerlink" href="#code" title="Permanent link">¶</a></h2>
+<details><summary><strong>DM-0054 — Project coding standard</strong> · SHALL</summary>
+
+**Directive**  
+Each language SHALL have an identified coding/style standard; style rules SHALL remain subordinate to scientific semantics and correctness.
+
+**Applicability / condition**  
+{"legacy_label":"ALL","operator":"ALWAYS","profiles":[]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A8","responsible":"A8","technical_approver":"A0"}
+
+**Verification / evidence / AR links**  
+Lint/style config review. | Evidence: Language playbook. | AR: AR-0016, AR-0018, AR-0038, AR-0039
+
+</details>
+<details><summary><strong>DM-0055 — Small cohesive functions</strong> · SHOULD</summary>
+
+**Directive**  
+Material scientific transformations SHOULD be implemented in cohesive functions with explicit inputs/outputs and limited side effects.
+
+**Applicability / condition**  
+{"legacy_label":"ALL","operator":"ALWAYS","profiles":[]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A8/A6","responsible":"A8","technical_approver":"A6"}
+
+**Verification / evidence / AR links**  
+Code review. | Evidence: Function-level design evidence. | AR: AR-0016, AR-0018, AR-0038, AR-0039
+
+</details>
+<details><summary><strong>DM-0056 — No hidden global state</strong> · SHALL</summary>
+
+**Directive**  
+Scientific results SHALL NOT depend on implicit global variables, interactive session leftovers or undeclared startup files.
+
+**Applicability / condition**  
+{"legacy_label":"SCI","operator":"ANY_OF","profiles":["SCI"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A8/A9","responsible":"A8","technical_approver":"A9"}
+
+**Verification / evidence / AR links**  
+Clean-session reproducibility test. | Evidence: Reproducibility receipt. | AR: AR-0016, AR-0018, AR-0038, AR-0039
+
+</details>
+<details><summary><strong>DM-0057 — Explicit configuration</strong> · SHALL</summary>
+
+**Directive**  
+Paths, thresholds, seeds, dataset IDs and environment options SHALL be explicit configuration or frozen constants with rationale.
+
+**Applicability / condition**  
+{"legacy_label":"ALL","operator":"ALWAYS","profiles":[]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A8/A5","responsible":"A8","technical_approver":"A5"}
+
+**Verification / evidence / AR links**  
+Config scan. | Evidence: Configuration manifest. | AR: AR-0016, AR-0018, AR-0038, AR-0039
+
+</details>
+<details><summary><strong>DM-0058 — No unexplained magic constants</strong> · SHALL</summary>
+
+**Directive**  
+Scientific/numerical constants SHALL have a named identifier, unit where applicable, source/rationale and validity scope.
+
+**Applicability / condition**  
+{"legacy_label":"SCI","operator":"ANY_OF","profiles":["SCI"],"resolution":"Direct profile mapping."} | Condition: {"condition_id":"COND-DM-0058","description":"Assess the internal conditional trigger stated by DM-0058.","mode":"ASSESSMENT_REQUIRED"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A6/A5","responsible":"A6","technical_approver":"A5"}
+
+**Verification / evidence / AR links**  
+Static + provenance review. | Evidence: Constant registry. | AR: AR-0016, AR-0018, AR-0038, AR-0039
+
+</details>
+<details><summary><strong>DM-0059 — Comments explain rationale</strong> · SHOULD</summary>
+
+**Directive**  
+Comments SHOULD explain non-obvious rationale, assumptions and invariants rather than restating syntax.
+
+**Applicability / condition**  
+{"legacy_label":"ALL","operator":"ALWAYS","profiles":[]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A8","responsible":"A8","technical_approver":"A0"}
+
+**Verification / evidence / AR links**  
+Peer review. | Evidence: Review findings. | AR: AR-0016, AR-0018, AR-0038, AR-0039
+
+</details>
+<details><summary><strong>DM-0060 — Fail explicit</strong> · SHALL</summary>
+
+**Directive**  
+Invalid scientific states, unsupported schemas or violated invariants SHALL fail explicitly rather than silently coerce, zero-fill or continue.
+
+**Applicability / condition**  
+{"legacy_label":"SCI","operator":"ANY_OF","profiles":["SCI"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A7","A10","A9"],"legacy_owner":"A2/A6/A7/A10","responsible":"A2","technical_approver":"A6"}
+
+**Verification / evidence / AR links**  
+Negative fixtures. | Evidence: Failure-mode tests. | AR: AR-0016, AR-0018, AR-0038, AR-0039
+
+</details>
+<details><summary><strong>DM-0061 — Missing/null/zero distinction</strong> · SHALL</summary>
+
+**Directive**  
+Code SHALL preserve semantic distinctions among missing, null/not-applicable, zero, masked/no-support and failed values where material.
+
+**Applicability / condition**  
+{"legacy_label":"SCI","operator":"ANY_OF","profiles":["SCI"],"resolution":"Direct profile mapping."} | Condition: {"condition_id":"COND-DM-0061","description":"Assess the internal conditional trigger stated by DM-0061.","mode":"ASSESSMENT_REQUIRED"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A10","A9"],"legacy_owner":"A6/A7/A10","responsible":"A6","technical_approver":"A7"}
+
+**Verification / evidence / AR links**  
+Boundary fixture tests. | Evidence: Semantic fixture report. | AR: AR-0016, AR-0018, AR-0038, AR-0039
+
+</details>
+<details><summary><strong>DM-0062 — Deterministic randomness</strong> · SHALL</summary>
+
+**Directive**  
+Randomized algorithms SHALL use explicit seed/stream policy and record generator/package/version when reproducibility is required.
+
+**Applicability / condition**  
+{"legacy_label":"SCI","operator":"ANY_OF","profiles":["SCI"],"resolution":"Direct profile mapping."} | Condition: {"condition_id":"COND-DM-0062","description":"Assess the internal conditional trigger stated by DM-0062.","mode":"ASSESSMENT_REQUIRED"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A7/A8","responsible":"A7","technical_approver":"A8"}
+
+**Verification / evidence / AR links**  
+Repeat-run comparison. | Evidence: Seed manifest. | AR: AR-0016, AR-0018, AR-0038, AR-0039
+
+</details>
+<details><summary><strong>DM-0063 — No silent unit conversion</strong> · SHALL</summary>
+
+**Directive**  
+Unit conversions SHALL be explicit, dimensionally validated and traceable.
+
+**Applicability / condition**  
+{"legacy_label":"SCI","operator":"ANY_OF","profiles":["SCI"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A6/A10","responsible":"A6","technical_approver":"A10"}
+
+**Verification / evidence / AR links**  
+Dimensional tests. | Evidence: Unit registry. | AR: AR-0016, AR-0018, AR-0038, AR-0039
+
+</details>
+<details><summary><strong>DM-0064 — Generated artifacts</strong> · SHALL</summary>
+
+**Directive**  
+Generated code/docs/manifests SHALL declare their generator and SHALL NOT be manually edited when deterministic regeneration is the authority model.
+
+**Applicability / condition**  
+{"legacy_label":"ALL","operator":"ALWAYS","profiles":[]} | Condition: {"condition_id":"COND-DM-0064","description":"Assess the internal conditional trigger stated by DM-0064.","mode":"ASSESSMENT_REQUIRED"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A8/A5","responsible":"A8","technical_approver":"A5"}
+
+**Verification / evidence / AR links**  
+Regeneration test. | Evidence: Generator receipt. | AR: AR-0016, AR-0018, AR-0038, AR-0039
+
+</details>
+<details><summary><strong>DM-0065 — Error messages</strong> · SHALL</summary>
+
+**Directive**  
+Material errors SHALL include enough context to localize the failing requirement/input/operation without exposing secrets.
+
+**Applicability / condition**  
+{"legacy_label":"ALL","operator":"ALWAYS","profiles":[]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A8","responsible":"A8","technical_approver":"A0"}
+
+**Verification / evidence / AR links**  
+Negative test review. | Evidence: Error-catalog evidence. | AR: AR-0016, AR-0018, AR-0038, AR-0039
+
+</details>
+<h2 id="data">DATA<a class="headerlink" href="#data" title="Permanent link">¶</a></h2>
+<details><summary><strong>DM-0078 — Versioned data contract</strong> · SHALL</summary>
+
+**Directive**  
+Each material data handoff SHALL use a versioned data contract.
+
+**Applicability / condition**  
+{"legacy_label":"INTEGRATION","operator":"ANY_OF","profiles":["INTEGRATION"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A10","responsible":"A10","technical_approver":"A0"}
+
+**Verification / evidence / AR links**  
+Contract presence/schema check. | Evidence: Data contract. | AR: AR-0023, AR-0025, AR-0026, AR-0027, AR-0028, AR-0029, AR-0030, AR-0031, AR-0032, AR-0033, AR-0043, AR-0047, AR-0048, AR-0049
+
+</details>
+<details><summary><strong>DM-0079 — Schema evolution</strong> · SHALL</summary>
+
+**Directive**  
+Schema changes SHALL include compatibility classification and migration/consumer impact.
+
+**Applicability / condition**  
+{"legacy_label":"INTEGRATION","operator":"ANY_OF","profiles":["INTEGRATION"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A10","responsible":"A10","technical_approver":"A0"}
+
+**Verification / evidence / AR links**  
+Schema diff. | Evidence: Compatibility receipt. | AR: AR-0023, AR-0025, AR-0026, AR-0027, AR-0028, AR-0029, AR-0030, AR-0031, AR-0032, AR-0033, AR-0043, AR-0047, AR-0048, AR-0049
+
+</details>
+<details><summary><strong>DM-0080 — Keys and uniqueness</strong> · SHALL</summary>
+
+**Directive**  
+Primary identifiers, uniqueness constraints and foreign-key relationships SHALL be explicit where applicable.
+
+**Applicability / condition**  
+{"legacy_label":"DATA","operator":"ANY_OF","profiles":["DATA"],"resolution":"Direct profile mapping."} | Condition: {"condition_id":"COND-DM-0080","description":"Assess the internal conditional trigger stated by DM-0080.","mode":"ASSESSMENT_REQUIRED"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A10","responsible":"A10","technical_approver":"A0"}
+
+**Verification / evidence / AR links**  
+Constraint tests. | Evidence: Data quality report. | AR: AR-0023, AR-0025, AR-0026, AR-0027, AR-0028, AR-0029, AR-0030, AR-0031, AR-0032, AR-0033, AR-0043, AR-0047, AR-0048, AR-0049
+
+</details>
+<details><summary><strong>DM-0081 — Missing-data semantics</strong> · SHALL</summary>
+
+**Directive**  
+Missing, no-data, masked, censored, not-observed and not-applicable values SHALL have documented distinct semantics where material.
+
+**Applicability / condition**  
+{"legacy_label":"DATA","operator":"ANY_OF","profiles":["DATA"],"resolution":"Direct profile mapping."} | Condition: {"condition_id":"COND-DM-0081","description":"Assess the internal conditional trigger stated by DM-0081.","mode":"ASSESSMENT_REQUIRED"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A10/A7","responsible":"A10","technical_approver":"A7"}
+
+**Verification / evidence / AR links**  
+Negative/boundary fixtures. | Evidence: Missingness contract. | AR: AR-0023, AR-0025, AR-0026, AR-0027, AR-0028, AR-0029, AR-0030, AR-0031, AR-0032, AR-0033, AR-0043, AR-0047, AR-0048, AR-0049
+
+</details>
+<details><summary><strong>DM-0082 — Units metadata</strong> · SHALL</summary>
+
+**Directive**  
+Material quantitative fields SHALL declare units or unitless status.
+
+**Applicability / condition**  
+{"legacy_label":"DATA","operator":"ANY_OF","profiles":["DATA"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A10/A6","responsible":"A10","technical_approver":"A6"}
+
+**Verification / evidence / AR links**  
+Schema check. | Evidence: Unit registry linkage. | AR: AR-0023, AR-0025, AR-0026, AR-0027, AR-0028, AR-0029, AR-0030, AR-0031, AR-0032, AR-0033, AR-0043, AR-0047, AR-0048, AR-0049
+
+</details>
+<details><summary><strong>DM-0083 — Spatial reference metadata</strong> · SHALL</summary>
+
+**Directive**  
+Spatial datasets SHALL carry CRS/reference-system, grid/resolution/support and geometry semantics required for correct interpretation.
+
+**Applicability / condition**  
+{"legacy_label":"GEO","operator":"ANY_OF","profiles":["GEO"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A4/A10","responsible":"A4","technical_approver":"A10"}
+
+**Verification / evidence / AR links**  
+Spatial metadata audit. | Evidence: Geospatial data contract. | AR: AR-0023, AR-0025, AR-0026, AR-0027, AR-0028, AR-0029, AR-0030, AR-0031, AR-0032, AR-0033, AR-0043, AR-0047, AR-0048, AR-0049
+
+</details>
+<details><summary><strong>DM-0084 — Range/domain constraints</strong> · SHALL</summary>
+
+**Directive**  
+Physical/logical range constraints SHALL be explicit and tested when violations could alter conclusions.
+
+**Applicability / condition**  
+{"legacy_label":"DATA","operator":"ANY_OF","profiles":["DATA"],"resolution":"Direct profile mapping."} | Condition: {"condition_id":"COND-DM-0084","description":"Assess the internal conditional trigger stated by DM-0084.","mode":"ASSESSMENT_REQUIRED"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A6/A10","responsible":"A6","technical_approver":"A10"}
+
+**Verification / evidence / AR links**  
+Boundary tests. | Evidence: Quality rules. | AR: AR-0023, AR-0025, AR-0026, AR-0027, AR-0028, AR-0029, AR-0030, AR-0031, AR-0032, AR-0033, AR-0043, AR-0047, AR-0048, AR-0049
+
+</details>
+<details><summary><strong>DM-0085 — Dataset provenance</strong> · SHALL</summary>
+
+**Directive**  
+Dataset versions SHALL bind to provider/source, acquisition date/version/collection, transformation lineage and evidence IDs.
+
+**Applicability / condition**  
+{"legacy_label":"DATA","operator":"ANY_OF","profiles":["DATA"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A5/A10","responsible":"A5","technical_approver":"A10"}
+
+**Verification / evidence / AR links**  
+Provenance audit. | Evidence: PROV/evidence record. | AR: AR-0023, AR-0025, AR-0026, AR-0027, AR-0028, AR-0029, AR-0030, AR-0031, AR-0032, AR-0033, AR-0043, AR-0047, AR-0048, AR-0049
+
+</details>
+<details><summary><strong>DM-0086 — Checksums</strong> · SHALL</summary>
+
+**Directive**  
+Material immutable distributions SHALL have checksums; checksum metadata alone SHALL NOT substitute for protected provenance authority.
+
+**Applicability / condition**  
+{"legacy_label":"DATA","operator":"ANY_OF","profiles":["DATA"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A5/A10","responsible":"A5","technical_approver":"A10"}
+
+**Verification / evidence / AR links**  
+Checksum/readback. | Evidence: Distribution receipt. | AR: AR-0023, AR-0025, AR-0026, AR-0027, AR-0028, AR-0029, AR-0030, AR-0031, AR-0032, AR-0033, AR-0043, AR-0047, AR-0048, AR-0049
+
+</details>
+<details><summary><strong>DM-0087 — Quality rule execution</strong> · SHALL</summary>
+
+**Directive**  
+Declared data-quality rules SHALL be executed and their results retained before certified consumption.
+
+**Applicability / condition**  
+{"legacy_label":"DATA","operator":"ANY_OF","profiles":["DATA"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A10","responsible":"A10","technical_approver":"A0"}
+
+**Verification / evidence / AR links**  
+Quality test execution. | Evidence: Data quality receipt. | AR: AR-0023, AR-0025, AR-0026, AR-0027, AR-0028, AR-0029, AR-0030, AR-0031, AR-0032, AR-0033, AR-0043, AR-0047, AR-0048, AR-0049
+
+</details>
+<details><summary><strong>DM-0088 — Duplicate policy</strong> · SHALL</summary>
+
+**Directive**  
+Duplicate records SHALL have an explicit allowed/prohibited/deduplication policy; silent deduplication is prohibited.
+
+**Applicability / condition**  
+{"legacy_label":"DATA","operator":"ANY_OF","profiles":["DATA"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A10","responsible":"A10","technical_approver":"A0"}
+
+**Verification / evidence / AR links**  
+Duplicate fixtures. | Evidence: Duplicate report. | AR: AR-0023, AR-0025, AR-0026, AR-0027, AR-0028, AR-0029, AR-0030, AR-0031, AR-0032, AR-0033, AR-0043, AR-0047, AR-0048, AR-0049
+
+</details>
+<details><summary><strong>DM-0089 — Drift monitoring</strong> · SHALL</summary>
+
+**Directive**  
+Schema or source-semantic drift SHALL be detectable and SHALL trigger compatibility review before use.
+
+**Applicability / condition**  
+{"legacy_label":"DATA","operator":"ANY_OF","profiles":["DATA"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A10/A9","responsible":"A10","technical_approver":"A9"}
+
+**Verification / evidence / AR links**  
+Drift fixture/check. | Evidence: Drift report. | AR: AR-0023, AR-0025, AR-0026, AR-0027, AR-0028, AR-0029, AR-0030, AR-0031, AR-0032, AR-0033, AR-0043, AR-0047, AR-0048, AR-0049
+
+</details>
+<details><summary><strong>DM-0090 — DCAT catalog</strong> · SHALL</summary>
+
+**Directive**  
+Certified module data products SHALL emit/update MM-DCAT metadata according to the project profile where applicable.
+
+**Applicability / condition**  
+{"legacy_label":"DATA","operator":"ANY_OF","profiles":["DATA"],"resolution":"Direct profile mapping."} | Condition: {"condition_id":"COND-DM-0090","description":"Assess the internal conditional trigger stated by DM-0090.","mode":"ASSESSMENT_REQUIRED"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A10","responsible":"A10","technical_approver":"A0"}
+
+**Verification / evidence / AR links**  
+Profile validation. | Evidence: Catalog record. | AR: AR-0023, AR-0025, AR-0026, AR-0027, AR-0028, AR-0029, AR-0030, AR-0031, AR-0032, AR-0033, AR-0043, AR-0047, AR-0048, AR-0049
+
+</details>
+<details><summary><strong>DM-0091 — SHACL validation</strong> · SHALL</summary>
+
+**Directive**  
+MM-DCAT graph certification SHALL use the qualified SHACL subset/toolchain defined by the architecture or a prospectively qualified replacement.
+
+**Applicability / condition**  
+{"legacy_label":"DATA","operator":"ANY_OF","profiles":["DATA"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A10/A8","responsible":"A10","technical_approver":"A8"}
+
+**Verification / evidence / AR links**  
+Positive/negative SHACL fixtures. | Evidence: SHACL receipt. | AR: AR-0023, AR-0025, AR-0026, AR-0027, AR-0028, AR-0029, AR-0030, AR-0031, AR-0032, AR-0033, AR-0043, AR-0047, AR-0048, AR-0049
+
+</details>
+<details><summary><strong>DM-0092 — DQV status preservation</strong> · SHALL</summary>
+
+**Directive**  
+If DQV is used, project documentation SHALL preserve its status as W3C Working Group Note.
+
+**Applicability / condition**  
+{"legacy_label":"DATA","operator":"ANY_OF","profiles":["DATA"],"resolution":"Direct profile mapping."} | Condition: {"condition_id":"COND-DM-0092","description":"Assess the internal conditional trigger stated by DM-0092.","mode":"ASSESSMENT_REQUIRED"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A10/A5","responsible":"A10","technical_approver":"A5"}
+
+**Verification / evidence / AR links**  
+Reference-status check. | Evidence: Metadata evidence. | AR: AR-0023, AR-0025, AR-0026, AR-0027, AR-0028, AR-0029, AR-0030, AR-0031, AR-0032, AR-0033, AR-0043, AR-0047, AR-0048, AR-0049
+
+</details>
+<h2 id="env">ENV<a class="headerlink" href="#env" title="Permanent link">¶</a></h2>
+<details><summary><strong>DM-0066 — Dependency lock</strong> · SHALL</summary>
+
+**Directive**  
+Runtime-capable modules SHALL pin or lock dependencies sufficiently to reproduce the tested environment.
+
+**Applicability / condition**  
+{"legacy_label":"MODULE","operator":"ANY_OF","profiles":["MODULE"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A8","responsible":"A8","technical_approver":"A0"}
+
+**Verification / evidence / AR links**  
+Fresh-environment restore test. | Evidence: Lockfile + environment receipt. | AR: AR-0012, AR-0015, AR-0046
+
+</details>
+<details><summary><strong>DM-0067 — Toolchain manifest</strong> · SHALL</summary>
+
+**Directive**  
+Material builds/runs SHALL record language/runtime, package/tool versions, OS/platform and critical external engine versions.
+
+**Applicability / condition**  
+{"legacy_label":"ALL","operator":"ALWAYS","profiles":[]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A8/A5","responsible":"A8","technical_approver":"A5"}
+
+**Verification / evidence / AR links**  
+Manifest completeness check. | Evidence: Toolchain manifest. | AR: AR-0012, AR-0015, AR-0046
+
+</details>
+<details><summary><strong>DM-0068 — Environment restoration</strong> · SHALL</summary>
+
+**Directive**  
+A certified candidate SHALL be restorable in a clean environment using documented steps without relying on hidden workstation state.
+
+**Applicability / condition**  
+{"legacy_label":"CERT","operator":"ANY_OF","profiles":["CERT"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A8/A9","responsible":"A8","technical_approver":"A9"}
+
+**Verification / evidence / AR links**  
+Clean-room restoration. | Evidence: Restore receipt. | AR: AR-0012, AR-0015, AR-0046
+
+</details>
+<details><summary><strong>DM-0069 — Dependency updates isolated</strong> · SHALL</summary>
+
+**Directive**  
+Dependency upgrades SHALL be isolated from unrelated scientific logic changes unless an explicit coupled migration is approved.
+
+**Applicability / condition**  
+{"legacy_label":"ALL","operator":"ALWAYS","profiles":[]} | Condition: {"condition_id":"COND-DM-0069","description":"Assess the internal conditional trigger stated by DM-0069.","mode":"ASSESSMENT_REQUIRED"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A8","responsible":"A8","technical_approver":"A0"}
+
+**Verification / evidence / AR links**  
+Diff review. | Evidence: Dependency-change record. | AR: AR-0012, AR-0015, AR-0046
+
+</details>
+<details><summary><strong>DM-0070 — Third-party provenance</strong> · SHALL</summary>
+
+**Directive**  
+Critical third-party libraries, datasets, containers and services SHALL have source, version/identifier and license/status recorded.
+
+**Applicability / condition**  
+{"legacy_label":"ALL","operator":"ALWAYS","profiles":[]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A10","A9"],"legacy_owner":"A5/A8/A10","responsible":"A5","technical_approver":"A8"}
+
+**Verification / evidence / AR links**  
+Dependency/provenance audit. | Evidence: Third-party registry. | AR: AR-0012, AR-0015, AR-0046
+
+</details>
+<details><summary><strong>DM-0071 — Secrets protection</strong> · SHALL</summary>
+
+**Directive**  
+Secrets, API keys and credentials SHALL NOT be committed to repositories or evidence bundles.
+
+**Applicability / condition**  
+{"legacy_label":"ALL","operator":"ALWAYS","profiles":[]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A8","responsible":"A8","technical_approver":"A0"}
+
+**Verification / evidence / AR links**  
+Secret scan. | Evidence: Secret-scan receipt. | AR: AR-0012, AR-0015, AR-0046
+
+</details>
+<details><summary><strong>DM-0072 — Least privilege runtime</strong> · SHALL</summary>
+
+**Directive**  
+Execution identities SHALL receive only the permissions needed for the authorized action.
+
+**Applicability / condition**  
+{"legacy_label":"ALL","operator":"ALWAYS","profiles":[]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A8","responsible":"A8","technical_approver":"A0"}
+
+**Verification / evidence / AR links**  
+Capability/permission check. | Evidence: Authorization receipt. | AR: AR-0012, AR-0015, AR-0046
+
+</details>
+<details><summary><strong>DM-0073 — Network dependence declaration</strong> · SHALL</summary>
+
+**Directive**  
+Network access required for a reproducible build or run SHALL be declared.
+
+**Applicability / condition**  
+{"legacy_label":"CERT","operator":"ANY_OF","profiles":["CERT"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A8/A5","responsible":"A8","technical_approver":"A5"}
+
+**Verification / evidence / AR links**  
+Network dependency inventory. | Evidence: Environment manifest. | AR: AR-0012, AR-0015, AR-0046
+
+</details>
+<details><summary><strong>DM-0074 — Vulnerability response</strong> · SHALL</summary>
+
+**Directive**  
+Material dependency vulnerabilities SHALL be assessed for applicability, impact, mitigation and release consequences.
+
+**Applicability / condition**  
+{"legacy_label":"ALL","operator":"ALWAYS","profiles":[]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A8/A9","responsible":"A8","technical_approver":"A9"}
+
+**Verification / evidence / AR links**  
+Vulnerability review. | Evidence: Vulnerability disposition record. | AR: AR-0012, AR-0015, AR-0046
+
+</details>
+<details><summary><strong>DM-0075 — Licensing</strong> · SHALL</summary>
+
+**Directive**  
+Software and data licensing constraints SHALL be recorded before distribution/release.
+
+**Applicability / condition**  
+{"legacy_label":"ALL","operator":"ALWAYS","profiles":[]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A5/A8","responsible":"A5","technical_approver":"A8"}
+
+**Verification / evidence / AR links**  
+License scan/review. | Evidence: License registry. | AR: AR-0012, AR-0015, AR-0046
+
+</details>
+<details><summary><strong>DM-0076 — SBOM-style inventory</strong> · SHOULD</summary>
+
+**Directive**  
+Certifiable releases SHOULD maintain a machine-readable inventory of critical software dependencies and toolchain elements.
+
+**Applicability / condition**  
+{"legacy_label":"CERT","operator":"ANY_OF","profiles":["CERT"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A8","responsible":"A8","technical_approver":"A0"}
+
+**Verification / evidence / AR links**  
+Inventory completeness check. | Evidence: Dependency inventory. | AR: AR-0012, AR-0015, AR-0046
+
+</details>
+<details><summary><strong>DM-0077 — External service drift</strong> · SHALL</summary>
+
+**Directive**  
+External services/APIs SHALL be treated as versioned dependencies; undocumented semantic drift SHALL trigger HOLD/requalification when material.
+
+**Applicability / condition**  
+{"legacy_label":"ALL","operator":"ALWAYS","profiles":[]} | Condition: {"condition_id":"COND-DM-0077","description":"Assess the internal conditional trigger stated by DM-0077.","mode":"ASSESSMENT_REQUIRED"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A8/A10","responsible":"A8","technical_approver":"A10"}
+
+**Verification / evidence / AR links**  
+Service-version check. | Evidence: External service registry. | AR: AR-0012, AR-0015, AR-0046
+
+</details>
+<details><summary><strong>DM-0174 — Offline/frozen certification inputs preference</strong> · SHOULD</summary>
+
+**Directive**  
+Offline or frozen inputs SHOULD be preferred for certification where feasible.
+
+**Applicability / condition**  
+{"legacy_label":"CERT","operator":"ANY_OF","profiles":["CERT"],"resolution":"Direct profile mapping."} | Condition: {"condition_id":"COND-DM-0174","description":"Assess the internal conditional trigger stated by DM-0174.","mode":"ASSESSMENT_REQUIRED"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A8/A5","responsible":"A8","technical_approver":"A5"}
+
+**Verification / evidence / AR links**  
+Network dependency inventory. | Evidence: Environment manifest. | AR: AR-0012, AR-0015, AR-0046
+
+</details>
+<h2 id="gov">GOV<a class="headerlink" href="#gov" title="Permanent link">¶</a></h2>
+<details><summary><strong>DM-0001 — Normative hierarchy</strong> · SHALL</summary>
+
+**Directive**  
+The Manual SHALL remain subordinate to the frozen Scientific Execution Architecture and SHALL NOT weaken any architecture hard barrier.
+
+**Applicability / condition**  
+{"legacy_label":"ALL","operator":"ALWAYS","profiles":[]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A0","responsible":"A0","technical_approver":"A3"}
+
+**Verification / evidence / AR links**  
+Compare manual rule graph against frozen architecture hard barriers. | Evidence: Traceability record showing no override. | AR: AR-0002, AR-0003, AR-0015, AR-0034, AR-0050
+
+</details>
+<details><summary><strong>DM-0002 — Prospective changes</strong> · SHALL</summary>
+
+**Directive**  
+Any material change to the Manual SHALL use prospective versioning; certified prior versions SHALL remain immutable.
+
+**Applicability / condition**  
+{"legacy_label":"ALL","operator":"ALWAYS","profiles":[]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A0/A5","responsible":"A0","technical_approver":"A5"}
+
+**Verification / evidence / AR links**  
+Version/readback audit. | Evidence: Version manifest and parent identity. | AR: AR-0002, AR-0003, AR-0015, AR-0020, AR-0034, AR-0050
+
+</details>
+<details><summary><strong>DM-0003 — No false compliance</strong> · SHALL</summary>
+
+**Directive**  
+Project documents SHALL state 'adapted from' or 'aligned with' external guidance unless formal conformity/compliance has been independently demonstrated.
+
+**Applicability / condition**  
+{"legacy_label":"ALL","operator":"ALWAYS","profiles":[]} | Condition: {"condition_id":"COND-DM-0003","description":"Assess the internal conditional trigger stated by DM-0003.","mode":"ASSESSMENT_REQUIRED"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A0/A5","responsible":"A0","technical_approver":"A5"}
+
+**Verification / evidence / AR links**  
+Text scan + review. | Evidence: Compliance-claim register. | AR: AR-0002, AR-0003, AR-0015, AR-0034, AR-0041, AR-0050
+
+</details>
+<details><summary><strong>DM-0004 — Tailoring control</strong> · SHALL</summary>
+
+**Directive**  
+Tailoring SHALL identify the affected rule, rationale, risk, compensating control, approving role and expiry/review condition; silent tailoring is prohibited.
+
+**Applicability / condition**  
+{"legacy_label":"ALL","operator":"ALWAYS","profiles":[]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A0/A3","responsible":"A0","technical_approver":"A3"}
+
+**Verification / evidence / AR links**  
+Tailoring-record schema validation. | Evidence: Approved tailoring record. | AR: AR-0002, AR-0003, AR-0015, AR-0034, AR-0050
+
+</details>
+<details><summary><strong>DM-0005 — Single mutable actor</strong> · SHALL</summary>
+
+**Directive**  
+Only A1 SHALL edit governed artifacts or perform external side effects in a Gate; all other A-roles SHALL be read-only unless a future architecture version explicitly changes this invariant.
+
+**Applicability / condition**  
+{"legacy_label":"ALL","operator":"ALWAYS","profiles":[]} | Condition: {"condition_id":"COND-DM-0005","description":"Assess the internal conditional trigger stated by DM-0005.","mode":"ASSESSMENT_REQUIRED"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A0/A8","responsible":"A0","technical_approver":"A8"}
+
+**Verification / evidence / AR links**  
+Capability-guard test. | Evidence: Per-gate capability manifest. | AR: AR-0002, AR-0003, AR-0015, AR-0034, AR-0050
+
+</details>
+<details><summary><strong>DM-0006 — Least capability</strong> · SHALL</summary>
+
+**Directive**  
+Read-only Gates SHALL expose only read/search/hash/local-nonmutating capabilities; mutation-capable tools SHALL be denied by construction.
+
+**Applicability / condition**  
+{"legacy_label":"ALL","operator":"ALWAYS","profiles":[]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A8","responsible":"A8","technical_approver":"A3"}
+
+**Verification / evidence / AR links**  
+Negative capability fixtures. | Evidence: Capability guard receipt. | AR: AR-0002, AR-0003, AR-0015, AR-0034, AR-0050
+
+</details>
+<details><summary><strong>DM-0007 — Competence-bound assurance</strong> · SHALL</summary>
+
+**Directive**  
+A specialist SHALL issue PASS/HOLD only within its assigned competence; global PASS belongs to A0 after independent findings and A9 review where required.
+
+**Applicability / condition**  
+{"legacy_label":"ALL","operator":"ALWAYS","profiles":[]} | Condition: {"condition_id":"COND-DM-0007","description":"Assess the internal conditional trigger stated by DM-0007.","mode":"ASSESSMENT_REQUIRED"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A0","responsible":"A0","technical_approver":"A3"}
+
+**Verification / evidence / AR links**  
+Role-to-finding audit. | Evidence: Agent assignment matrix. | AR: AR-0002, AR-0003, AR-0015, AR-0034, AR-0050
+
+</details>
+<details><summary><strong>DM-0008 — Stop on material ambiguity</strong> · SHALL</summary>
+
+**Directive**  
+If a material ambiguity cannot be resolved from frozen authority/evidence, the activity SHALL transition to HOLD rather than use silent assumption.
+
+**Applicability / condition**  
+{"legacy_label":"ALL","operator":"ALWAYS","profiles":[]} | Condition: {"condition_id":"COND-DM-0008","description":"Assess the internal conditional trigger stated by DM-0008.","mode":"ASSESSMENT_REQUIRED"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A0/A3","responsible":"A0","technical_approver":"A3"}
+
+**Verification / evidence / AR links**  
+Negative ambiguity fixture. | Evidence: HOLD terminal. | AR: AR-0002, AR-0003, AR-0015, AR-0034, AR-0050
+
+</details>
+<details><summary><strong>DM-0009 — Decision records</strong> · SHALL</summary>
+
+**Directive**  
+Material engineering decisions SHALL record decision ID, context, options considered, evidence, rationale, owner, date and affected artifacts.
+
+**Applicability / condition**  
+{"legacy_label":"ALL","operator":"ALWAYS","profiles":[]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A0/A5","responsible":"A0","technical_approver":"A5"}
+
+**Verification / evidence / AR links**  
+Decision-log audit. | Evidence: Architecture/engineering decision record. | AR: AR-0002, AR-0003, AR-0015, AR-0034, AR-0050
+
+</details>
+<details><summary><strong>DM-0010 — Behavior profile status</strong> · SHALL</summary>
+
+**Directive**  
+The MM Agent Behavioral Execution Profile SHALL remain non-mandatory until its prospective DOE acceptance criterion is satisfied.
+
+**Applicability / condition**  
+{"legacy_label":"AI","operator":"ANY_OF","profiles":["AI"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A2/A8","responsible":"A2","technical_approver":"A8"}
+
+**Verification / evidence / AR links**  
+Profile status check. | Evidence: DOE receipt or CANDIDATE status. | AR: AR-0002, AR-0003, AR-0015, AR-0034, AR-0050
+
+</details>
+<details><summary><strong>DM-0175 — Context semantic validation</strong> · SHALL</summary>
+
+**Directive**  
+A conformance context SHALL pass activity-specific semantic validation before profile derivation or plan resolution.
+
+**Applicability / condition**  
+{"legacy_label":null,"operator":"ALWAYS","profiles":[]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":null,"responsible":"A3","technical_approver":"A0"}
+
+**Verification / evidence / AR links**  
+Execute the RC2 direct, negative and mutation fixtures for this requirement. | Evidence: Traceable semantic-context validator receipt. | AR: AR-0012, AR-0013, AR-0014, AR-0040
+
+</details>
+<details><summary><strong>DM-0176 — Authoritative profile derivation</strong> · SHALL</summary>
+
+**Directive**  
+The engine SHALL derive profiles from validated context fields rather than accept caller-supplied profiles as authority.
+
+**Applicability / condition**  
+{"legacy_label":null,"operator":"ALWAYS","profiles":[]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":null,"responsible":"A3","technical_approver":"A0"}
+
+**Verification / evidence / AR links**  
+Execute the RC2 direct, negative and mutation fixtures for this requirement. | Evidence: Derived-profile comparison receipt. | AR: AR-0012, AR-0013, AR-0014, AR-0040
+
+</details>
+<details><summary><strong>DM-0177 — Materiality assurance burden</strong> · SHALL</summary>
+
+**Directive**  
+The conformance engine SHALL make HIGH and CRITICAL materiality increase the assurance burden prospectively.
+
+**Applicability / condition**  
+{"legacy_label":null,"operator":"ALWAYS","profiles":[]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":null,"responsible":"A8","technical_approver":"A3"}
+
+**Verification / evidence / AR links**  
+Execute the RC2 direct, negative and mutation fixtures for this requirement. | Evidence: Materiality truth-table receipt. | AR: AR-0012, AR-0013, AR-0014, AR-0040
+
+</details>
+<details><summary><strong>DM-0179 — Conditional trigger model</strong> · SHALL</summary>
+
+**Directive**  
+Each internally conditional normative requirement SHALL have a typed condition predicate or assessment contract.
+
+**Applicability / condition**  
+{"legacy_label":null,"operator":"ALWAYS","profiles":[]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":null,"responsible":"A3","technical_approver":"A0"}
+
+**Verification / evidence / AR links**  
+Execute the RC2 direct, negative and mutation fixtures for this requirement. | Evidence: Condition registry. | AR: AR-0012, AR-0013, AR-0014, AR-0040
+
+</details>
+<details><summary><strong>DM-0180 — Evidence-backed NOT_APPLICABLE</strong> · SHALL</summary>
+
+**Directive**  
+A NOT_APPLICABLE determination SHALL include assessor, rationale and objective trigger evidence.
+
+**Applicability / condition**  
+{"legacy_label":null,"operator":"ALWAYS","profiles":[]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":null,"responsible":"A3","technical_approver":"A0"}
+
+**Verification / evidence / AR links**  
+Execute the RC2 direct, negative and mutation fixtures for this requirement. | Evidence: Condition assessment record. | AR: AR-0012, AR-0013, AR-0014, AR-0040
+
+</details>
+<details><summary><strong>DM-0181 — Plan versus conformance state</strong> · SHALL</summary>
+
+**Directive**  
+A resolved conformance plan SHALL NOT be labeled operationally conformant before evidence adjudication.
+
+**Applicability / condition**  
+{"legacy_label":null,"operator":"ALWAYS","profiles":[]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":null,"responsible":"A3","technical_approver":"A0"}
+
+**Verification / evidence / AR links**  
+Execute the RC2 direct, negative and mutation fixtures for this requirement. | Evidence: State-model fixture. | AR: AR-0012, AR-0013, AR-0014, AR-0040
+
+</details>
+<details><summary><strong>DM-0182 — Objective evidence assessment</strong> · SHALL</summary>
+
+**Directive**  
+Operational PASS SHALL require typed objective evidence assessments with artifact identity, method, assessor, date, toolchain and authority pointer.
+
+**Applicability / condition**  
+{"legacy_label":null,"operator":"ALWAYS","profiles":[]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":null,"responsible":"A5","technical_approver":"A3"}
+
+**Verification / evidence / AR links**  
+Execute the RC2 direct, negative and mutation fixtures for this requirement. | Evidence: Evidence assessment registry. | AR: AR-0012, AR-0013, AR-0014, AR-0040
+
+</details>
+<details><summary><strong>DM-0183 — Evidence referential integrity</strong> · SHALL</summary>
+
+**Directive**  
+Every evidence identifier used by assessment or tailoring SHALL resolve uniquely in the active evidence registry.
+
+**Applicability / condition**  
+{"legacy_label":null,"operator":"ALWAYS","profiles":[]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":null,"responsible":"A5","technical_approver":"A3"}
+
+**Verification / evidence / AR links**  
+Execute the RC2 direct, negative and mutation fixtures for this requirement. | Evidence: Referential-integrity receipt. | AR: AR-0012, AR-0013, AR-0014, AR-0040
+
+</details>
+<details><summary><strong>DM-0184 — Tailoring uniqueness</strong> · SHALL</summary>
+
+**Directive**  
+The tailoring engine SHALL reject multiple active tailoring records for the same requirement and context that lack an explicit valid supersession chain.
+
+**Applicability / condition**  
+{"legacy_label":null,"operator":"ALWAYS","profiles":[]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":null,"responsible":"A3","technical_approver":"A0"}
+
+**Verification / evidence / AR links**  
+Execute the RC2 direct, negative and mutation fixtures for this requirement. | Evidence: Duplicate/supersession fixtures. | AR: AR-0012, AR-0013, AR-0014, AR-0040
+
+</details>
+<details><summary><strong>DM-0185 — Tailoring independence</strong> · SHALL</summary>
+
+**Directive**  
+A tailoring requester SHALL NOT approve the same tailoring record.
+
+**Applicability / condition**  
+{"legacy_label":null,"operator":"ALWAYS","profiles":[]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":null,"responsible":"A0","technical_approver":"A3"}
+
+**Verification / evidence / AR links**  
+Execute the RC2 direct, negative and mutation fixtures for this requirement. | Evidence: Independence fixture. | AR: AR-0012, AR-0013, AR-0014, AR-0040
+
+</details>
+<details><summary><strong>DM-0186 — Executable component binding</strong> · SHALL</summary>
+
+**Directive**  
+The canonical source SHALL bind executable resolver, oracle and validator source identities by path and SHA-256.
+
+**Applicability / condition**  
+{"legacy_label":null,"operator":"ALWAYS","profiles":[]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":null,"responsible":"A5","technical_approver":"A3"}
+
+**Verification / evidence / AR links**  
+Execute the RC2 direct, negative and mutation fixtures for this requirement. | Evidence: Executable-component manifest. | AR: AR-0012, AR-0013, AR-0014, AR-0040
+
+</details>
+<details><summary><strong>DM-0192 — Required-linked consistency</strong> · SHALL</summary>
+
+**Directive**  
+Every playbook or checklist containing a linked applicable rule or item SHALL be included in the plan required-artifact set.
+
+**Applicability / condition**  
+{"legacy_label":null,"operator":"ALWAYS","profiles":[]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":null,"responsible":"A10","technical_approver":"A3"}
+
+**Verification / evidence / AR links**  
+Execute the RC2 direct, negative and mutation fixtures for this requirement. | Evidence: Required-linked set equality test. | AR: AR-0012, AR-0013, AR-0014, AR-0040
+
+</details>
+<details><summary><strong>DM-0193 — Lean role activation</strong> · SHALL</summary>
+
+**Directive**  
+The conformance engine SHALL activate roles from activity, materiality, affected domain and independence needs rather than all requirement owners indiscriminately.
+
+**Applicability / condition**  
+{"legacy_label":null,"operator":"ALWAYS","profiles":[]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":null,"responsible":"A8","technical_approver":"A3"}
+
+**Verification / evidence / AR links**  
+Execute the RC2 direct, negative and mutation fixtures for this requirement. | Evidence: Role activation truth table. | AR: AR-0012, AR-0013, AR-0014, AR-0040
+
+</details>
+<details><summary><strong>DM-0195 — Living-source change control</strong> · SHALL</summary>
+
+**Directive**  
+A living external guidance source SHALL have snapshot/access identity, freshness review and prospective impact analysis before changing Manual requirements.
+
+**Applicability / condition**  
+{"legacy_label":null,"operator":"ALWAYS","profiles":[]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":null,"responsible":"A5","technical_approver":"A3"}
+
+**Verification / evidence / AR links**  
+Execute the RC2 direct, negative and mutation fixtures for this requirement. | Evidence: Living-source review record. | AR: AR-0012, AR-0013, AR-0014, AR-0040, AR-0041
+
+</details>
+<details><summary><strong>DM-0197 — Conjunctive sub-obligation evidence</strong> · SHALL</summary>
+
+**Directive**  
+Every conjunctive sub-obligation SHALL receive an individual result before its parent requirement can pass.
+
+**Applicability / condition**  
+{"legacy_label":null,"operator":"ALWAYS","profiles":[]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":null,"responsible":"A3","technical_approver":"A0"}
+
+**Verification / evidence / AR links**  
+Execute the RC2 direct, negative and mutation fixtures for this requirement. | Evidence: Sub-obligation completeness receipt. | AR: AR-0012, AR-0013, AR-0014, AR-0040
+
+</details>
+<h2 id="inc">INC<a class="headerlink" href="#inc" title="Permanent link">¶</a></h2>
+<details><summary><strong>DM-0145 — Immediate containment</strong> · SHALL</summary>
+
+**Directive**  
+On a material defect or unauthorized side effect, the activity SHALL stop further consequential actions and preserve evidence.
+
+**Applicability / condition**  
+{"legacy_label":"ALL","operator":"ALWAYS","profiles":[]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A0/A8","responsible":"A0","technical_approver":"A8"}
+
+**Verification / evidence / AR links**  
+Incident timeline review. | Evidence: Incident receipt. | AR: AR-0002, AR-0008, AR-0009
+
+</details>
+<details><summary><strong>DM-0146 — Failure classification</strong> · SHALL</summary>
+
+**Directive**  
+Incidents SHALL distinguish scientific, requirements, implementation, data, infrastructure, transport, authorization and external-service failures.
+
+**Applicability / condition**  
+{"legacy_label":"ALL","operator":"ALWAYS","profiles":[]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A10","A9"],"legacy_owner":"A0/A8/A10","responsible":"A0","technical_approver":"A8"}
+
+**Verification / evidence / AR links**  
+Classification review. | Evidence: Incident record. | AR: AR-0002, AR-0008, AR-0009
+
+</details>
+<details><summary><strong>DM-0147 — Evidence preservation</strong> · SHALL</summary>
+
+**Directive**  
+Raw logs/artifacts/identities from failed operations SHALL be preserved before repair/retry when material.
+
+**Applicability / condition**  
+{"legacy_label":"ALL","operator":"ALWAYS","profiles":[]} | Condition: {"condition_id":"COND-DM-0147","description":"Assess the internal conditional trigger stated by DM-0147.","mode":"ASSESSMENT_REQUIRED"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A5","responsible":"A5","technical_approver":"A9"}
+
+**Verification / evidence / AR links**  
+Evidence manifest. | Evidence: Failure evidence package. | AR: AR-0002, AR-0008, AR-0009
+
+</details>
+<details><summary><strong>DM-0148 — Root cause vs symptom</strong> · SHALL</summary>
+
+**Directive**  
+Corrective action SHALL distinguish observed symptom, contributing conditions and supported root cause; unsupported causal claims are prohibited.
+
+**Applicability / condition**  
+{"legacy_label":"ALL","operator":"ALWAYS","profiles":[]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A8","A9"],"legacy_owner":"A2/A3/A8","responsible":"A2","technical_approver":"A3"}
+
+**Verification / evidence / AR links**  
+RCA review. | Evidence: Root cause report. | AR: AR-0002, AR-0008, AR-0009
+
+</details>
+<details><summary><strong>DM-0149 — Earliest affected gate</strong> · SHALL</summary>
+
+**Directive**  
+A defect SHALL identify the earliest affected Gate/requirement before remediation scope is approved.
+
+**Applicability / condition**  
+{"legacy_label":"ALL","operator":"ALWAYS","profiles":[]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A0/A3","responsible":"A0","technical_approver":"A3"}
+
+**Verification / evidence / AR links**  
+Gate mapping check. | Evidence: Remediation record. | AR: AR-0002, AR-0008, AR-0009
+
+</details>
+<details><summary><strong>DM-0150 — No retroactive repair</strong> · SHALL</summary>
+
+**Directive**  
+Certified historical evidence SHALL not be mutated to make a new interpretation pass; repairs SHALL be prospective.
+
+**Applicability / condition**  
+{"legacy_label":"CERT","operator":"ANY_OF","profiles":["CERT"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A5","responsible":"A5","technical_approver":"A9"}
+
+**Verification / evidence / AR links**  
+History/readback audit. | Evidence: New version/erratum. | AR: AR-0002, AR-0008, AR-0009, AR-0020
+
+</details>
+<details><summary><strong>DM-0151 — Corrective and preventive actions</strong> · SHALL</summary>
+
+**Directive**  
+Material incidents SHALL define corrective action and, when recurrence class is generalizable, a preventive control/manual update.
+
+**Applicability / condition**  
+{"legacy_label":"ALL","operator":"ALWAYS","profiles":[]} | Condition: {"condition_id":"COND-DM-0151","description":"Assess the internal conditional trigger stated by DM-0151.","mode":"ASSESSMENT_REQUIRED"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A8/A9","responsible":"A8","technical_approver":"A9"}
+
+**Verification / evidence / AR links**  
+CAPA review. | Evidence: CAPA record. | AR: AR-0002, AR-0008, AR-0009
+
+</details>
+<details><summary><strong>DM-0152 — Postmortem acceptance</strong> · SHALL</summary>
+
+**Directive**  
+A high-materiality incident SHALL not be considered closed until evidence, root cause scope, corrective action and recurrence prevention have been independently reviewed.
+
+**Applicability / condition**  
+{"legacy_label":"ALL","operator":"ALWAYS","profiles":[]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A9/A0","responsible":"A9","technical_approver":"A0"}
+
+**Verification / evidence / AR links**  
+Closure review. | Evidence: Postmortem receipt. | AR: AR-0002, AR-0008, AR-0009
+
+</details>
+<h2 id="lc">LC<a class="headerlink" href="#lc" title="Permanent link">¶</a></h2>
+<details><summary><strong>DM-0011 — Lifecycle plan</strong> · SHALL</summary>
+
+**Directive**  
+Each runtime-capable module SHALL maintain a lifecycle plan covering inception, development, verification, release, operation/maintenance, supersession and retirement.
+
+**Applicability / condition**  
+{"legacy_label":"MODULE","operator":"ANY_OF","profiles":["MODULE"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A8","responsible":"A8","technical_approver":"A0"}
+
+**Verification / evidence / AR links**  
+Plan completeness review. | Evidence: Module lifecycle plan. | AR: AR-0001, AR-0002, AR-0046
+
+</details>
+<details><summary><strong>DM-0012 — Development state</strong> · SHALL</summary>
+
+**Directive**  
+Every governed artifact SHALL carry one lifecycle state from DRAFT, REVIEW_CANDIDATE, VERIFIED_CANDIDATE, CERTIFIED, SUPERSEDED or RETIRED.
+
+**Applicability / condition**  
+{"legacy_label":"ALL","operator":"ALWAYS","profiles":[]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A5/A10","responsible":"A5","technical_approver":"A10"}
+
+**Verification / evidence / AR links**  
+Schema validation. | Evidence: Artifact metadata. | AR: AR-0001, AR-0002, AR-0046
+
+</details>
+<details><summary><strong>DM-0013 — Entry/exit criteria</strong> · SHALL</summary>
+
+**Directive**  
+Every development phase or release Gate SHALL define prospective entry criteria, exit criteria and blocking conditions.
+
+**Applicability / condition**  
+{"legacy_label":"ALL","operator":"ALWAYS","profiles":[]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A0/A3","responsible":"A0","technical_approver":"A3"}
+
+**Verification / evidence / AR links**  
+Gate-contract validation. | Evidence: Gate manifest. | AR: AR-0001, AR-0002, AR-0046
+
+</details>
+<details><summary><strong>DM-0014 — Risk register</strong> · SHALL</summary>
+
+**Directive**  
+Material development risks SHALL be maintained with likelihood/impact or equivalent prioritization, owner, mitigation and residual risk.
+
+**Applicability / condition**  
+{"legacy_label":"ALL","operator":"ALWAYS","profiles":[]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A0/A8","responsible":"A0","technical_approver":"A8"}
+
+**Verification / evidence / AR links**  
+Risk-register review. | Evidence: Risk register. | AR: AR-0001, AR-0002, AR-0046
+
+</details>
+<details><summary><strong>DM-0015 — Training/competency</strong> · SHALL</summary>
+
+**Directive**  
+Tool- or domain-critical work SHALL identify required competency and shall not be assigned solely on availability.
+
+**Applicability / condition**  
+{"legacy_label":"ALL","operator":"ALWAYS","profiles":[]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A0","responsible":"A0","technical_approver":"A8"}
+
+**Verification / evidence / AR links**  
+Role/competency check. | Evidence: Assignment record. | AR: AR-0001, AR-0002, AR-0046
+
+</details>
+<details><summary><strong>DM-0016 — Environment prequalification</strong> · SHALL</summary>
+
+**Directive**  
+A material development/release activity SHALL NOT begin until required environments, tools, transports and readback paths are prospectively identified.
+
+**Applicability / condition**  
+{"legacy_label":"ALL","operator":"ALWAYS","profiles":[]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A8","responsible":"A8","technical_approver":"A0"}
+
+**Verification / evidence / AR links**  
+Preflight review. | Evidence: Environment qualification receipt. | AR: AR-0001, AR-0002, AR-0046
+
+</details>
+<details><summary><strong>DM-0017 — Lessons learned</strong> · SHALL</summary>
+
+**Directive**  
+Significant defects, near misses, rejected releases and successful mitigations SHALL produce a reusable lessons-learned record.
+
+**Applicability / condition**  
+{"legacy_label":"ALL","operator":"ALWAYS","profiles":[]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A8/A9","responsible":"A8","technical_approver":"A9"}
+
+**Verification / evidence / AR links**  
+Postmortem audit. | Evidence: Lessons-learned record. | AR: AR-0001, AR-0002, AR-0046
+
+</details>
+<details><summary><strong>DM-0018 — Retirement/supersession</strong> · SHALL</summary>
+
+**Directive**  
+Superseded code/data/contracts SHALL be explicitly marked and SHALL NOT remain silently selectable as active authority.
+
+**Applicability / condition**  
+{"legacy_label":"ALL","operator":"ALWAYS","profiles":[]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A5/A10","responsible":"A5","technical_approver":"A10"}
+
+**Verification / evidence / AR links**  
+Catalog/repository status check. | Evidence: Supersession record. | AR: AR-0001, AR-0002, AR-0046
+
+</details>
+<h2 id="mod">MOD<a class="headerlink" href="#mod" title="Permanent link">¶</a></h2>
+<details><summary><strong>DM-0159 — Module playbook mandatory</strong> · SHALL</summary>
+
+**Directive**  
+Before production-capable development, each module SHALL adopt the relevant Manual playbook and declare any approved tailoring.
+
+**Applicability / condition**  
+{"legacy_label":"MODULE","operator":"ANY_OF","profiles":["MODULE"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A0/A8","responsible":"A0","technical_approver":"A8"}
+
+**Verification / evidence / AR links**  
+Playbook binding check. | Evidence: Module engineering profile. | AR: AR-0018, AR-0021, AR-0022, AR-0023, AR-0024, AR-0032, AR-0042, AR-0043, AR-0046, AR-0047, AR-0048
+
+</details>
+<details><summary><strong>DM-0160 — Module repository binding</strong> · SHALL</summary>
+
+**Directive**  
+A runtime-capable module SHALL bind logical module ID to repository/ref and environment identity before its pre-runtime freeze.
+
+**Applicability / condition**  
+{"legacy_label":"MODULE","operator":"ANY_OF","profiles":["MODULE"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A5/A8","responsible":"A5","technical_approver":"A8"}
+
+**Verification / evidence / AR links**  
+Authority lock. | Evidence: Module authority receipt. | AR: AR-0018, AR-0021, AR-0022, AR-0023, AR-0024, AR-0032, AR-0042, AR-0043, AR-0046, AR-0047, AR-0048
+
+</details>
+<details><summary><strong>DM-0161 — Environment module GEE semantics</strong> · SHALL</summary>
+
+**Directive**  
+MM-ENVIRONMENT SHALL use official GEE semantics as primary platform authority and SHALL not use style guidance to override projection/mask/grid semantics.
+
+**Applicability / condition**  
+{"legacy_label":"GEO","operator":"ANY_OF","profiles":["GEO"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A4/A8","responsible":"A4","technical_approver":"A8"}
+
+**Verification / evidence / AR links**  
+GEE review. | Evidence: GEE playbook receipt. | AR: AR-0018, AR-0021, AR-0022, AR-0023, AR-0024, AR-0032, AR-0042, AR-0043, AR-0046, AR-0047, AR-0048
+
+</details>
+<details><summary><strong>DM-0162 — R core/package engineering</strong> · SHALL</summary>
+
+**Directive**  
+MM-INTEGRATION-CORE and R components SHALL follow R Core package/build/check conventions when packaged; tidyverse style is a consistency layer, not normative R semantics.
+
+**Applicability / condition**  
+{"legacy_label":"R","operator":"ANY_OF","profiles":["R"],"resolution":"Direct profile mapping."} | Condition: {"condition_id":"COND-DM-0162","description":"Assess the internal conditional trigger stated by DM-0162.","mode":"ASSESSMENT_REQUIRED"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A8","responsible":"A8","technical_approver":"A0"}
+
+**Verification / evidence / AR links**  
+R CMD check / repository review. | Evidence: R playbook receipt. | AR: AR-0018, AR-0021, AR-0022, AR-0023, AR-0024, AR-0032, AR-0042, AR-0043, AR-0046, AR-0047, AR-0048
+
+</details>
+<details><summary><strong>DM-0163 — R dependency restoration</strong> · SHALL</summary>
+
+**Directive**  
+R release candidates SHALL use a project dependency lock/restoration mechanism such as renv when appropriate and SHALL record R/package versions.
+
+**Applicability / condition**  
+{"legacy_label":"R","operator":"ANY_OF","profiles":["R"],"resolution":"Direct profile mapping."} | Condition: {"condition_id":"COND-DM-0163","description":"Assess the internal conditional trigger stated by DM-0163.","mode":"ASSESSMENT_REQUIRED"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A8","responsible":"A8","technical_approver":"A0"}
+
+**Verification / evidence / AR links**  
+Clean restore. | Evidence: renv.lock/sessionInfo receipt. | AR: AR-0018, AR-0021, AR-0022, AR-0023, AR-0024, AR-0032, AR-0042, AR-0043, AR-0046, AR-0047, AR-0048
+
+</details>
+<details><summary><strong>DM-0164 — GEE expensive-run pilot</strong> · SHALL</summary>
+
+**Directive**  
+Expensive/large GEE tasks SHALL have a pilot/resource estimate and explicit batch/export strategy before production execution.
+
+**Applicability / condition**  
+{"legacy_label":"GEO","operator":"ANY_OF","profiles":["GEO"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A4/A8","responsible":"A4","technical_approver":"A8"}
+
+**Verification / evidence / AR links**  
+Pilot review. | Evidence: Resource pilot. | AR: AR-0018, AR-0021, AR-0022, AR-0023, AR-0024, AR-0032, AR-0042, AR-0043, AR-0046, AR-0047, AR-0048
+
+</details>
+<details><summary><strong>DM-0165 — DSSAT input immutability</strong> · SHALL</summary>
+
+**Directive**  
+DSSAT sensitivity/simulation runs SHALL create run-specific perturbed inputs and SHALL NOT overwrite certified baseline climate/soil/management inputs.
+
+**Applicability / condition**  
+{"legacy_label":"PLANT","operator":"ANY_OF","profiles":["PLANT"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A8/A10","responsible":"A8","technical_approver":"A10"}
+
+**Verification / evidence / AR links**  
+Filesystem/hash comparison. | Evidence: DSSAT run manifest. | AR: AR-0018, AR-0021, AR-0022, AR-0023, AR-0024, AR-0032, AR-0042, AR-0043, AR-0046, AR-0047, AR-0048
+
+</details>
+<details><summary><strong>DM-0166 — DSSAT baseline reproduction</strong> · SHALL</summary>
+
+**Directive**  
+Before mechanistic perturbation campaigns, the DSSAT wrapper SHALL reproduce an approved unperturbed baseline within prospectively defined criteria.
+
+**Applicability / condition**  
+{"legacy_label":"PLANT","operator":"ANY_OF","profiles":["PLANT"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A8"],"legacy_owner":"A2/A7/A8","responsible":"A2","technical_approver":"A7"}
+
+**Verification / evidence / AR links**  
+Baseline rerun. | Evidence: Baseline reproduction receipt. | AR: AR-0018, AR-0021, AR-0022, AR-0023, AR-0024, AR-0032, AR-0042, AR-0043, AR-0046, AR-0047, AR-0048
+
+</details>
+<details><summary><strong>DM-0167 — Animal module contracts</strong> · SHALL</summary>
+
+**Directive**  
+MM-ANIMAL SHALL expose biological/productivity outputs through explicit versioned contracts and preserve units/scenario semantics.
+
+**Applicability / condition**  
+{"legacy_label":"ANIMAL","operator":"ANY_OF","profiles":["ANIMAL"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A7"],"legacy_owner":"A10/A6/A7","responsible":"A10","technical_approver":"A6"}
+
+**Verification / evidence / AR links**  
+Contract tests. | Evidence: Animal data contract. | AR: AR-0018, AR-0021, AR-0022, AR-0023, AR-0024, AR-0032, AR-0042, AR-0043, AR-0046, AR-0047, AR-0048
+
+</details>
+<details><summary><strong>DM-0168 — Economic module monetary contract</strong> · SHALL</summary>
+
+**Directive**  
+MM-ECONOMIC SHALL make currency, price base/date, deflator/exchange assumptions and stochastic dependence explicit and versioned.
+
+**Applicability / condition**  
+{"legacy_label":"ECON","operator":"ANY_OF","profiles":["ECON"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A10"],"legacy_owner":"A6/A7/A10","responsible":"A6","technical_approver":"A7"}
+
+**Verification / evidence / AR links**  
+Economic contract review. | Evidence: Economic assumptions registry. | AR: AR-0018, AR-0021, AR-0022, AR-0023, AR-0024, AR-0032, AR-0042, AR-0043, AR-0046, AR-0047, AR-0048
+
+</details>
+<details><summary><strong>DM-0169 — Integration release cross-module audit</strong> · SHALL</summary>
+
+**Directive**  
+Major MM-INTEGRATION-CORE releases SHALL run cross-module compatibility, provenance and end-to-end regression tests before certification.
+
+**Applicability / condition**  
+{"legacy_label":"INTEGRATION","operator":"ANY_OF","profiles":["INTEGRATION"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A8","A10","A9"],"legacy_owner":"A3/A5/A8/A10/A9","responsible":"A3","technical_approver":"A5"}
+
+**Verification / evidence / AR links**  
+Integrated release suite. | Evidence: Integration certification candidate report. | AR: AR-0018, AR-0021, AR-0022, AR-0023, AR-0024, AR-0032, AR-0042, AR-0043, AR-0046, AR-0047, AR-0048
+
+</details>
+<details><summary><strong>DM-0170 — Data catalog federation</strong> · SHALL</summary>
+
+**Directive**  
+MM-DATA-CATALOG SHALL aggregate module metadata without requiring shared mutable module repositories.
+
+**Applicability / condition**  
+{"legacy_label":"DATA","operator":"ANY_OF","profiles":["DATA"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A10","responsible":"A10","technical_approver":"A8"}
+
+**Verification / evidence / AR links**  
+Catalog topology review. | Evidence: Federation manifest. | AR: AR-0018, AR-0021, AR-0022, AR-0023, AR-0024, AR-0032, AR-0042, AR-0043, AR-0046, AR-0047, AR-0048
+
+</details>
+<details><summary><strong>DM-0171 — UI separation</strong> · SHALL</summary>
+
+**Directive**  
+User-interface/deployment layers SHALL not become the scientific source of truth for MM computational semantics.
+
+**Applicability / condition**  
+{"legacy_label":"UI","operator":"ANY_OF","profiles":["UI"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A8/A5","responsible":"A8","technical_approver":"A5"}
+
+**Verification / evidence / AR links**  
+Source-authority audit. | Evidence: UI-core boundary record. | AR: AR-0018, AR-0021, AR-0022, AR-0023, AR-0024, AR-0032, AR-0042, AR-0043, AR-0046, AR-0047, AR-0048
+
+</details>
+<details><summary><strong>DM-0178 — Affected module model</strong> · SHALL</summary>
+
+**Directive**  
+A material integration release SHALL identify affected modules and interfaces before SME activation.
+
+**Applicability / condition**  
+{"legacy_label":null,"operator":"ANY_OF","profiles":["INTEGRATION"]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":null,"responsible":"A2","technical_approver":"A3"}
+
+**Verification / evidence / AR links**  
+Execute the RC2 direct, negative and mutation fixtures for this requirement. | Evidence: Affected-module/interface record. | AR: AR-0012, AR-0013, AR-0014, AR-0040
+
+</details>
+<details><summary><strong>DM-0194 — GEE engineering profile qualification</strong> · SHALL</summary>
+
+**Directive**  
+The GEE engineering profile SHALL pass schema validation, semantic validation, negative fixtures and mutation testing before certified use.
+
+**Applicability / condition**  
+{"legacy_label":null,"operator":"ANY_OF","profiles":["GEO"]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":null,"responsible":"A4","technical_approver":"A3"}
+
+**Verification / evidence / AR links**  
+Execute the RC2 direct, negative and mutation fixtures for this requirement. | Evidence: GEE profile qualification receipt. | AR: AR-0012, AR-0013, AR-0014, AR-0040
+
+</details>
+<h2 id="num">NUM<a class="headerlink" href="#num" title="Permanent link">¶</a></h2>
+<details><summary><strong>DM-0093 — A6 applicability screen</strong> · SHALL</summary>
+
+**Directive**  
+Material numerical/mathematical transformations SHALL undergo an A6 applicability screen before implementation/release.
+
+**Applicability / condition**  
+{"legacy_label":"SCI","operator":"ANY_OF","profiles":["SCI"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A6","responsible":"A6","technical_approver":"A0"}
+
+**Verification / evidence / AR links**  
+Applicability record. | Evidence: A6 screen. | AR: AR-0016
+
+</details>
+<details><summary><strong>DM-0094 — Well-posedness and domain</strong> · SHALL</summary>
+
+**Directive**  
+Algorithms SHALL document domain-of-validity and existence/uniqueness/regularity assumptions when material to correctness.
+
+**Applicability / condition**  
+{"legacy_label":"SCI","operator":"ANY_OF","profiles":["SCI"],"resolution":"Direct profile mapping."} | Condition: {"condition_id":"COND-DM-0094","description":"Assess the internal conditional trigger stated by DM-0094.","mode":"ASSESSMENT_REQUIRED"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A6","responsible":"A6","technical_approver":"A0"}
+
+**Verification / evidence / AR links**  
+Mathematical review. | Evidence: Validity report. | AR: AR-0016
+
+</details>
+<details><summary><strong>DM-0095 — Conditioning vs stability</strong> · SHALL</summary>
+
+**Directive**  
+Numerical reviews SHALL distinguish sensitivity of the mathematical problem from stability of the implemented algorithm when relevant.
+
+**Applicability / condition**  
+{"legacy_label":"SCI","operator":"ANY_OF","profiles":["SCI"],"resolution":"Direct profile mapping."} | Condition: {"condition_id":"COND-DM-0095","description":"Assess the internal conditional trigger stated by DM-0095.","mode":"ASSESSMENT_REQUIRED"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A6","responsible":"A6","technical_approver":"A0"}
+
+**Verification / evidence / AR links**  
+Numerical assurance review. | Evidence: Conditioning/stability contract. | AR: AR-0016
+
+</details>
+<details><summary><strong>DM-0096 — Prospective tolerances</strong> · SHALL</summary>
+
+**Directive**  
+Numerical tolerances SHALL be justified and frozen before observing the values they adjudicate.
+
+**Applicability / condition**  
+{"legacy_label":"SCI","operator":"ANY_OF","profiles":["SCI"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A6/A3","responsible":"A6","technical_approver":"A3"}
+
+**Verification / evidence / AR links**  
+Version/timestamp review. | Evidence: Tolerance registry. | AR: AR-0016
+
+</details>
+<details><summary><strong>DM-0097 — Error budget</strong> · SHALL</summary>
+
+**Directive**  
+Material approximations SHALL identify relevant discretization, truncation, iterative and floating-point error contributions.
+
+**Applicability / condition**  
+{"legacy_label":"SCI","operator":"ANY_OF","profiles":["SCI"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A6","responsible":"A6","technical_approver":"A0"}
+
+**Verification / evidence / AR links**  
+Error-budget review. | Evidence: Error budget. | AR: AR-0016
+
+</details>
+<details><summary><strong>DM-0098 — Convergence evidence</strong> · SHALL</summary>
+
+**Directive**  
+Iterative/approximate methods SHALL have prospective convergence criteria and non-convergence handling.
+
+**Applicability / condition**  
+{"legacy_label":"SCI","operator":"ANY_OF","profiles":["SCI"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A6","responsible":"A6","technical_approver":"A0"}
+
+**Verification / evidence / AR links**  
+Convergence fixtures. | Evidence: Convergence report. | AR: AR-0016
+
+</details>
+<details><summary><strong>DM-0099 — Finite/nonfinite policy</strong> · SHALL</summary>
+
+**Directive**  
+NaN, Inf, overflow/underflow and invalid-operation behavior SHALL be explicitly handled where reachable.
+
+**Applicability / condition**  
+{"legacy_label":"SCI","operator":"ANY_OF","profiles":["SCI"],"resolution":"Direct profile mapping."} | Condition: {"condition_id":"COND-DM-0099","description":"Assess the internal conditional trigger stated by DM-0099.","mode":"ASSESSMENT_REQUIRED"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A6/A8","responsible":"A6","technical_approver":"A8"}
+
+**Verification / evidence / AR links**  
+Boundary fixtures. | Evidence: Numerical edge-case report. | AR: AR-0016
+
+</details>
+<details><summary><strong>DM-0189 — Substantive assurance records</strong> · SHALL</summary>
+
+**Directive**  
+Mathematical, statistical and data-quality PASS or CERTIFIED records SHALL contain non-empty substantive content and objective evidence.
+
+**Applicability / condition**  
+{"legacy_label":null,"operator":"ANY_OF","profiles":["SCI"]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":null,"responsible":"A6","technical_approver":"A3"}
+
+**Verification / evidence / AR links**  
+Execute the RC2 direct, negative and mutation fixtures for this requirement. | Evidence: Negative schema/semantic fixture receipt. | AR: AR-0012, AR-0013, AR-0014, AR-0040
+
+</details>
+<h2 id="rel">REL<a class="headerlink" href="#rel" title="Permanent link">¶</a></h2>
+<details><summary><strong>DM-0123 — Immutable release candidate</strong> · SHALL</summary>
+
+**Directive**  
+A formal release/freeze SHALL identify exact source commit/tree, generated artifacts, dependencies and evidence package before persistence.
+
+**Applicability / condition**  
+{"legacy_label":"CERT","operator":"ANY_OF","profiles":["CERT"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A5","responsible":"A5","technical_approver":"A0"}
+
+**Verification / evidence / AR links**  
+Identity-lock review. | Evidence: Release manifest. | AR: AR-0009, AR-0010, AR-0011, AR-0012, AR-0047
+
+</details>
+<details><summary><strong>DM-0124 — Reproducible build</strong> · SHALL</summary>
+
+**Directive**  
+Generated release artifacts SHALL be reproducible from frozen source/toolchain where the project claims deterministic generation.
+
+**Applicability / condition**  
+{"legacy_label":"CERT","operator":"ANY_OF","profiles":["CERT"],"resolution":"Direct profile mapping."} | Condition: {"condition_id":"COND-DM-0124","description":"Assess the internal conditional trigger stated by DM-0124.","mode":"ASSESSMENT_REQUIRED"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A8/A5","responsible":"A8","technical_approver":"A5"}
+
+**Verification / evidence / AR links**  
+Independent rebuild/hash comparison. | Evidence: Build receipt. | AR: AR-0009, AR-0010, AR-0011, AR-0012, AR-0047
+
+</details>
+<details><summary><strong>DM-0125 — Transport prequalification</strong> · SHALL</summary>
+
+**Directive**  
+Artifact upload/transport and readback mechanisms SHALL be designed and qualified before the release/freeze action begins.
+
+**Applicability / condition**  
+{"legacy_label":"CERT","operator":"ANY_OF","profiles":["CERT"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A8/A5","responsible":"A8","technical_approver":"A5"}
+
+**Verification / evidence / AR links**  
+Preflight fixture/readback. | Evidence: Transport qualification receipt. | AR: AR-0009, AR-0010, AR-0011, AR-0012, AR-0047
+
+</details>
+<details><summary><strong>DM-0126 — Artifact manifest</strong> · SHALL</summary>
+
+**Directive**  
+Every certified bundle SHALL have a manifest listing path, size, checksum/identity and semantic role.
+
+**Applicability / condition**  
+{"legacy_label":"CERT","operator":"ANY_OF","profiles":["CERT"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A5","responsible":"A5","technical_approver":"A0"}
+
+**Verification / evidence / AR links**  
+Manifest readback. | Evidence: Bundle manifest. | AR: AR-0009, AR-0010, AR-0011, AR-0012, AR-0047
+
+</details>
+<details><summary><strong>DM-0127 — Content readback</strong> · SHALL</summary>
+
+**Directive**  
+External persistence SHALL be followed by immutable readback sufficient to prove stored content identity.
+
+**Applicability / condition**  
+{"legacy_label":"CERT","operator":"ANY_OF","profiles":["CERT"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A5","responsible":"A5","technical_approver":"A0"}
+
+**Verification / evidence / AR links**  
+Readback comparison. | Evidence: Readback proof. | AR: AR-0009, AR-0010, AR-0011, AR-0012, AR-0047
+
+</details>
+<details><summary><strong>DM-0128 — A then B certification</strong> · SHALL</summary>
+
+**Directive**  
+When the project uses Content Commit A / Certification Commit B, B SHALL NOT exist until Content A readback passes with zero mismatches.
+
+**Applicability / condition**  
+{"legacy_label":"CERT","operator":"ANY_OF","profiles":["CERT"],"resolution":"Direct profile mapping."} | Condition: {"condition_id":"COND-DM-0128","description":"Assess the internal conditional trigger stated by DM-0128.","mode":"ASSESSMENT_REQUIRED"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A5","responsible":"A5","technical_approver":"A0"}
+
+**Verification / evidence / AR links**  
+Commit ancestry/readback. | Evidence: Certification receipt. | AR: AR-0009, AR-0010, AR-0011, AR-0012, AR-0047
+
+</details>
+<details><summary><strong>DM-0129 — No certify on mismatch</strong> · SHALL</summary>
+
+**Directive**  
+Any artifact/readback mismatch SHALL produce HOLD; hashes or summaries SHALL NOT be used to waive missing content.
+
+**Applicability / condition**  
+{"legacy_label":"CERT","operator":"ANY_OF","profiles":["CERT"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A0/A5","responsible":"A0","technical_approver":"A5"}
+
+**Verification / evidence / AR links**  
+Negative mismatch fixture. | Evidence: HOLD receipt. | AR: AR-0009, AR-0010, AR-0011, AR-0012, AR-0047
+
+</details>
+<details><summary><strong>DM-0130 — Binary transport semantics</strong> · SHALL</summary>
+
+**Directive**  
+Binary artifacts SHALL declare whether authority is monolithic bytes, content-addressed segments, LFS/object storage, or another reproducible representation.
+
+**Applicability / condition**  
+{"legacy_label":"CERT","operator":"ANY_OF","profiles":["CERT"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A5/A8","responsible":"A5","technical_approver":"A8"}
+
+**Verification / evidence / AR links**  
+Transport manifest audit. | Evidence: Binary authority contract. | AR: AR-0009, AR-0010, AR-0011, AR-0012, AR-0047
+
+</details>
+<details><summary><strong>DM-0131 — Release notes</strong> · SHALL</summary>
+
+**Directive**  
+Certified releases SHALL document scope, scientific/engineering changes, compatibility, known limitations and unresolved non-blocking issues.
+
+**Applicability / condition**  
+{"legacy_label":"CERT","operator":"ANY_OF","profiles":["CERT"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A0/A8","responsible":"A0","technical_approver":"A8"}
+
+**Verification / evidence / AR links**  
+Release-note review. | Evidence: Release notes. | AR: AR-0009, AR-0010, AR-0011, AR-0012, AR-0047
+
+</details>
+<details><summary><strong>DM-0132 — Rollback</strong> · SHALL</summary>
+
+**Directive**  
+Production/deployment changes SHALL have a validated rollback or safe-state strategy before mutation.
+
+**Applicability / condition**  
+{"legacy_label":"PROD","operator":"ANY_OF","profiles":["PROD"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A8/A9","responsible":"A8","technical_approver":"A9"}
+
+**Verification / evidence / AR links**  
+Rollback rehearsal/review. | Evidence: Rollback plan. | AR: AR-0009, AR-0010, AR-0011, AR-0012, AR-0047
+
+</details>
+<details><summary><strong>DM-0133 — Supersession link</strong> · SHALL</summary>
+
+**Directive**  
+A superseding release SHALL explicitly reference the prior authority and state whether semantics changed.
+
+**Applicability / condition**  
+{"legacy_label":"CERT","operator":"ANY_OF","profiles":["CERT"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A5","responsible":"A5","technical_approver":"A0"}
+
+**Verification / evidence / AR links**  
+Version lineage check. | Evidence: Supersession record. | AR: AR-0009, AR-0010, AR-0011, AR-0012, AR-0047
+
+</details>
+<details><summary><strong>DM-0134 — Default branch isolation</strong> · SHALL</summary>
+
+**Directive**  
+Certification on a provenance branch SHALL NOT imply mutation of main/default/production branches.
+
+**Applicability / condition**  
+{"legacy_label":"CERT","operator":"ANY_OF","profiles":["CERT"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A5/A8","responsible":"A5","technical_approver":"A8"}
+
+**Verification / evidence / AR links**  
+Branch readback. | Evidence: Branch state receipt. | AR: AR-0009, AR-0010, AR-0011, AR-0012, AR-0047
+
+</details>
+<h2 id="req">REQ<a class="headerlink" href="#req" title="Permanent link">¶</a></h2>
+<details><summary><strong>DM-0019 — Unique requirement IDs</strong> · SHALL</summary>
+
+**Directive**  
+Every normative software-development requirement SHALL have a unique persistent identifier.
+
+**Applicability / condition**  
+{"legacy_label":"ALL","operator":"ALWAYS","profiles":[]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A3","responsible":"A3","technical_approver":"A0"}
+
+**Verification / evidence / AR links**  
+Uniqueness check. | Evidence: Requirements baseline. | AR: AR-0001, AR-0007, AR-0009, AR-0010
+
+</details>
+<details><summary><strong>DM-0020 — Atomic testable requirements</strong> · SHALL</summary>
+
+**Directive**  
+Normative requirements SHALL be unambiguous, sufficiently atomic and testable; conjunctions that hide independent obligations SHALL be split where material.
+
+**Applicability / condition**  
+{"legacy_label":"ALL","operator":"ALWAYS","profiles":[]} | Condition: {"condition_id":"COND-DM-0020","description":"Assess the internal conditional trigger stated by DM-0020.","mode":"ASSESSMENT_REQUIRED"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A3","responsible":"A3","technical_approver":"A0"}
+
+**Verification / evidence / AR links**  
+Requirements quality review. | Evidence: Review findings. | AR: AR-0001, AR-0007, AR-0009, AR-0010
+
+</details>
+<details><summary><strong>DM-0021 — Requirement rationale</strong> · SHALL</summary>
+
+**Directive**  
+Material requirements SHALL record rationale and source/evidence, not only directive text.
+
+**Applicability / condition**  
+{"legacy_label":"ALL","operator":"ALWAYS","profiles":[]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A3/A5","responsible":"A3","technical_approver":"A5"}
+
+**Verification / evidence / AR links**  
+Traceability check. | Evidence: Requirement record. | AR: AR-0001, AR-0007, AR-0009, AR-0010
+
+</details>
+<details><summary><strong>DM-0022 — Assumption registry</strong> · SHALL</summary>
+
+**Directive**  
+Requirements relying on assumptions SHALL reference explicit assumption IDs with validity domain and verification method.
+
+**Applicability / condition**  
+{"legacy_label":"ALL","operator":"ALWAYS","profiles":[]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A6","A7","A9"],"legacy_owner":"A2/A3/A6/A7","responsible":"A2","technical_approver":"A3"}
+
+**Verification / evidence / AR links**  
+Assumption-reference audit. | Evidence: Assumption registry. | AR: AR-0001, AR-0007, AR-0009, AR-0010
+
+</details>
+<details><summary><strong>DM-0023 — Bidirectional traceability</strong> · SHALL</summary>
+
+**Directive**  
+Requirements SHALL trace bidirectionally through design, implementation, tests and release evidence.
+
+**Applicability / condition**  
+{"legacy_label":"ALL","operator":"ALWAYS","profiles":[]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A3/A5","responsible":"A3","technical_approver":"A5"}
+
+**Verification / evidence / AR links**  
+No-hole traceability check. | Evidence: Traceability matrix. | AR: AR-0001, AR-0007, AR-0009, AR-0010
+
+</details>
+<details><summary><strong>DM-0024 — No orphan implementation</strong> · SHALL</summary>
+
+**Directive**  
+Code, configuration, data transforms and tests with no originating requirement/design rationale SHALL be treated as scope creep until justified.
+
+**Applicability / condition**  
+{"legacy_label":"ALL","operator":"ALWAYS","profiles":[]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A3","responsible":"A3","technical_approver":"A0"}
+
+**Verification / evidence / AR links**  
+Reverse traceability check. | Evidence: Orphan report. | AR: AR-0001, AR-0007, AR-0009, AR-0010
+
+</details>
+<details><summary><strong>DM-0025 — No unresolved TBD at freeze</strong> · SHALL</summary>
+
+**Directive**  
+A release/freeze candidate SHALL contain no unresolved material TBD/TBC/placeholder affecting correctness, authority or reproducibility.
+
+**Applicability / condition**  
+{"legacy_label":"CERT","operator":"ANY_OF","profiles":["CERT"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A3/A9","responsible":"A3","technical_approver":"A9"}
+
+**Verification / evidence / AR links**  
+Pattern scan + review. | Evidence: TBD report = 0. | AR: AR-0001, AR-0007, AR-0009, AR-0010
+
+</details>
+<details><summary><strong>DM-0026 — Interface requirements</strong> · SHALL</summary>
+
+**Directive**  
+Cross-module interfaces SHALL specify producer, consumer, schema, units, missing-value semantics, version compatibility, provenance and acceptance criteria.
+
+**Applicability / condition**  
+{"legacy_label":"INTEGRATION","operator":"ANY_OF","profiles":["INTEGRATION"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A6","A7","A9"],"legacy_owner":"A10/A4/A6/A7","responsible":"A10","technical_approver":"A4"}
+
+**Verification / evidence / AR links**  
+Contract schema validation + interface tests. | Evidence: Versioned data contract. | AR: AR-0001, AR-0007, AR-0009, AR-0010
+
+</details>
+<details><summary><strong>DM-0027 — Non-functional requirements</strong> · SHALL</summary>
+
+**Directive**  
+Performance, reproducibility, reliability, security, portability and maintainability requirements SHALL be explicit when material.
+
+**Applicability / condition**  
+{"legacy_label":"ALL","operator":"ALWAYS","profiles":[]} | Condition: {"condition_id":"COND-DM-0027","description":"Assess the internal conditional trigger stated by DM-0027.","mode":"ASSESSMENT_REQUIRED"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A3/A8","responsible":"A3","technical_approver":"A8"}
+
+**Verification / evidence / AR links**  
+Requirements review. | Evidence: NFR records. | AR: AR-0001, AR-0007, AR-0009, AR-0010
+
+</details>
+<details><summary><strong>DM-0028 — Scientific semantic requirements</strong> · SHALL</summary>
+
+**Directive**  
+Units, coordinate reference systems, support/masks, numerical tolerance and estimand-affecting semantics SHALL be requirements, not hidden implementation choices.
+
+**Applicability / condition**  
+{"legacy_label":"SCI","operator":"ANY_OF","profiles":["SCI"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A6","A7","A9"],"legacy_owner":"A2/A4/A6/A7","responsible":"A2","technical_approver":"A4"}
+
+**Verification / evidence / AR links**  
+Semantic contract review. | Evidence: Scientific requirement records. | AR: AR-0001, AR-0007, AR-0009, AR-0010
+
+</details>
+<details><summary><strong>DM-0029 — Acceptance criteria prospective</strong> · SHALL</summary>
+
+**Directive**  
+Acceptance criteria SHALL be frozen before observing the result they will adjudicate.
+
+**Applicability / condition**  
+{"legacy_label":"SCI/CERT","operator":"ANY_OF","profiles":["SCI","CERT"],"resolution":"Prospective explicit ANY_OF; no retroactive semantics claimed."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A2/A3","responsible":"A2","technical_approver":"A3"}
+
+**Verification / evidence / AR links**  
+Timestamp/version comparison. | Evidence: Acceptance criteria artifact. | AR: AR-0001, AR-0007, AR-0009, AR-0010
+
+</details>
+<details><summary><strong>DM-0030 — Requirement change impact</strong> · SHALL</summary>
+
+**Directive**  
+A requirement change SHALL trigger impact analysis across design, code, tests, data contracts, documentation and certified evidence.
+
+**Applicability / condition**  
+{"legacy_label":"ALL","operator":"ALWAYS","profiles":[]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A10","A9"],"legacy_owner":"A3/A5/A10","responsible":"A3","technical_approver":"A5"}
+
+**Verification / evidence / AR links**  
+Impact graph review. | Evidence: Change impact record. | AR: AR-0001, AR-0007, AR-0009, AR-0010
+
+</details>
+<details><summary><strong>DM-0031 — Independent requirement review</strong> · SHALL</summary>
+
+**Directive**  
+High-materiality requirements SHALL receive review by a role other than A1 before implementation.
+
+**Applicability / condition**  
+{"legacy_label":"CERT","operator":"ANY_OF","profiles":["CERT"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A3/A9","responsible":"A3","technical_approver":"A9"}
+
+**Verification / evidence / AR links**  
+Reviewer identity check. | Evidence: Frozen review findings. | AR: AR-0001, AR-0007, AR-0009, AR-0010
+
+</details>
+<details><summary><strong>DM-0187 — Resolver mutation qualification</strong> · SHALL</summary>
+
+**Directive**  
+The production conformance resolver SHALL detect every mutation in the frozen critical resolver mutation suite before freeze readiness.
+
+**Applicability / condition**  
+{"legacy_label":null,"operator":"ANY_OF","profiles":["CERT"]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":null,"responsible":"A3","technical_approver":"A0"}
+
+**Verification / evidence / AR links**  
+Execute the RC2 direct, negative and mutation fixtures for this requirement. | Evidence: Mutation receipt with zero misses. | AR: AR-0012, AR-0013, AR-0014, AR-0040
+
+</details>
+<details><summary><strong>DM-0188 — Independent resolver oracle</strong> · SHALL</summary>
+
+**Directive**  
+Critical conformance plans SHALL be cross-checked by an independently implemented resolver oracle.
+
+**Applicability / condition**  
+{"legacy_label":null,"operator":"ANY_OF","profiles":["CERT"]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":null,"responsible":"A3","technical_approver":"A0"}
+
+**Verification / evidence / AR links**  
+Execute the RC2 direct, negative and mutation fixtures for this requirement. | Evidence: Engine-oracle equivalence receipt. | AR: AR-0012, AR-0013, AR-0014, AR-0040
+
+</details>
+<details><summary><strong>DM-0190 — Bundle hygiene</strong> · SHALL</summary>
+
+**Directive**  
+A certifiable Manual bundle SHALL exclude interpreter caches, bytecode and other transient machine artifacts.
+
+**Applicability / condition**  
+{"legacy_label":null,"operator":"ANY_OF","profiles":["CERT"]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":null,"responsible":"A8","technical_approver":"A3"}
+
+**Verification / evidence / AR links**  
+Execute the RC2 direct, negative and mutation fixtures for this requirement. | Evidence: Bundle hygiene scan. | AR: AR-0012, AR-0013, AR-0014, AR-0040
+
+</details>
+<details><summary><strong>DM-0191 — Toolchain manifest</strong> · SHALL</summary>
+
+**Directive**  
+A certifiable Manual bundle SHALL contain a machine-readable toolchain, dependency and environment manifest.
+
+**Applicability / condition**  
+{"legacy_label":null,"operator":"ANY_OF","profiles":["CERT"]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":null,"responsible":"A8","technical_approver":"A3"}
+
+**Verification / evidence / AR links**  
+Execute the RC2 direct, negative and mutation fixtures for this requirement. | Evidence: Toolchain manifest validation. | AR: AR-0012, AR-0013, AR-0014, AR-0040
+
+</details>
+<details><summary><strong>DM-0196 — Evidence overlay durable-state control</strong> · SHALL</summary>
+
+**Directive**  
+The Manual Evidence Overlay SHALL remain explicitly non-durable until a subsequent authorized A-readback-B persistence Gate completes.
+
+**Applicability / condition**  
+{"legacy_label":null,"operator":"ANY_OF","profiles":["CERT"]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":null,"responsible":"A5","technical_approver":"A3"}
+
+**Verification / evidence / AR links**  
+Execute the RC2 direct, negative and mutation fixtures for this requirement. | Evidence: Overlay durability-state receipt. | AR: AR-0012, AR-0013, AR-0014, AR-0020, AR-0040
+
+</details>
+<h2 id="rsw">RSW<a class="headerlink" href="#rsw" title="Permanent link">¶</a></h2>
+<details><summary><strong>DM-0153 — Persistent release identity</strong> · SHOULD</summary>
+
+**Directive**  
+Published/citable software releases SHOULD have stable version identifiers and, where appropriate, persistent identifiers.
+
+**Applicability / condition**  
+{"legacy_label":"PUB","operator":"ANY_OF","profiles":["PUB"],"resolution":"Direct profile mapping."} | Condition: {"condition_id":"COND-DM-0153","description":"Assess the internal conditional trigger stated by DM-0153.","mode":"ASSESSMENT_REQUIRED"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A5","responsible":"A5","technical_approver":"A8"}
+
+**Verification / evidence / AR links**  
+Metadata review. | Evidence: Release metadata. | AR: AR-0019, AR-0047
+
+</details>
+<details><summary><strong>DM-0154 — Rich metadata</strong> · SHALL</summary>
+
+**Directive**  
+Research software SHALL maintain sufficient metadata to identify purpose, version, authorship/ownership, license, dependencies and documentation.
+
+**Applicability / condition**  
+{"legacy_label":"PUB","operator":"ANY_OF","profiles":["PUB"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A5/A8","responsible":"A5","technical_approver":"A8"}
+
+**Verification / evidence / AR links**  
+Metadata completeness. | Evidence: CITATION/metadata. | AR: AR-0019, AR-0047
+
+</details>
+<details><summary><strong>DM-0155 — Reproducibility documentation</strong> · SHALL</summary>
+
+**Directive**  
+Research software SHALL document how to restore/run the certified or published workflow, including required external engines and data authorities.
+
+**Applicability / condition**  
+{"legacy_label":"PUB","operator":"ANY_OF","profiles":["PUB"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A8","responsible":"A8","technical_approver":"A0"}
+
+**Verification / evidence / AR links**  
+Fresh-reader/clean-env walkthrough. | Evidence: Reproducibility guide. | AR: AR-0019, AR-0047
+
+</details>
+<details><summary><strong>DM-0156 — Citation</strong> · SHALL</summary>
+
+**Directive**  
+Software and datasets materially used in scientific outputs SHALL have citation/provenance instructions where feasible.
+
+**Applicability / condition**  
+{"legacy_label":"PUB","operator":"ANY_OF","profiles":["PUB"],"resolution":"Direct profile mapping."} | Condition: {"condition_id":"COND-DM-0156","description":"Assess the internal conditional trigger stated by DM-0156.","mode":"ASSESSMENT_REQUIRED"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A5","responsible":"A5","technical_approver":"A8"}
+
+**Verification / evidence / AR links**  
+Citation-file review. | Evidence: CITATION.cff / CITATION. | AR: AR-0019, AR-0047
+
+</details>
+<details><summary><strong>DM-0157 — Documentation close to code</strong> · SHOULD</summary>
+
+**Directive**  
+Public/reusable APIs SHOULD be documented near their source and checked as part of build/test when tooling supports it.
+
+**Applicability / condition**  
+{"legacy_label":"ALL","operator":"ALWAYS","profiles":[]} | Condition: {"condition_id":"COND-DM-0157","description":"Assess the internal conditional trigger stated by DM-0157.","mode":"ASSESSMENT_REQUIRED"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A8","responsible":"A8","technical_approver":"A0"}
+
+**Verification / evidence / AR links**  
+Documentation build/check. | Evidence: API docs. | AR: AR-0019, AR-0047
+
+</details>
+<details><summary><strong>DM-0158 — Examples are tests where possible</strong> · SHOULD</summary>
+
+**Directive**  
+Documentation examples SHOULD be executable/tested where feasible and scientifically safe.
+
+**Applicability / condition**  
+{"legacy_label":"ALL","operator":"ALWAYS","profiles":[]} | Condition: {"condition_id":"COND-DM-0158","description":"Assess the internal conditional trigger stated by DM-0158.","mode":"ASSESSMENT_REQUIRED"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A8","responsible":"A8","technical_approver":"A0"}
+
+**Verification / evidence / AR links**  
+Example execution. | Evidence: Build/check report. | AR: AR-0019, AR-0047
+
+</details>
+<h2 id="stat">STAT<a class="headerlink" href="#stat" title="Permanent link">¶</a></h2>
+<details><summary><strong>DM-0100 — A7 applicability screen</strong> · SHALL</summary>
+
+**Directive**  
+Statistical, geostatistical, UQ, Monte Carlo or sensitivity analyses SHALL undergo A7 review appropriate to materiality.
+
+**Applicability / condition**  
+{"legacy_label":"SCI","operator":"ANY_OF","profiles":["SCI"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A7","responsible":"A7","technical_approver":"A0"}
+
+**Verification / evidence / AR links**  
+Applicability record. | Evidence: A7 screen. | AR: AR-0017, AR-0044
+
+</details>
+<details><summary><strong>DM-0101 — Dependence structure</strong> · SHALL</summary>
+
+**Directive**  
+Correlation, spatial dependence and temporal dependence SHALL be preserved or justified when material.
+
+**Applicability / condition**  
+{"legacy_label":"SCI","operator":"ANY_OF","profiles":["SCI"],"resolution":"Direct profile mapping."} | Condition: {"condition_id":"COND-DM-0101","description":"Assess the internal conditional trigger stated by DM-0101.","mode":"ASSESSMENT_REQUIRED"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A7","responsible":"A7","technical_approver":"A0"}
+
+**Verification / evidence / AR links**  
+Model/input review. | Evidence: Dependence contract. | AR: AR-0017, AR-0044
+
+</details>
+<details><summary><strong>DM-0102 — Spatial leakage control</strong> · SHALL</summary>
+
+**Directive**  
+Training/validation or comparison designs SHALL control spatial/temporal leakage where applicable.
+
+**Applicability / condition**  
+{"legacy_label":"SCI","operator":"ANY_OF","profiles":["SCI"],"resolution":"Direct profile mapping."} | Condition: {"condition_id":"COND-DM-0102","description":"Assess the internal conditional trigger stated by DM-0102.","mode":"ASSESSMENT_REQUIRED"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A7/A4","responsible":"A7","technical_approver":"A4"}
+
+**Verification / evidence / AR links**  
+Split/validation review. | Evidence: Validation design. | AR: AR-0017, AR-0044
+
+</details>
+<details><summary><strong>DM-0103 — Uncertainty taxonomy</strong> · SHALL</summary>
+
+**Directive**  
+Parameter, input, structural/model and numerical uncertainty SHALL be distinguished where they affect interpretation.
+
+**Applicability / condition**  
+{"legacy_label":"SCI","operator":"ANY_OF","profiles":["SCI"],"resolution":"Direct profile mapping."} | Condition: {"condition_id":"COND-DM-0103","description":"Assess the internal conditional trigger stated by DM-0103.","mode":"ASSESSMENT_REQUIRED"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A7/A6","responsible":"A7","technical_approver":"A6"}
+
+**Verification / evidence / AR links**  
+UQ review. | Evidence: Uncertainty register. | AR: AR-0017, AR-0044
+
+</details>
+<details><summary><strong>DM-0104 — Monte Carlo reproducibility</strong> · SHALL</summary>
+
+**Directive**  
+Monte Carlo runs SHALL record seeds/streams, design size, package/version, failure handling and convergence/precision diagnostics as applicable.
+
+**Applicability / condition**  
+{"legacy_label":"SCI","operator":"ANY_OF","profiles":["SCI"],"resolution":"Direct profile mapping."} | Condition: {"condition_id":"COND-DM-0104","description":"Assess the internal conditional trigger stated by DM-0104.","mode":"ASSESSMENT_REQUIRED"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A7/A8","responsible":"A7","technical_approver":"A8"}
+
+**Verification / evidence / AR links**  
+Repeatability test. | Evidence: Simulation manifest. | AR: AR-0017, AR-0044
+
+</details>
+<details><summary><strong>DM-0105 — Sensitivity design prospective</strong> · SHALL</summary>
+
+**Directive**  
+Sensitivity-analysis factor definitions, distributions/ranges, independence/dependence assumptions and estimators SHALL be frozen before outcome inspection.
+
+**Applicability / condition**  
+{"legacy_label":"SCI","operator":"ANY_OF","profiles":["SCI"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A2/A7","responsible":"A2","technical_approver":"A7"}
+
+**Verification / evidence / AR links**  
+Protocol version review. | Evidence: Sensitivity protocol. | AR: AR-0017, AR-0044
+
+</details>
+<details><summary><strong>DM-0106 — Independent oracle when required</strong> · SHALL</summary>
+
+**Directive**  
+Critical numerical/geometric/statistical equivalence claims SHALL use an independently authorized oracle when required by the Scientific Execution Architecture.
+
+**Applicability / condition**  
+{"legacy_label":"SCI","operator":"ANY_OF","profiles":["SCI"],"resolution":"Direct profile mapping."} | Condition: {"condition_id":"COND-DM-0106","description":"Assess the internal conditional trigger stated by DM-0106.","mode":"ASSESSMENT_REQUIRED"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A4","A9"],"legacy_owner":"A6/A7/A4","responsible":"A6","technical_approver":"A7"}
+
+**Verification / evidence / AR links**  
+Oracle receipt review. | Evidence: Independent oracle evidence. | AR: AR-0017, AR-0044
+
+</details>
+<h2 id="test">TEST<a class="headerlink" href="#test" title="Permanent link">¶</a></h2>
+<details><summary><strong>DM-0107 — Test plan before execution</strong> · SHALL</summary>
+
+**Directive**  
+Material testing SHALL be planned before formal test execution, with scope, environment, fixtures and entry/exit criteria.
+
+**Applicability / condition**  
+{"legacy_label":"ALL","operator":"ALWAYS","profiles":[]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A3/A8","responsible":"A3","technical_approver":"A8"}
+
+**Verification / evidence / AR links**  
+Plan timestamp/version review. | Evidence: Test plan. | AR: AR-0012, AR-0013, AR-0014, AR-0040
+
+</details>
+<details><summary><strong>DM-0108 — Requirements test coverage</strong> · SHALL</summary>
+
+**Directive**  
+Every certifiable requirement SHALL map to at least one verification/validation case or justified non-test method.
+
+**Applicability / condition**  
+{"legacy_label":"CERT","operator":"ANY_OF","profiles":["CERT"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A3","responsible":"A3","technical_approver":"A0"}
+
+**Verification / evidence / AR links**  
+Traceability coverage check. | Evidence: Verification matrix. | AR: AR-0012, AR-0013, AR-0014, AR-0040
+
+</details>
+<details><summary><strong>DM-0109 — Unit tests</strong> · SHALL</summary>
+
+**Directive**  
+Deterministic computational units SHALL have unit tests for normal and material edge conditions where practicable.
+
+**Applicability / condition**  
+{"legacy_label":"ALL","operator":"ALWAYS","profiles":[]} | Condition: {"condition_id":"COND-DM-0109","description":"Assess the internal conditional trigger stated by DM-0109.","mode":"ASSESSMENT_REQUIRED"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A8","responsible":"A8","technical_approver":"A3"}
+
+**Verification / evidence / AR links**  
+Test execution. | Evidence: Unit test report. | AR: AR-0012, AR-0013, AR-0014, AR-0040
+
+</details>
+<details><summary><strong>DM-0110 — Integration tests</strong> · SHALL</summary>
+
+**Directive**  
+Module interfaces and data contracts SHALL have integration tests before integrated release.
+
+**Applicability / condition**  
+{"legacy_label":"INTEGRATION","operator":"ANY_OF","profiles":["INTEGRATION"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A10/A8","responsible":"A10","technical_approver":"A8"}
+
+**Verification / evidence / AR links**  
+Test execution. | Evidence: Integration test report. | AR: AR-0012, AR-0013, AR-0014, AR-0040
+
+</details>
+<details><summary><strong>DM-0111 — System tests</strong> · SHALL</summary>
+
+**Directive**  
+Integrated scientific release candidates SHALL have end-to-end tests covering approved scientific workflows.
+
+**Applicability / condition**  
+{"legacy_label":"CERT","operator":"ANY_OF","profiles":["CERT"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A2/A8","responsible":"A2","technical_approver":"A8"}
+
+**Verification / evidence / AR links**  
+Test execution. | Evidence: System test report. | AR: AR-0012, AR-0013, AR-0014, AR-0040
+
+</details>
+<details><summary><strong>DM-0112 — Regression after change</strong> · SHALL</summary>
+
+**Directive**  
+Material changes SHALL execute an appropriate regression suite before integration/release.
+
+**Applicability / condition**  
+{"legacy_label":"ALL","operator":"ALWAYS","profiles":[]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A8","responsible":"A8","technical_approver":"A3"}
+
+**Verification / evidence / AR links**  
+Test report. | Evidence: Regression receipt. | AR: AR-0012, AR-0013, AR-0014, AR-0040
+
+</details>
+<details><summary><strong>DM-0113 — Negative tests</strong> · SHALL</summary>
+
+**Directive**  
+Validation, authorization and parsing code SHALL include negative fixtures proving invalid states are rejected.
+
+**Applicability / condition**  
+{"legacy_label":"ALL","operator":"ALWAYS","profiles":[]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A3/A9","responsible":"A3","technical_approver":"A9"}
+
+**Verification / evidence / AR links**  
+Negative fixture execution. | Evidence: Negative-test receipt. | AR: AR-0012, AR-0013, AR-0014, AR-0040
+
+</details>
+<details><summary><strong>DM-0114 — Boundary tests</strong> · SHALL</summary>
+
+**Directive**  
+Scientific/numerical inputs SHALL include boundary/singularity/domain edge tests when such states are reachable.
+
+**Applicability / condition**  
+{"legacy_label":"SCI","operator":"ANY_OF","profiles":["SCI"],"resolution":"Direct profile mapping."} | Condition: {"condition_id":"COND-DM-0114","description":"Assess the internal conditional trigger stated by DM-0114.","mode":"ASSESSMENT_REQUIRED"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A4","A9"],"legacy_owner":"A6/A7/A4","responsible":"A6","technical_approver":"A7"}
+
+**Verification / evidence / AR links**  
+Boundary suite. | Evidence: Boundary report. | AR: AR-0012, AR-0013, AR-0014, AR-0040
+
+</details>
+<details><summary><strong>DM-0115 — Mutation tests</strong> · SHALL</summary>
+
+**Directive**  
+Critical assurance validators and guards SHALL use mutation tests to demonstrate that prohibited semantic changes are detected.
+
+**Applicability / condition**  
+{"legacy_label":"CERT","operator":"ANY_OF","profiles":["CERT"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A3/A9","responsible":"A3","technical_approver":"A9"}
+
+**Verification / evidence / AR links**  
+Mutation execution. | Evidence: Mutation report. | AR: AR-0012, AR-0013, AR-0014, AR-0040
+
+</details>
+<details><summary><strong>DM-0116 — Metamorphic/property tests</strong> · SHOULD</summary>
+
+**Directive**  
+Where exact expected outputs are difficult to specify, scientifically valid invariants/metamorphic properties SHOULD supplement example-based tests.
+
+**Applicability / condition**  
+{"legacy_label":"SCI","operator":"ANY_OF","profiles":["SCI"],"resolution":"Direct profile mapping."} | Condition: {"condition_id":"COND-DM-0116","description":"Assess the internal conditional trigger stated by DM-0116.","mode":"ASSESSMENT_REQUIRED"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A4"],"legacy_owner":"A6/A7/A4","responsible":"A6","technical_approver":"A7"}
+
+**Verification / evidence / AR links**  
+Property-test execution. | Evidence: Property test report. | AR: AR-0012, AR-0013, AR-0014, AR-0040
+
+</details>
+<details><summary><strong>DM-0117 — Golden baseline</strong> · SHALL</summary>
+
+**Directive**  
+Refactors/migrations SHALL use frozen baseline outputs where output invariance is expected.
+
+**Applicability / condition**  
+{"legacy_label":"ALL","operator":"ALWAYS","profiles":[]} | Condition: {"condition_id":"COND-DM-0117","description":"Assess the internal conditional trigger stated by DM-0117.","mode":"ASSESSMENT_REQUIRED"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A5/A8","responsible":"A5","technical_approver":"A8"}
+
+**Verification / evidence / AR links**  
+Hash/numeric comparison. | Evidence: Baseline comparison report. | AR: AR-0012, AR-0013, AR-0014, AR-0040
+
+</details>
+<details><summary><strong>DM-0118 — Test fixture provenance</strong> · SHALL</summary>
+
+**Directive**  
+Scientific test fixtures SHALL have provenance, semantic role and expected outcome documented.
+
+**Applicability / condition**  
+{"legacy_label":"SCI","operator":"ANY_OF","profiles":["SCI"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A5/A10","responsible":"A5","technical_approver":"A10"}
+
+**Verification / evidence / AR links**  
+Fixture manifest audit. | Evidence: Fixture manifest. | AR: AR-0012, AR-0013, AR-0014, AR-0040
+
+</details>
+<details><summary><strong>DM-0119 — Controlled test environment</strong> · SHALL</summary>
+
+**Directive**  
+Formal tests SHALL record the environment/toolchain and SHALL not depend on unrecorded interactive state.
+
+**Applicability / condition**  
+{"legacy_label":"CERT","operator":"ANY_OF","profiles":["CERT"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A8","responsible":"A8","technical_approver":"A3"}
+
+**Verification / evidence / AR links**  
+Environment/readback review. | Evidence: Test environment manifest. | AR: AR-0012, AR-0013, AR-0014, AR-0040
+
+</details>
+<details><summary><strong>DM-0120 — Failure preservation</strong> · SHALL</summary>
+
+**Directive**  
+A failed formal test SHALL preserve evidence and SHALL NOT be overwritten by a retry unless retry authority is prospectively defined.
+
+**Applicability / condition**  
+{"legacy_label":"CERT","operator":"ANY_OF","profiles":["CERT"],"resolution":"Direct profile mapping."} | Condition: {"condition_id":"COND-DM-0120","description":"Assess the internal conditional trigger stated by DM-0120.","mode":"ASSESSMENT_REQUIRED"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A5/A8","responsible":"A5","technical_approver":"A8"}
+
+**Verification / evidence / AR links**  
+Run history audit. | Evidence: Failure receipt. | AR: AR-0012, AR-0013, AR-0014, AR-0040
+
+</details>
+<details><summary><strong>DM-0121 — Performance/resource tests</strong> · SHALL</summary>
+
+**Directive**  
+Resource-sensitive GEE/DSSAT/Monte Carlo workflows SHALL have pilot/performance tests before expensive or large-scale execution.
+
+**Applicability / condition**  
+{"legacy_label":"SCI","operator":"ANY_OF","profiles":["SCI"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A8/A2","responsible":"A8","technical_approver":"A2"}
+
+**Verification / evidence / AR links**  
+Pilot report review. | Evidence: Performance pilot receipt. | AR: AR-0012, AR-0013, AR-0014, AR-0040
+
+</details>
+<details><summary><strong>DM-0122 — Review of test artifacts</strong> · SHALL</summary>
+
+**Directive**  
+High-materiality test plans/cases/results SHALL be reviewed by a role independent from A1 before release adjudication.
+
+**Applicability / condition**  
+{"legacy_label":"CERT","operator":"ANY_OF","profiles":["CERT"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A3/A9","responsible":"A3","technical_approver":"A9"}
+
+**Verification / evidence / AR links**  
+Reviewer check. | Evidence: Review record. | AR: AR-0012, AR-0013, AR-0014, AR-0040
+
+</details>
+<h2 id="vcs">VCS<a class="headerlink" href="#vcs" title="Permanent link">¶</a></h2>
+<details><summary><strong>DM-0042 — Immutable baseline before refactor</strong> · SHALL</summary>
+
+**Directive**  
+Major refactoring, translation or migration SHALL begin from an identified immutable baseline/tag/commit.
+
+**Applicability / condition**  
+{"legacy_label":"ALL","operator":"ALWAYS","profiles":[]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A5/A8","responsible":"A5","technical_approver":"A8"}
+
+**Verification / evidence / AR links**  
+Baseline identity check. | Evidence: Baseline receipt. | AR: AR-0009, AR-0010, AR-0011, AR-0038
+
+</details>
+<details><summary><strong>DM-0043 — Branch per logical change</strong> · SHALL</summary>
+
+**Directive**  
+Unrelated changes SHALL use separate branches/change sets.
+
+**Applicability / condition**  
+{"legacy_label":"ALL","operator":"ALWAYS","profiles":[]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A1/A8","responsible":"A1","technical_approver":"A8"}
+
+**Verification / evidence / AR links**  
+Diff/branch review. | Evidence: Branch scope statement. | AR: AR-0009, AR-0010, AR-0011, AR-0038
+
+</details>
+<details><summary><strong>DM-0044 — No direct production mutation</strong> · SHALL</summary>
+
+**Directive**  
+Production/default branches or deployed apps SHALL NOT be changed directly during exploratory/refactor work.
+
+**Applicability / condition**  
+{"legacy_label":"PROD","operator":"ANY_OF","profiles":["PROD"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A8","responsible":"A8","technical_approver":"A0"}
+
+**Verification / evidence / AR links**  
+Branch protection/capability check. | Evidence: PR/release record. | AR: AR-0009, AR-0010, AR-0011, AR-0038
+
+</details>
+<details><summary><strong>DM-0045 — Pull-request review</strong> · SHALL</summary>
+
+**Directive**  
+Material code changes SHALL be reviewed through a diff-oriented review process before integration.
+
+**Applicability / condition**  
+{"legacy_label":"ALL","operator":"ALWAYS","profiles":[]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A3/A8/A9","responsible":"A3","technical_approver":"A8"}
+
+**Verification / evidence / AR links**  
+Review metadata check. | Evidence: PR/review receipt. | AR: AR-0009, AR-0010, AR-0011, AR-0038
+
+</details>
+<details><summary><strong>DM-0046 — No drive-by unrelated edits</strong> · SHALL</summary>
+
+**Directive**  
+Drive-by unrelated edits SHALL be prohibited.
+
+**Applicability / condition**  
+{"legacy_label":"ALL","operator":"ALWAYS","profiles":[]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A1/A8","responsible":"A1","technical_approver":"A8"}
+
+**Verification / evidence / AR links**  
+Diff review. | Evidence: Commit list. | AR: AR-0009, AR-0010, AR-0011, AR-0038
+
+</details>
+<details><summary><strong>DM-0047 — Commit messages</strong> · SHALL</summary>
+
+**Directive**  
+Commit messages SHALL identify the engineering purpose and, for material changes, reference requirement/issue/decision IDs.
+
+**Applicability / condition**  
+{"legacy_label":"ALL","operator":"ALWAYS","profiles":[]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A1/A5","responsible":"A1","technical_approver":"A5"}
+
+**Verification / evidence / AR links**  
+Commit-message audit. | Evidence: Commit metadata. | AR: AR-0009, AR-0010, AR-0011, AR-0038
+
+</details>
+<details><summary><strong>DM-0048 — No IDE/private state</strong> · SHALL</summary>
+
+**Directive**  
+IDE caches, user-local state, secrets, credentials and machine-specific transient files SHALL NOT be committed.
+
+**Applicability / condition**  
+{"legacy_label":"ALL","operator":"ALWAYS","profiles":[]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A8","responsible":"A8","technical_approver":"A0"}
+
+**Verification / evidence / AR links**  
+Repository scan. | Evidence: Scan report. | AR: AR-0009, AR-0010, AR-0011, AR-0038
+
+</details>
+<details><summary><strong>DM-0049 — Binary/large-artifact strategy</strong> · SHALL</summary>
+
+**Directive**  
+Large/binary artifacts SHALL have a predeclared storage/transport/readback strategy before release execution.
+
+**Applicability / condition**  
+{"legacy_label":"CERT","operator":"ANY_OF","profiles":["CERT"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A5/A8","responsible":"A5","technical_approver":"A8"}
+
+**Verification / evidence / AR links**  
+Release preflight. | Evidence: Artifact transport plan. | AR: AR-0009, AR-0010, AR-0011, AR-0038
+
+</details>
+<details><summary><strong>DM-0050 — Release commit signing</strong> · SHOULD</summary>
+
+**Directive**  
+Freeze/release commits SHOULD be signed where supported.
+
+**Applicability / condition**  
+{"legacy_label":"CERT","operator":"ANY_OF","profiles":["CERT"],"resolution":"Direct profile mapping."} | Condition: {"condition_id":"COND-DM-0050","description":"Assess the internal conditional trigger stated by DM-0050.","mode":"ASSESSMENT_REQUIRED"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A5","responsible":"A5","technical_approver":"A8"}
+
+**Verification / evidence / AR links**  
+Commit verification readback. | Evidence: Certification receipt. | AR: AR-0009, AR-0010, AR-0011, AR-0038
+
+</details>
+<details><summary><strong>DM-0051 — Branch protection status</strong> · SHALL</summary>
+
+**Directive**  
+Branch-protection status SHALL be captured for certification branches; lack of protection SHALL be recorded and compensated by immutable commit anchoring.
+
+**Applicability / condition**  
+{"legacy_label":"CERT","operator":"ANY_OF","profiles":["CERT"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A5/A8","responsible":"A5","technical_approver":"A8"}
+
+**Verification / evidence / AR links**  
+Branch readback. | Evidence: Protection-status evidence. | AR: AR-0009, AR-0010, AR-0011, AR-0038
+
+</details>
+<details><summary><strong>DM-0052 — Backup/mirror for critical migration</strong> · SHOULD</summary>
+
+**Directive**  
+High-risk repository restructuring SHOULD have an independently recoverable backup/mirror or equivalent immutable baseline.
+
+**Applicability / condition**  
+{"legacy_label":"ALL","operator":"ALWAYS","profiles":[]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A8/A5","responsible":"A8","technical_approver":"A5"}
+
+**Verification / evidence / AR links**  
+Recovery evidence review. | Evidence: Backup/baseline manifest. | AR: AR-0009, AR-0010, AR-0011, AR-0038
+
+</details>
+<details><summary><strong>DM-0053 — No history rewriting of certified authority</strong> · SHALL</summary>
+
+**Directive**  
+Certified commit history SHALL NOT be force-rewritten as a repair mechanism.
+
+**Applicability / condition**  
+{"legacy_label":"CERT","operator":"ANY_OF","profiles":["CERT"],"resolution":"Direct profile mapping."} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A5","responsible":"A5","technical_approver":"A8"}
+
+**Verification / evidence / AR links**  
+Ref ancestry check. | Evidence: Commit ancestry receipt. | AR: AR-0009, AR-0010, AR-0011, AR-0038
+
+</details>
+<details><summary><strong>DM-0172 — Commit size and reversibility</strong> · SHOULD</summary>
+
+**Directive**  
+Commits SHOULD be small enough to explain, test and revert.
+
+**Applicability / condition**  
+{"legacy_label":"ALL","operator":"ALWAYS","profiles":[]} | Condition: {"mode":"ALWAYS"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":[],"legacy_owner":"A1/A8","responsible":"A1","technical_approver":"A8"}
+
+**Verification / evidence / AR links**  
+Diff review. | Evidence: Commit list. | AR: AR-0009, AR-0010, AR-0011, AR-0038
+
+</details>
+<details><summary><strong>DM-0173 — Unsigned release commit disclosure</strong> · SHALL</summary>
+
+**Directive**  
+If a freeze/release commit is unsigned, that property SHALL be recorded and the immutable commit SHA SHALL remain the authority anchor.
+
+**Applicability / condition**  
+{"legacy_label":"CERT","operator":"ANY_OF","profiles":["CERT"],"resolution":"Direct profile mapping."} | Condition: {"condition_id":"COND-DM-0173","description":"Assess the internal conditional trigger stated by DM-0173.","mode":"ASSESSMENT_REQUIRED"}
+
+**Responsibility**  
+{"evidence_custodian":"A5","final_accountable":"A0","independent_reviewers":["A9"],"legacy_owner":"A5","responsible":"A5","technical_approver":"A8"}
+
+**Verification / evidence / AR links**  
+Commit verification readback. | Evidence: Certification receipt. | AR: AR-0009, AR-0010, AR-0011, AR-0038
+
+</details></main>
+</div>
+<footer class="site-footer"><div class="wrap"><span>MM methodology v1.0.2 · non-normative documentation derivative</span><span>Certified authorities prevail · no runtime authorization</span><nav aria-label="Site legal information" class="site-legal-nav"><a href="../../legal/privacy/index.html">Privacy notice</a><span aria-hidden="true">·</span><a href="../../legal/copyright-licensing/index.html">Copyright &amp; licensing</a></nav><div class="site-contact-links" role="group" aria-label="Contact channels"><div>Academic correspondence: <a href="mailto:rhallim.michael@usp.br">rhallim.michael@usp.br</a></div><div>Privacy &amp; legal inquiries: <a href="mailto:rhallim.michael@gmail.com">rhallim.michael@gmail.com</a></div></div></div></footer>
+</body>
+</html>

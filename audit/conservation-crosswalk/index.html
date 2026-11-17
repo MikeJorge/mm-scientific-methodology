@@ -1,0 +1,823 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="light dark" name="color-scheme"/>
+<title>Content-conservation crosswalk · MM Scientific Software Development Methodology</title>
+<link href="../../assets/mm.css" rel="stylesheet"/>
+<meta content="MM Methodology v1.0.2 — Content-conservation crosswalk. Controlled, non-normative scientific software documentation." name="description"/><meta content="#10293f" name="theme-color"/><meta content="strict-origin-when-cross-origin" name="referrer"/><meta content="default-src 'self'; script-src 'none'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; object-src 'none'; frame-src 'none'; base-uri 'none'; form-action 'none'" http-equiv="Content-Security-Policy"/></head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<header class="site-header">
+<div class="wrap">
+<p class="eyebrow">Module Minimum (MM)</p>
+<p class="site-title">MM Scientific Software Development Methodology</p>
+<p class="status">Controlled derivative · not normative authority · not runtime authorization</p>
+<p class="status"><strong>Author and Principal Investigator:</strong> Michael Allim Jorge · <a href="https://orcid.org/0000-0002-7288-2095" rel="me noopener">ORCID 0000-0002-7288-2095</a></p>
+</div>
+</header><details class="mobile-menu"><summary>Explore methodology sections</summary><nav aria-label="Mobile primary navigation"><ul><li><a href="../..">Methodology</a></li><li><a href="../../architecture-figure/">Architecture figure</a></li><li><a href="../../local-execution-adapter/">Local execution environment</a></li><li><a href="../index.html">Audit &amp; traceability</a><ul><li><a href="../">Overview</a></li><li><a href="../audience-pathways/">Audience pathways</a></li><li><a href="../glossary/">Glossary</a></li><li><a href="../source-reference-register/">Source &amp; reference register</a></li><li><a aria-current="page" href="./">Content-conservation crosswalk</a></li><li><a href="../architecture-manual-crosswalk/">Architecture ↔ Manual crosswalk</a></li><li><a href="../manual-requirements/">Manual requirements</a></li><li><a href="../playbooks-checklists/">Playbooks &amp; checklists</a></li><li><a href="../certified-identities/">Certified identities &amp; hashes</a></li><li><a href="../evidence-overlay/">Evidence overlay</a></li><li><a href="../historical-assurance-lessons/">Historical assurance lessons</a></li><li><a href="../historical-build-qa/">Historical build / QA receipt</a></li></ul></li></ul></nav></details>
+<div class="layout wrap">
+<nav aria-label="Primary navigation" class="site-nav">
+<h2>Contents</h2>
+<ul><li><a href="../..">Methodology</a></li><li><a href="../../architecture-figure/">Architecture figure</a></li><li><a href="../../local-execution-adapter/">Local execution environment</a></li><li><a href="../index.html">Audit &amp; traceability</a><ul><li><a href="../">Overview</a></li><li><a href="../audience-pathways/">Audience pathways</a></li><li><a href="../glossary/">Glossary</a></li><li><a href="../source-reference-register/">Source &amp; reference register</a></li><li><a aria-current="page" href="./">Content-conservation crosswalk</a></li><li><a href="../architecture-manual-crosswalk/">Architecture ↔ Manual crosswalk</a></li><li><a href="../manual-requirements/">Manual requirements</a></li><li><a href="../playbooks-checklists/">Playbooks &amp; checklists</a></li><li><a href="../certified-identities/">Certified identities &amp; hashes</a></li><li><a href="../evidence-overlay/">Evidence overlay</a></li><li><a href="../historical-assurance-lessons/">Historical assurance lessons</a></li><li><a href="../historical-build-qa/">Historical build / QA receipt</a></li></ul></li></ul>
+<h2>On this page</h2>
+<ul><li><a href="#docx-v101-v102-content-conservation-crosswalk">DOCX → v1.0.1 → v1.0.2 content-conservation crosswalk</a></li></ul>
+</nav>
+<main class="content" id="main-content" tabindex="-1"><nav aria-label="Breadcrumb" class="breadcrumbs"><a href="../../index.html">Methodology</a><span aria-hidden="true" class="sep">›</span><a href="../index.html">Audit &amp; traceability</a><span aria-hidden="true" class="sep">›</span><span>Content-conservation crosswalk</span></nav><h1 id="docx-v101-v102-content-conservation-crosswalk">DOCX → v1.0.1 → v1.0.2 content-conservation crosswalk<a class="headerlink" href="#docx-v101-v102-content-conservation-crosswalk" title="Permanent link">¶</a></h1>
+<p>Every extracted heading from the historical Technical Reference has an explicit disposition. Silent omission is prohibited.</p>
+<p><strong>Rows:</strong> 111</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Level</th>
+<th>Historical DOCX unit</th>
+<th>Disposition</th>
+<th>v1.0.2 treatment</th>
+<th>Audience</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">1</td>
+<td>Document Control</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Site publication metadata + authority boundary + dedicated audit/control page</td>
+<td>all</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>Revision History</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Site publication metadata + authority boundary + dedicated audit/control page</td>
+<td>all</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>How to Use This Document</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Site publication metadata + authority boundary + dedicated audit/control page</td>
+<td>all</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td>Table of Contents</td>
+<td><code>SUPERSEDED_BY_CERTIFIED_SUCCESSOR</code></td>
+<td>MkDocs navigation and generated TOC</td>
+<td>all</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>List of Figures</td>
+<td><code>SUPERSEDED_BY_CERTIFIED_SUCCESSOR</code></td>
+<td>MkDocs navigation and generated TOC</td>
+<td>all</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td>1. Purpose, Scope, and Authority</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Methodology §§1,3,26 plus authority boundary</td>
+<td>scientist</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>1.1 Problem Class</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Methodology §§1,3,26 plus authority boundary</td>
+<td>scientist</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>1.2 Governing Principle</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Methodology §§1,3,26 plus authority boundary</td>
+<td>scientist</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>1.3 Scope Included</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Methodology §§1,3,26 plus authority boundary</td>
+<td>scientist</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>1.4 Explicit Non-Scope and Non-Claims</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Methodology §§1,3,26 plus authority boundary</td>
+<td>scientist</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td>2. Certified Baseline and Chain of Custody</td>
+<td><code>EXTERNALIZED_TO_AUDIT_PAGE</code></td>
+<td>Authority &amp; chain-of-custody audit page; concepts also in §§3,18</td>
+<td>auditor</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>2.1 Architecture Certification</td>
+<td><code>EXTERNALIZED_TO_AUDIT_PAGE</code></td>
+<td>Authority &amp; chain-of-custody audit page; concepts also in §§3,18</td>
+<td>auditor</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>2.2 Manual Certification</td>
+<td><code>EXTERNALIZED_TO_AUDIT_PAGE</code></td>
+<td>Authority &amp; chain-of-custody audit page; concepts also in §§3,18</td>
+<td>auditor</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>2.3 Evidence Base Certification</td>
+<td><code>EXTERNALIZED_TO_AUDIT_PAGE</code></td>
+<td>Authority &amp; chain-of-custody audit page; concepts also in §§3,18</td>
+<td>auditor</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>2.4 Main Branch Immutability</td>
+<td><code>HISTORICAL_ONLY</code></td>
+<td>Historical main snapshot; current main state must be read separately</td>
+<td>auditor</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>2.5 Manual Content Readback</td>
+<td><code>HISTORICAL_ONLY</code></td>
+<td>Preserve as certification/readback evidence</td>
+<td>auditor</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>2.6 Certified Identity Register</td>
+<td><code>EXTERNALIZED_TO_AUDIT_PAGE</code></td>
+<td>Certified identity registry</td>
+<td>auditor</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td>3. Certified Scientific Execution Infrastructure</td>
+<td><code>CORRECTED</code></td>
+<td>Four-plane execution-control core + cross-cutting Data/Catalog governance; current §5 five-plane wording must be corrected</td>
+<td>developer</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>3.1 Control Plane</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Four-plane core</td>
+<td>developer</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>3.2 Execution Plane</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Four-plane core</td>
+<td>developer</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>3.3 Authority Plane</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Four-plane core</td>
+<td>developer</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>3.4 Evidence Plane</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Four-plane core</td>
+<td>developer</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>3.5 Local Workspace</td>
+<td><code>HISTORICAL_ONLY</code></td>
+<td>Superseded by qualified WSL2 /opt/mm adapter</td>
+<td>developer</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>3.6 GitHub and Codespaces</td>
+<td><code>HISTORICAL_ONLY</code></td>
+<td>Historical freeze transport; retain lessons only</td>
+<td>developer/auditor</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>3.7 Google Earth Engine Infrastructure</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Platform is execution environment, never normative authority</td>
+<td>developer</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>3.8 Infrastructure Control Matrix</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Four-plane core + historical local archive line classified</td>
+<td>developer</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td>4. System Architecture v1.0.2</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Methodology §§4,6,10,18; Figure 1</td>
+<td>developer</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>4.1 Architecture Schema</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Methodology §§4,6,10,18; Figure 1</td>
+<td>developer</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>4.2 Architecture–Manual Formal Relation</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Methodology §§4,6,10,18; Figure 1</td>
+<td>developer</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>4.3 Gate Model</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Methodology §§4,6,10,18; Figure 1</td>
+<td>developer</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>4.4 Decision Partition</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Methodology §§4,6,10,18; Figure 1</td>
+<td>developer</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>4.5 Control Prequalification</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Methodology §§4,6,10,18; Figure 1</td>
+<td>developer</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>4.6 Authority and Immutability</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Methodology §§4,6,10,18; Figure 1</td>
+<td>developer</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>4.7 Runtime Authorization Boundary</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Methodology §§4,6,10,18; Figure 1</td>
+<td>developer</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>4.8 Versioned Remediation</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Methodology §§4,6,10,18; Figure 1</td>
+<td>developer</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td>5. Modular MM System Topology</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Methodology §4 + module/contract catalog; Figure 1</td>
+<td>developer</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>5.1 Module Contract Minimum</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Methodology §4 + module/contract catalog; Figure 1</td>
+<td>developer</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>5.2 Cross-Module Release</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Methodology §4 + module/contract catalog; Figure 1</td>
+<td>developer</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td>6. Multi-Agent Assurance Framework</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Methodology §9 + Figure 1/2</td>
+<td>auditor</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>6.1 Single-Writer Invariant</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Methodology §9 + Figure 1/2</td>
+<td>auditor</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>6.2 Activation Logic</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Methodology §9 + Figure 1/2</td>
+<td>auditor</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td>7. End-to-End Workflow</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Methodology §§6–7; expanded scientific SDLC</td>
+<td>all</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>7.1 Intake and Classification</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Methodology §§6–7; expanded scientific SDLC</td>
+<td>all</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>7.2 Authority Lock</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Methodology §§6–7; expanded scientific SDLC</td>
+<td>all</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>7.3 Evidence Eligibility</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Methodology §§6–7; expanded scientific SDLC</td>
+<td>all</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>7.4 Protocol and DOE Design</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Methodology §§6–7; expanded scientific SDLC</td>
+<td>all</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>7.5 Decision Partition Proof</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Methodology §§6–7; expanded scientific SDLC</td>
+<td>all</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>7.6 Control Prequalification</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Methodology §§6–7; expanded scientific SDLC</td>
+<td>all</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>7.7 Capability Preflight</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Methodology §§6–7; expanded scientific SDLC</td>
+<td>all</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>7.8 Authorized Execution</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Methodology §§6–7; expanded scientific SDLC</td>
+<td>all</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>7.9 Raw Readback</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Methodology §§6–7; expanded scientific SDLC</td>
+<td>all</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>7.10 Independent Adjudication</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Methodology §§6–7; expanded scientific SDLC</td>
+<td>all</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>7.11 Freeze and Certification</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Methodology §§6–7; expanded scientific SDLC</td>
+<td>all</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>7.12 Run-Specific Authorization</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Methodology §§6–7; expanded scientific SDLC</td>
+<td>all</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td>8. Architecture and Manual Framework Mechanisms</td>
+<td><code>EXTERNALIZED_TO_AUDIT_PAGE</code></td>
+<td>Assurance/conformance engine page; current §§6,8,19 retain only part of mechanism detail</td>
+<td>auditor</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>8.1 Canonical Source and Deterministic Generation</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Keep in main methodology + audit machinery</td>
+<td>developer/auditor</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>8.2 Typed Normative Force</td>
+<td><code>EXTERNALIZED_TO_AUDIT_PAGE</code></td>
+<td>Restore SHALL/SHOULD/MAY mechanism explicitly</td>
+<td>auditor</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>8.3 Typed Applicability and Context</td>
+<td><code>EXTERNALIZED_TO_AUDIT_PAGE</code></td>
+<td>Restore conformance engine mechanics</td>
+<td>developer/auditor</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>8.4 Conditional Triggers and NOT_APPLICABLE</td>
+<td><code>EXTERNALIZED_TO_AUDIT_PAGE</code></td>
+<td>Restore typed conditional semantics</td>
+<td>auditor</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>8.5 Responsibility Model</td>
+<td><code>EXTERNALIZED_TO_AUDIT_PAGE</code></td>
+<td>Restore RACI/assurance responsibility model</td>
+<td>developer/auditor</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>8.6 Objective Evidence</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Explicit evidence schema + audit page</td>
+<td>auditor</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>8.7 Tailoring</td>
+<td><code>EXTERNALIZED_TO_AUDIT_PAGE</code></td>
+<td>Restore controlled tailoring mechanics</td>
+<td>developer/auditor</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>8.8 Verification Catalog</td>
+<td><code>EXTERNALIZED_TO_AUDIT_PAGE</code></td>
+<td>Restore verification catalog traceability</td>
+<td>developer/auditor</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>8.9 Conformance Resolver and Independent Oracle</td>
+<td><code>EXTERNALIZED_TO_AUDIT_PAGE</code></td>
+<td>Restore engine/oracle mechanics</td>
+<td>developer/auditor</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>8.10 Mutation Testing</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Methodology §19 + audit detail</td>
+<td>developer/auditor</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td>9. Scientific Software Development &amp; Assurance Manual v1.0.1 RC3</td>
+<td><code>EXTERNALIZED_TO_AUDIT_PAGE</code></td>
+<td>Manual requirement domain summary + 197-DM register</td>
+<td>developer</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>9.1 Manual Requirement Domains</td>
+<td><code>EXTERNALIZED_TO_AUDIT_PAGE</code></td>
+<td>Restore 16 domains and counts</td>
+<td>developer</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>9.2 Playbooks and Checklists</td>
+<td><code>EXTERNALIZED_TO_AUDIT_PAGE</code></td>
+<td>Restore 7 playbooks / 5 checklists</td>
+<td>developer/auditor</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td>10. Domain Playbooks</td>
+<td><code>EXTERNALIZED_TO_AUDIT_PAGE</code></td>
+<td>Seven playbooks and traceability index; concise method text remains in main pages</td>
+<td>developer</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>10.1 GEE / Geospatial Playbook</td>
+<td><code>EXTERNALIZED_TO_AUDIT_PAGE</code></td>
+<td>PB-GEE detailed rules; summary remains in §14</td>
+<td>scientist</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>10.2 R / MHSMM Playbook</td>
+<td><code>EXTERNALIZED_TO_AUDIT_PAGE</code></td>
+<td>PB-R detailed rules</td>
+<td>developer/auditor</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>10.3 DSSAT / Plant Playbook</td>
+<td><code>EXTERNALIZED_TO_AUDIT_PAGE</code></td>
+<td>PB-DSSAT detailed rules</td>
+<td>scientist</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>10.4 Animal Module Playbook</td>
+<td><code>EXTERNALIZED_TO_AUDIT_PAGE</code></td>
+<td>PB-ANIMAL detailed rules</td>
+<td>scientist</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>10.5 Economic / Monte Carlo Playbook</td>
+<td><code>EXTERNALIZED_TO_AUDIT_PAGE</code></td>
+<td>PB-ECON detailed rules; summary remains in §16</td>
+<td>scientist</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>10.6 Data / DCAT Playbook</td>
+<td><code>EXTERNALIZED_TO_AUDIT_PAGE</code></td>
+<td>PB-DATA detailed rules; summary remains in §13</td>
+<td>developer/auditor</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>10.7 AI / Multi-Agent Playbook</td>
+<td><code>EXTERNALIZED_TO_AUDIT_PAGE</code></td>
+<td>PB-AI detailed rules; summary remains in §9</td>
+<td>developer/auditor</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td>11. Geospatial, Geodetic, and GEE Assurance</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Methodology §14 + GEE/geospatial playbook audit page</td>
+<td>scientist</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>11.1 Support-State Contract</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Methodology §14 + GEE/geospatial playbook audit page</td>
+<td>scientist</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>11.2 CRS Parse Localization</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Methodology §14 + GEE/geospatial playbook audit page</td>
+<td>scientist</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td>12. Mathematical, Numerical, Statistical, and Geostatistical Assurance</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Methodology §§15–16 + restored source citations</td>
+<td>scientist</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>12.1 Mathematical Assurance Record</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Methodology §§15–16 + restored source citations</td>
+<td>scientist</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>12.2 Statistical Assurance Record</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Methodology §§15–16 + restored source citations</td>
+<td>scientist</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>12.3 Uncertainty Taxonomy</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Methodology §§15–16 + restored source citations</td>
+<td>scientist</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td>13. Data Engineering, Data Quality, Metadata, and Provenance</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Methodology §13 + source/evidence register + W3C context</td>
+<td>developer</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>13.1 Data Quality Profile</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Methodology §13 + source/evidence register + W3C context</td>
+<td>developer</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>13.2 Catalog and Provenance Plane</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Methodology §13 + source/evidence register + W3C context</td>
+<td>developer</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td>14. GitHub Authority, Exact-Byte Persistence, and Freeze Procedure</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Methodology §18 + historical certification snapshot</td>
+<td>auditor</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>14.1 Why Two Commits</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Methodology §18 + historical certification snapshot</td>
+<td>auditor</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>14.2 Object Identity and Reconstruction</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Methodology §18 + historical certification snapshot</td>
+<td>auditor</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>14.3 Manual Freeze Results</td>
+<td><code>HISTORICAL_ONLY</code></td>
+<td>Historical certification snapshot</td>
+<td>auditor</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td>15. Failure Modes, Corrective Actions, and Lessons Learned</td>
+<td><code>HISTORICAL_ONLY</code></td>
+<td>Assurance lessons page; do not present historical failures as current blockers</td>
+<td>all</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>15.1 General Lesson</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Retain general invariant; table remains historical</td>
+<td>all</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td>16. Operating Guide for Future Gates</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Methodology §§6.1 and 29</td>
+<td>developer</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>16.1 Minimum Gate Contract</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Methodology §§6.1 and 29</td>
+<td>developer</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td>17. Governance, Maintenance, and Change Control</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Methodology §§3.3,13.3,18,27,30.3; living-source control must be restored explicitly</td>
+<td>auditor</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>17.1 Living References</td>
+<td><code>CORRECTED</code></td>
+<td>Restore explicit snapshot/access/freshness/impact rule in main methodology</td>
+<td>auditor</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>17.2 Evidence Base Updates</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Methodology §13.3</td>
+<td>auditor</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>17.3 Branch Protection and Signatures</td>
+<td><code>HISTORICAL_ONLY</code></td>
+<td>Historical state plus prospective governance note</td>
+<td>auditor</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td>18. Auditability and Reproducibility Checklist</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Methodology §§21 and 29 + audit traceability pages</td>
+<td>auditor</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td>19. Certified Status and Next-Gate Boundary</td>
+<td><code>HISTORICAL_ONLY</code></td>
+<td>Historical certified-state snapshot; current Control Plane publication state shown separately</td>
+<td>auditor</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td>References and Certified Authorities</td>
+<td><code>CORRECTED</code></td>
+<td>Full corrected source/reference register; current v1.0.1 source set is incomplete</td>
+<td>all</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>Project Authorities</td>
+<td><code>PRESERVED_AND_UPDATED</code></td>
+<td>Internal authority register</td>
+<td>all</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>External Technical and Scientific References</td>
+<td><code>CORRECTED</code></td>
+<td>Rebuild complete validated register</td>
+<td>all</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td>Appendix A. Glossary and Acronyms</td>
+<td><code>EXTERNALIZED_TO_AUDIT_PAGE</code></td>
+<td>Glossary / terminology page</td>
+<td>all</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td>Appendix B. Architecture Requirement Register (50 Certified AR Records)</td>
+<td><code>EXTERNALIZED_TO_AUDIT_PAGE</code></td>
+<td>Architecture requirement/crosswalk view generated from certified authority</td>
+<td>auditor</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td>Appendix C. Manual Requirement Register (197 Certified DM Records)</td>
+<td><code>EXTERNALIZED_TO_AUDIT_PAGE</code></td>
+<td>197-DM requirement registry generated from canonical Manual</td>
+<td>developer</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td>Appendix D. Playbook Rule and Checklist Index</td>
+<td><code>EXTERNALIZED_TO_AUDIT_PAGE</code></td>
+<td>Seven playbooks, five checklists and traceability</td>
+<td>developer</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td>Appendix E. Architecture–Manual Crosswalk and Permission Summary</td>
+<td><code>EXTERNALIZED_TO_AUDIT_PAGE</code></td>
+<td>Architecture↔Manual crosswalk; 47 refined / 3 Architecture-only</td>
+<td>auditor</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td>Appendix F. Certified Hashes, Commits, Trees, and Local Archive</td>
+<td><code>HISTORICAL_ONLY</code></td>
+<td>Historical certification identities page; never present historical main/local workspace as current</td>
+<td>auditor</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td>Appendix G. Manual Evidence Overlay Record Index</td>
+<td><code>CORRECTED</code></td>
+<td>Rebuilt Source &amp; Evidence Register with metadata/status corrections and freshness identities</td>
+<td>auditor</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td>Appendix H. Document Generation and QA Receipt</td>
+<td><code>HISTORICAL_ONLY</code></td>
+<td>Historical DOCX construction/conservation receipt</td>
+<td>auditor</td>
+</tr>
+</tbody>
+</table></main>
+</div>
+<footer class="site-footer"><div class="wrap"><span>MM methodology v1.0.2 · non-normative documentation derivative</span><span>Certified authorities prevail · no runtime authorization</span><nav aria-label="Site legal information" class="site-legal-nav"><a href="../../legal/privacy/index.html">Privacy notice</a><span aria-hidden="true">·</span><a href="../../legal/copyright-licensing/index.html">Copyright &amp; licensing</a></nav><div class="site-contact-links" role="group" aria-label="Contact channels"><div>Academic correspondence: <a href="mailto:rhallim.michael@usp.br">rhallim.michael@usp.br</a></div><div>Privacy &amp; legal inquiries: <a href="mailto:rhallim.michael@gmail.com">rhallim.michael@gmail.com</a></div></div></div></footer>
+</body>
+</html>
