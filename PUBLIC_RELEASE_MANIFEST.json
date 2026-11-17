@@ -1,0 +1,200 @@
+{
+  "schema": "MM_CONTROL6_A0_DEDICATED_REPO_PUBLIC_RELEASE_MANIFEST_v1.0.0",
+  "prepared_at_utc_date": "2026-11-17",
+  "repository_proposed": "MikeJorge/mm-scientific-methodology",
+  "repository_creation_executed": false,
+  "publication_executed": false,
+  "scientific_version": "1.0.2",
+  "source_approved_candidate": {
+    "filename": "MM_CONTROL6_METHODOLOGY_V102_LEGAL_CONTACTS_CANDIDATE_NOT_DEPLOYED_v1.0.3.zip",
+    "size_bytes": 728043,
+    "sha256": "24e21a4a85bde7723b3c89079d9cf613512b7cef5e00b0f6a0300a69d283b856",
+    "independent_review": "LC-01..LC-06 PASS (applies to frozen historical-address candidate)"
+  },
+  "site_release": {
+    "filename": "MM_METHODOLOGY_V102_DEDICATED_GHPAGES_SITE_NOT_DEPLOYED_v1.0.0.zip",
+    "size_bytes": 728136,
+    "sha256": "096a3bac4fde59ee42792343a3880e33e794b7c02c1870750ff882cb095ab92b",
+    "entries": 26,
+    "expected_git_tree_sha1": "d6dbd9b7b275d80066bbe631c7c90b7b85466cd2",
+    "published_site_url_prospective": "https://mikejorge.github.io/mm-scientific-methodology/"
+  },
+  "public_file_changes": {
+    "unchanged_approved_members": 24,
+    "changed_approved_members": [
+      "sitemap.xml"
+    ],
+    "sitemap_old_base": "https://mikejorge.github.io/modulo-minimo-MHSMM/",
+    "sitemap_new_base": "https://mikejorge.github.io/mm-scientific-methodology/",
+    "sitemap_url_rebindings": 17,
+    "deployment_only_added_files": [
+      ".nojekyll"
+    ]
+  },
+  "source_files": 25,
+  "target_files": 26,
+  "files": [
+    {
+      "path": ".nojekyll",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "architecture-figure/index.html",
+      "size_bytes": 13049,
+      "sha256": "a596ec447a1cb6b626ba1101f82df77b4eb3cbcc42481de293f19d2191494f30",
+      "git_blob_sha1": "5a542d1dff54be5083b4d3e6971092a7e54e9ebf"
+    },
+    {
+      "path": "assets/figures/mm-development-architecture-v1.0.3.pdf",
+      "size_bytes": 36867,
+      "sha256": "994df91b223a2a72a19dc1897c4e2e30d9f7c51520afa7354756665ac7abb070",
+      "git_blob_sha1": "09a65edd851a3bf3aa8aa6d30ead963cb9f52d76"
+    },
+    {
+      "path": "assets/figures/mm-development-architecture-v1.0.3.png",
+      "size_bytes": 483863,
+      "sha256": "cb3b797333b6d819bef2274e4ee92c081fca315f90c6d0bc5aad5c908b7b1bb9",
+      "git_blob_sha1": "47f75a122e51635ef32823da29f5fc7ab57d4baa"
+    },
+    {
+      "path": "assets/figures/mm-development-architecture-v1.0.3.svg",
+      "size_bytes": 50028,
+      "sha256": "fcd00d37b821cdae8a106bf863d11311f7e9dd90700cef690ded9850706d6625",
+      "git_blob_sha1": "c8ec4ad29d11d953f707e62ba136acdfec63ed57"
+    },
+    {
+      "path": "assets/figures/mm-local-execution-adapter-v1.0.6.pdf",
+      "size_bytes": 61763,
+      "sha256": "8fa10c936bc545c55aa315f5471f7a09b7e19f9bb0292143344f5844870bfded",
+      "git_blob_sha1": "976bfc21acbe4bfb7f338a7c113eae98adea23b8"
+    },
+    {
+      "path": "assets/figures/mm-local-execution-adapter-v1.0.6.svg",
+      "size_bytes": 39143,
+      "sha256": "eef2e70870c211d5343aacf491543d41873b5e4c60e60d3cd9b6feab2e69845a",
+      "git_blob_sha1": "1107f1f4aff2f2adec2b046a64e5f86ffea953b1"
+    },
+    {
+      "path": "assets/mm.css",
+      "size_bytes": 10124,
+      "sha256": "e2651ca7e364e9e7264747306da502e3ae76218c389a4e3f7bfefa5ea5160bc3",
+      "git_blob_sha1": "471552ab0d956cbefe490ee9540ff7c2a7e5134d"
+    },
+    {
+      "path": "audit/architecture-manual-crosswalk/index.html",
+      "size_bytes": 22808,
+      "sha256": "e9b9f7741646e8b028c8472e1566c200418f94c45c45c5515fb84c4c3ec06a5e",
+      "git_blob_sha1": "aafa5e4d8ac07c168d11fc569ef0d28e64e935df"
+    },
+    {
+      "path": "audit/audience-pathways/index.html",
+      "size_bytes": 7229,
+      "sha256": "cdb62e33832a8636d9e517cf2b281a9186c792b3792a8aa0f72ecbcbd51d7914",
+      "git_blob_sha1": "959c285ba675a3fea39ce7f7d40b3f4af2f973a0"
+    },
+    {
+      "path": "audit/certified-identities/index.html",
+      "size_bytes": 7991,
+      "sha256": "cf7cbf244bde0d2ba9d13461a70545f693df7ab704bb12699c4b07921a4bcfc9",
+      "git_blob_sha1": "a7e4d25082650a5d014ffa50b17dfcbca859b8c3"
+    },
+    {
+      "path": "audit/conservation-crosswalk/index.html",
+      "size_bytes": 29168,
+      "sha256": "ef26a41d30165f38368a3569631882db93aee066c0e1c2eb901e5605c2723851",
+      "git_blob_sha1": "a27387ea49c7e3857cabd4d428842776476abc20"
+    },
+    {
+      "path": "audit/evidence-overlay/index.html",
+      "size_bytes": 17430,
+      "sha256": "2966d64d2a61bf25dd74015f80858a1724c32731eafadddd72f83164dc1111fa",
+      "git_blob_sha1": "fde00747f462f2070b43e57587ca3b59fda32dd5"
+    },
+    {
+      "path": "audit/glossary/index.html",
+      "size_bytes": 7779,
+      "sha256": "adfe90a6a04acb0d4faaf3271f5569be5c69dc7985e154ca94a3b73bada0a265",
+      "git_blob_sha1": "6bc1fa20aa36e638ac8232308ee0ba030ab87a88"
+    },
+    {
+      "path": "audit/historical-assurance-lessons/index.html",
+      "size_bytes": 7846,
+      "sha256": "617cd68059751fef38810e428c3a92b69f5dd756b1846c0d2b2ed7dae29c5fe7",
+      "git_blob_sha1": "631b3c0586267a102b0e9c35c44c3489138d2d77"
+    },
+    {
+      "path": "audit/historical-build-qa/index.html",
+      "size_bytes": 6337,
+      "sha256": "99cda496807fe1355d705c911115e7fc8b449199d8e791fb02b5b343810748cf",
+      "git_blob_sha1": "57899f88b68c21da3bd7eddb324aa3513d37ad16"
+    },
+    {
+      "path": "audit/index.html",
+      "size_bytes": 9258,
+      "sha256": "867a9e42605f39a91b5e026e8f0b462d51dad4d24362d232b45d48a466af0c63",
+      "git_blob_sha1": "753a4ce0a9f424dbf1cb484f3f9250570eb2f511"
+    },
+    {
+      "path": "audit/manual-requirements/index.html",
+      "size_bytes": 155372,
+      "sha256": "ba273fb66ab71c40b4d6d353c6e5ba6519df21fae4fa949a17e9179412c997f2",
+      "git_blob_sha1": "369f95e2381f141df2a7070ac5275a49323e899a"
+    },
+    {
+      "path": "audit/playbooks-checklists/index.html",
+      "size_bytes": 26461,
+      "sha256": "6f54ed7c0b6c80a6865b225dc502cb7606ba95cc180b8f78001776c4c9617464",
+      "git_blob_sha1": "7cfa2c68e2a178105e31944d320e63d5b942d11a"
+    },
+    {
+      "path": "audit/source-reference-register/index.html",
+      "size_bytes": 16106,
+      "sha256": "b16c34e1ae2ceb3e283502542992c3ca5c5ee6d03bb8657041da813e982a950d",
+      "git_blob_sha1": "17ab5f62ef66f2645a4d5a8457204da1419ee2fc"
+    },
+    {
+      "path": "downloads/mm-methodology-v1.0.2-reproducibility-supplement.zip",
+      "size_bytes": 77416,
+      "sha256": "f1acba06eadfa3aa19bed8eb16798b9d9edb09f977e942dedbd6461e1180c4a9",
+      "git_blob_sha1": "b745516a119505326cfd0112d456d2d1e19d5a72"
+    },
+    {
+      "path": "index.html",
+      "size_bytes": 81025,
+      "sha256": "409af0c7624445340d67cb333c5d29ec911dc5f8b3c0c45f123e5b465bc58cad",
+      "git_blob_sha1": "32c22b7125344b5469aed97ac709d830a23d253f"
+    },
+    {
+      "path": "legal/copyright-licensing/index.html",
+      "size_bytes": 11728,
+      "sha256": "674a7063c290d7527ae1fc965b3fafb34234111e11a759147a40a42ea55b4719",
+      "git_blob_sha1": "7ef3586d32e17370fd45ee7ba6877c42fb800265"
+    },
+    {
+      "path": "legal/privacy/index.html",
+      "size_bytes": 11526,
+      "sha256": "08f27a35870bf3818fb9c0ce5ff8d72ec5efae8697e129ae006b5b9691d3c98d",
+      "git_blob_sha1": "bc6c2916b8790029fd256d595a39f6c56d6fddfe"
+    },
+    {
+      "path": "local-execution-adapter/index.html",
+      "size_bytes": 15546,
+      "sha256": "254df40dba925bee7576226d9af6250e78cfab8eb6ae3e4bf1751d393e2e9dc1",
+      "git_blob_sha1": "52e0895b6ab3e645a64793f1e09ce17ee1f0fbe5"
+    },
+    {
+      "path": "sitemap.xml",
+      "size_bytes": 1843,
+      "sha256": "5b1c7215ea03ee00461d5cd5e0236134bfa6ee8e297777118518dfc3c6e33661",
+      "git_blob_sha1": "26b9b8ed5dbb15a04d9efe937d6856ca27d00410"
+    }
+  ],
+  "notes": [
+    "All 15 scientific and assurance HTML main regions remain unchanged because the complete 17 HTML bytes remain unchanged.",
+    "No new license grant; historic source references in legal page preserved as provenance.",
+    "Remote repository is currently not found; proposed Git tree is a LOCAL PROSPECTIVE SHA, not an observed remote SHA.",
+    "The GitHub Pages source configuration and public HTTPS content remain unverified."
+  ]
+}
