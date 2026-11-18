@@ -1,166 +1,92 @@
 # MM Scientific Software Development and Assurance Methodology
 
-**A versioned, evidence-governed methodology for the engineering, verification, validation, traceability, and controlled release of scientific software.**
+**Documentary edition v1.0.3**
 
-[**Read the published methodology**](https://mikejorge.github.io/mm-scientific-methodology/) · [Audit and traceability](https://mikejorge.github.io/mm-scientific-methodology/audit/) · [Reproducibility supplement](https://mikejorge.github.io/mm-scientific-methodology/downloads/mm-methodology-v1.0.2-reproducibility-supplement.zip) · [Citation](CITATION.md) · [Licensing](LICENSING.md)
+A versioned, evidence-governed methodology for the engineering, verification, validation, traceability, and controlled release of scientific software.
 
-| Publication metadata | Verified or controlled identity |
-| --- | --- |
-| Scientific edition | **v1.0.2** |
-| Publication type | Scientific development and assurance **methodology / technical documentation**; **not** an installable MM runtime |
-| Author and principal investigator | **Michael Allim Jorge** · [ORCID 0000-0002-7288-2095](https://orcid.org/0000-0002-7288-2095) |
-| Public site | <https://mikejorge.github.io/mm-scientific-methodology/> |
-| Source of the deployed static site | [`gh-pages`](https://github.com/MikeJorge/mm-scientific-methodology/tree/gh-pages), repository root |
-| Public distribution and version documentation | [`main`](https://github.com/MikeJorge/mm-scientific-methodology/tree/main) |
-| First verified HTTPS publication | **17 November 2026**; Work readback recorded 17/17 HTML routes and 25/25 public payload files |
-| Frozen public site | **26 Git files**: 25 approved distribution files plus the empty `.nojekyll` sentinel |
-| Digital object identifier | **None assigned**; do not infer a Zenodo deposit or journal publication |
+[Methodology website](https://mikejorge.github.io/mm-scientific-methodology/) · [Audit and traceability](https://mikejorge.github.io/mm-scientific-methodology/audit/) · [v1.0.3 citation](releases/v1.0.3/CITATION.md) · [v1.0.3 reproducibility](releases/v1.0.3/REPRODUCIBILITY.md) · [Licensing](LICENSING.md)
 
-> **Scope and authority.** This is a public documentation projection of the controlled MM/MHSMM scientific-development methodology. Publication, passing a static-site check, and possession of this repository **do not** certify a scientific model, grant operational permission, authorize execution, or establish endorsement by NASA, ISO, USP, or any other institution.
+| Edition information | Identity |
+|---|---|
+| Author and principal investigator | Michael Allim Jorge · [ORCID 0000-0002-7288-2095](https://orcid.org/0000-0002-7288-2095) |
+| Edition | 1.0.3 |
+| Object | Scientific development and assurance methodology and controlled technical documentation |
+| Website address | https://mikejorge.github.io/mm-scientific-methodology/ |
+| Frozen distribution | [Version 1.0.3 site ZIP](releases/v1.0.3/MM_METHODOLOGY_V103_EN_US_SITE_v1.0.0.zip) |
+| Artifact manifest | [Version 1.0.3 manifest](releases/v1.0.3/PUBLIC_RELEASE_MANIFEST.json) |
+| Edition changes | [Version 1.0.3 release notes](releases/v1.0.3/RELEASE_NOTES.md) |
+| Website file set | 26 regular files, including 17 HTML pages and nine non-HTML members |
 
-## 1. What this publication contributes
+## Purpose and authority
 
-MM defines how a modular scientific software system is **specified, built, checked, validated for its intended use, integrated, documented, independently examined, and released under explicit authority**. Its governing assurance questions are complementary: **Was the system built correctly?** (*verification*) and **Was the correct system built for the scientific purpose?** (*validation*).
+MM defines how a modular scientific software system is specified, built, checked, validated for its intended use, integrated, documented, independently examined, and released under explicit authority. Its governing assurance questions are complementary: Was the system built correctly? (verification) and Was the correct system built for the scientific purpose? (validation).
 
-The methodology joins scientific questions and domain models to software-engineering controls: typed interface contracts; dimensional, spatial, and temporal consistency; numerical and statistical assurance; uncertainty quantification; independently checkable evidence; release identity; and a fail-closed authorization regime. It is applicable to the MM/MHSMM modular modeling context and describes a transferable engineering approach **without asserting universal validation of any model or implementation**.
+The methodology joins scientific questions and domain models to software-engineering controls: typed interface contracts; dimensional, spatial, and temporal consistency; numerical and statistical assurance; uncertainty quantification; independently checkable evidence; release identity; and a fail-closed authorization regime. It describes a transferable engineering approach without asserting universal validation of any model or implementation.
 
-**Core mechanisms, as specified by the published methodology:**
+Certified Architecture, the subordinate Manual, the Evidence Base and applicable execution records retain their authority. The methodology includes 197 Manual requirement records, a 50-record Architecture–Manual crosswalk, playbooks, checklists and source/provenance records. Public access to those records does not disclose the private execution evidence or authorize scientific operation.
 
-- **Authority hierarchy:** certified scientific architecture governs; the subordinate assurance manual refines operational requirements but cannot override architectural prohibitions.
-- **Four execution-control planes:** **Control**, **Execution**, **Authority**, and **Evidence/Provenance**, with **Data/Catalog governance** as a cross-cutting function—not a fifth execution plane.
-- **Gate contracts:** scoped inputs, permitted effects, roles, preconditions, evidence predicates, exhaustive terminal-state classes, independent readback, a single next admissible action, and `STOP=true`.
-- **Evidence discipline:** `DIRECT`, `BOUND`, `DERIVED`, `HISTORICAL`, and `NOT_ESTABLISHED` are distinct states; derived or historical evidence must not masquerade as a current direct observation.
-- **Scientific quality:** traceability from scientific intent to requirements, architecture, detailed design, implementation, V&V, integration, uncertainty, and scientifically credible claims.
-- **Separation of duties:** execution and independent assurance have different roles; missing, inconsistent, or inadmissible evidence yields **HOLD**, not inferred PASS.
+This repository provides a documentation projection. Website publication, static-file verification and repository access do not establish model validation, runtime permission, regulatory compliance, institutional ownership or endorsement by NASA, ISO, USP or another institution. The historical [MHSMM software repository](https://github.com/MikeJorge/modulo-minimo-MHSMM) and the controlled execution infrastructure remain separate.
 
-The published material includes a register of **197 manual requirement records**, a **50-record Architecture–Manual crosswalk**, playbooks/checklists, source-status information, content-conservation evidence, and bounded historical assurance records. These are navigational and traceability artifacts; their public availability does not make private operational evidence public.
+## Read the edition
 
-## 2. Where to start
+| Reader need | Entry point |
+|---|---|
+| Methodological narrative and scientific lifecycle | [Methodology website](https://mikejorge.github.io/mm-scientific-methodology/) |
+| Terminology and cited sources | [Glossary](https://mikejorge.github.io/mm-scientific-methodology/audit/glossary/) and [source register](https://mikejorge.github.io/mm-scientific-methodology/audit/source-reference-register/) |
+| Requirements and architecture | [Manual records](https://mikejorge.github.io/mm-scientific-methodology/audit/manual-requirements/) and [Architecture–Manual crosswalk](https://mikejorge.github.io/mm-scientific-methodology/audit/architecture-manual-crosswalk/) |
+| Figure sources and reuse limits | [Version 1.0.3 reproducibility guidance](releases/v1.0.3/REPRODUCIBILITY.md) |
+| Citation and edition differences | [Citation](releases/v1.0.3/CITATION.md) and [release notes](releases/v1.0.3/RELEASE_NOTES.md) |
 
-| Reader | Entry point | Follow with |
-| --- | --- | --- |
-| Scientist / modeler | [Purpose, scientific lifecycle, V&V, uncertainty](https://mikejorge.github.io/mm-scientific-methodology/) | [Glossary](https://mikejorge.github.io/mm-scientific-methodology/audit/glossary/) and [source register](https://mikejorge.github.io/mm-scientific-methodology/audit/source-reference-register/) |
-| Software architect / senior developer | [Development architecture](https://mikejorge.github.io/mm-scientific-methodology/architecture-figure/) | [Architecture–Manual crosswalk](https://mikejorge.github.io/mm-scientific-methodology/audit/architecture-manual-crosswalk/) and [playbooks](https://mikejorge.github.io/mm-scientific-methodology/audit/playbooks-checklists/) |
-| Independent auditor / reviewer | [Audit and traceability](https://mikejorge.github.io/mm-scientific-methodology/audit/) | [197 requirement records](https://mikejorge.github.io/mm-scientific-methodology/audit/manual-requirements/), [identities](https://mikejorge.github.io/mm-scientific-methodology/audit/certified-identities/), and [conservation crosswalk](https://mikejorge.github.io/mm-scientific-methodology/audit/conservation-crosswalk/) |
-| Reproducibility / provenance reader | [Reproducibility boundary](REPRODUCIBILITY.md) | [Evidence overlay](https://mikejorge.github.io/mm-scientific-methodology/audit/evidence-overlay/) and [local execution-adapter figure](https://mikejorge.github.io/mm-scientific-methodology/local-execution-adapter/) |
-| Editor or prospective citer | [Citation guidance](CITATION.md) | [Release notes](RELEASE_NOTES_v1.0.2.md) and [licensing boundaries](LICENSING.md) |
+The address above is the repository's website destination. A version number or local expected tree in an artifact manifest is not, by itself, evidence of which bytes a live server currently delivers. Actual deployment events and HTTPS comparisons belong to their execution receipt.
 
-The website contains **17 HTML pages**: 15 methodology/assurance pages and two bilingual legal pages. Read the [audience pathways](https://mikejorge.github.io/mm-scientific-methodology/audit/audience-pathways/) for a curated navigation sequence.
+## Exact v1.0.3 distribution
 
-## 3. Repository and publication architecture
+| Object | Identity |
+|---|---|
+| Snapshot | MM_METHODOLOGY_V103_EN_US_SITE_v1.0.0.zip |
+| Snapshot bytes | 750,541 |
+| Snapshot SHA-256 | 63a548ef7ffc405280cd39331d360f3f6427b269bd67a22c904be88aec8e6cbd |
+| Expected static Git tree, mode 100644 | b8898263e12142ef66056c10ee46cf6cdad1f750 |
+| Unchanged scientific supplement | 77,416 bytes; SHA-256 f1acba06eadfa3aa19bed8eb16798b9d9edb09f977e942dedbd6461e1180c4a9 |
 
-```text
-Private engineering/execution evidence (not distributed here)
-    | authorized, reviewed public projection
-    v
-main: version documentation + full public ZIP snapshot + manifest
-    | exact static payload (no scientific runtime)
-    v
-gh-pages: 17 HTML + 5 figure assets + CSS + sitemap + supplement + .nojekyll
-    | GitHub Pages: Deploy from gh-pages / (root)
-    v
-https://mikejorge.github.io/mm-scientific-methodology/
-```
+The version-specific manifest binds all 26 file lengths, SHA-256 values and Git blob IDs. Its expected tree is calculated locally from those files; it is not an asserted remote commit. SHA-256 and Git object IDs identify bytes and objects, not signatures or scientific validity.
 
-This **dedicated methodology repository** is distinct from the [historical MHSMM software repository](https://github.com/MikeJorge/modulo-minimo-MHSMM) and the separately controlled private MkDocs executor. Neither the historical software's maturity nor the private executor's assurance receipts should be inferred from the public site.
+## Verify the selected version
 
-```text
-main/
-├── README.md                          # entry point and scientific scope
-├── CITATION.md                        # citable description; no invented DOI
-├── LICENSING.md                       # differentiated IP/licensing notices
-├── REPRODUCIBILITY.md                 # scientific reproducibility boundary
-├── RELEASE_NOTES_v1.0.2.md           # edition and publication provenance
-├── PUBLIC_RELEASE_MANIFEST.json       # per-member hashes and Git blob IDs
-├── verify_public_release.py           # read-only, standard-library verifier
-└── releases/v1.0.2/
-    └── MM_METHODOLOGY_V102_DEDICATED_GHPAGES_SITE_NOT_DEPLOYED_v1.0.0.zip
-
-gh-pages/
-├── index.html                          # primary scientific methodology
-├── architecture-figure/
-├── local-execution-adapter/
-├── audit/                              # 12 pages of review/traceability
-├── legal/privacy/
-├── legal/copyright-licensing/
-├── assets/                             # CSS and figure assets
-├── downloads/                          # versioned public supplement
-├── sitemap.xml
-└── .nojekyll                          # deployment sentinel
-```
-
-The ZIP filename retains `NOT_DEPLOYED` because **the snapshot was frozen before publication**; it is preserved as an immutable identifier, **not** a claim about the current HTTPS status. Likewise, `repository_creation_executed=false` and `publication_executed=false` in the historical `PUBLIC_RELEASE_MANIFEST.json` describe its **pre-publication preparation state**, not the subsequently verified deployment. Do not rewrite the frozen manifest to retroactively change that provenance.
-
-## 4. Immutable v1.0.2 evidence anchors
-
-| Artifact | Exact identity |
-| --- | --- |
-| Frozen site snapshot ZIP | **728,136 bytes** · SHA-256 `096a3bac4fde59ee42792343a3880e33e794b7c02c1870750ff882cb095ab92b` |
-| Deployed `gh-pages` Git tree | `d6dbd9b7b275d80066bbe631c7c90b7b85466cd2` |
-| Deployment commit verified at initial publication | `acd8a9310f3e1c3c536de18cabbf3afabbd1ba13` |
-| Public scientific supplement ZIP | **77,416 bytes** · SHA-256 `f1acba06eadfa3aa19bed8eb16798b9d9edb09f977e942dedbd6461e1180c4a9` |
-| Approved original public release | 25 files; 24 byte-conserved in the dedicated-repository projection, and 17 site-map URLs rebound to its new public address |
-| Initial HTTPS verification | 17/17 sitemap HTML routes and 25/25 public content-file identities (reported by Work, 17 November 2026, 20:49 BRT) |
-
-**Hash semantics:** SHA-256 identifies distributed bytes. Git SHA-1 identifies Git objects/trees in this repository; it is **not** a cryptographic signature or a substitute for independent scientific validation. The embedded manifest and external hash comparisons help detect drift, but a compromised repository could change an artifact and its own manifest together. Retain independent evidence of release identity for high-assurance use.
-
-## 5. Verify the frozen snapshot locally
-
-Requirements: **Python 3.9+ (standard library only)**; no MkDocs installation, scientific runtime, credentials, environment provisioning, or external Python dependencies are required.
+The unchanged root verifier and its default arguments retain the v1.0.2 distribution. To select v1.0.3, run the following from the repository root:
 
 ```bash
-git clone https://github.com/MikeJorge/mm-scientific-methodology.git
-cd mm-scientific-methodology
-python verify_public_release.py
+python verify_public_release.py --snapshot releases/v1.0.3/MM_METHODOLOGY_V103_EN_US_SITE_v1.0.0.zip --manifest releases/v1.0.3/PUBLIC_RELEASE_MANIFEST.json
 ```
 
-On Windows, use `py -3 verify_public_release.py` if `python` is not on `PATH`. The verifier is read-only: it does **not** extract or execute ZIP members. It checks the snapshot size and SHA-256, ZIP CRC, exact file inventory, all 26 per-file lengths and SHA-256 digests, all Git blob object IDs, and the reconstructed recursive Git tree.
-
-Expected output includes:
+On Windows, the equivalent Python launcher command is:
 
 ```text
-PASS: MM public release snapshot integrity
-version=1.0.2
-snapshot_sha256=096a3bac4fde59ee42792343a3880e33e794b7c02c1870750ff882cb095ab92b
-verified_files=26
-git_tree_sha1=d6dbd9b7b275d80066bbe631c7c90b7b85466cd2
-supplement_sha256=f1acba06eadfa3aa19bed8eb16798b9d9edb09f977e942dedbd6461e1180c4a9
-scope=static_snapshot_integrity_only; no scientific runtime executed
+py -3 verify_public_release.py --snapshot releases/v1.0.3/MM_METHODOLOGY_V103_EN_US_SITE_v1.0.0.zip --manifest releases/v1.0.3/PUBLIC_RELEASE_MANIFEST.json
 ```
 
-For an independent Git-level comparison:
+The existing standard-library verifier checks the archive identity, CRC, exact member set, per-file hashes, Git blob IDs and reconstructed static tree. It does not execute the site contents, recreate figures, run MM software, contact the network or establish live deployment.
 
-```bash
-git fetch origin gh-pages
-git rev-parse origin/gh-pages^{tree}
-```
+## Assurance scope
 
-For a **version-pinned comparison**, first select the recorded deployment commit rather than assuming that a moving branch will remain unchanged. A future `v1.0.2` tag, if issued, should identify the versioned **`main` distribution commit**; its embedded snapshot and manifest bind the deployed `gh-pages` tree. An attached GitHub Release ZIP is an additional distribution surface, not the authority for different scientific content.
+Version 1.0.3 contains source-bound American English, terminology, first-use definition and navigation improvements, together with readable projections of unchanged certified records. Independent native-browser evidence applies to the exact R1 parent, SHA-256 e7da9a2cad8deb50cb64649b4e172608ba9c9d9112819799aaa5187fb11baa74. The distribution here adds a finite current-edition/status delta: 21 rules at 81 occurrences in 17 HTML files. Its nine non-HTML members and controlled records remain conserved.
 
-## 6. Reproducibility: what the supplement does and does not establish
+The original native screenshots are not relabeled as observations of this different ZIP. The [release notes](releases/v1.0.3/RELEASE_NOTES.md) explain the separate status derivation and the retained EVID-01 capture limitation. These source and artifact records do not replace the release-specific decision or execution receipt.
 
-The [versioned public supplement](https://mikejorge.github.io/mm-scientific-methodology/downloads/mm-methodology-v1.0.2-reproducibility-supplement.zip) includes **12 approved original scientific sources**: two Python figure-generator scripts, nine selected machine-readable research/assurance records, and one figure source manifest, plus five distribution, licensing, and provenance files (17 supplement members total).
+## Historical v1.0.2 records
 
-It supports inspection of selected figure sources and published traceability data. It **does not** package a complete executable MM scientific model, DSSAT integration, credentials, independent oracle, live adapter, private QA receipts, or authority to perform protected operations. Figure-generation reproducibility may require the dependencies and conditions described in the supplement; the verifier above checks **bytes**, not numerical reproducibility, model credibility, or scientific correctness.
+For the original reading context, use the [README at tag v1.0.2](https://github.com/MikeJorge/mm-scientific-methodology/blob/v1.0.2/README.md) and its tagged companion documents. The [archived README copy](releases/v1.0.2/README.md) is byte-identical to that predecessor. Its original relative links are deliberately preserved; the tagged README is the preferred way to follow them.
 
-The second figure's [C2PA/provenance note](https://mikejorge.github.io/mm-scientific-methodology/local-execution-adapter/#figure2-c2pa-provenance) documents associated metadata and expressly does **not** assert independent signature verification or infer that the diagram was generated by an image-generation model. The recorded Python/Matplotlib provenance is retained.
+The root CITATION.md, REPRODUCIBILITY.md, PUBLIC_RELEASE_MANIFEST.json, RELEASE_NOTES_v1.0.2.md and verifier defaults remain the v1.0.2 records. The original v1.0.2 site snapshot remains in its existing path. Use the version-specific v1.0.3 links above for this edition. Root LICENSING.md retains the applicable differentiated rights notice.
 
-## 7. Governance, changes, and scientific claims
+Preparation-time flags in frozen manifests describe when those records were made. They are preserved as provenance and must not be silently rewritten to simulate later deployment events.
 
-This is a **controlled edition**. Proposed changes should identify the impacted authority, scientific/engineering requirement, intended use, affected interfaces, falsifiable acceptance predicate, necessary test evidence, independent reviewer, and resulting release boundary. Preserve a distinction between **historical certification**, **current publication evidence**, and **runtime authorization**. A passing website check is not evidence that the scientific software is operationally or scientifically validated.
+## Reproducibility, rights and contact
 
-For subsequent editions, use separate versioned records rather than silently modifying the v1.0.2 snapshot. Do not disclose unpublished inventories, credentials, assurance receipts, or private execution controls in public artifacts. A public contribution or issue does not itself authorize a Gate or a change to protected scientific systems.
+The unchanged [v1.0.2 reproducibility supplement](https://mikejorge.github.io/mm-scientific-methodology/downloads/mm-methodology-v1.0.2-reproducibility-supplement.zip) contains 12 approved original sources: two Python figure generators, nine selected machine-readable records and one figure source manifest, plus distribution and rights metadata. It is not an installable scientific model, live adapter, credential collection or permission to operate scientific infrastructure.
 
-## 8. Attribution, rights, privacy, and contact
+Rights are described in [LICENSING.md](LICENSING.md), the [website notice](https://mikejorge.github.io/mm-scientific-methodology/legal/copyright-licensing/) and the supplement's component notices. The historical MIT license is not a blanket license for all methodology text, figures or third-party material. This edition creates no new general Creative Commons grant, IP assignment or institutional endorsement.
 
-- **Citation:** [CITATION.md](CITATION.md). No DOI has been assigned; refer to the version, repository, and any **actually issued** tag/Release rather than inventing a persistent identifier.
-- **Copyright/IP:** [Licensing scope](LICENSING.md) and [website legal notice](https://mikejorge.github.io/mm-scientific-methodology/legal/copyright-licensing/). An MIT license in the historical software repository is **not** a blanket license for this methodology's text, figures, and third-party content; no additional general CC BY grant is implied.
-- **Privacy:** [Bilingual privacy notice](https://mikejorge.github.io/mm-scientific-methodology/legal/privacy/). GitHub Pages hosting and email providers may process data independently of the static site's code.
-- **Academic/scientific correspondence:** [rhallim.michael@usp.br](mailto:rhallim.michael@usp.br).
-- **Privacy, permissions, IP, and legal correspondence:** [rhallim.michael@gmail.com](mailto:rhallim.michael@gmail.com). Do not submit personal or confidential records through public GitHub issues.
+For academic or scientific correspondence: [rhallim.michael@usp.br](mailto:rhallim.michael@usp.br). For privacy, rights, licensing or permissions: [rhallim.michael@gmail.com](mailto:rhallim.michael@gmail.com). The [privacy notice](https://mikejorge.github.io/mm-scientific-methodology/legal/privacy/) distinguishes the project's static content from hosting-provider processing. Do not send personal or confidential material through public issues.
 
-**Institutional boundary:** Academic affiliation, citations to standards or NASA guidance, and the use of a university email address do not establish institutional ownership, approval, certification, or endorsement.
-
----
-
-**Version discipline:** v1.0.2 identifies the methodology edition and its published public distribution. **Static-site identity, software-runtime authority, independent scientific validation, archival DOI, and GitHub Release issuance are distinct propositions and must be evidenced separately.**
+No DOI is supplied by these edition documents. Use the [citation guidance](releases/v1.0.3/CITATION.md), the exact snapshot identity and version references that have actually been issued.

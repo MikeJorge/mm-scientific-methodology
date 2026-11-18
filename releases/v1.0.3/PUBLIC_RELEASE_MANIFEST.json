@@ -1,0 +1,229 @@
+{
+  "schema": "MM_CONTROL7_A0_VERSION_SPECIFIC_PUBLIC_RELEASE_MANIFEST_v1.0.0",
+  "record_class": "FROZEN_PREPUBLICATION_ARTIFACT_MANIFEST",
+  "prepared_at_utc_date": "2026-11-18",
+  "repository": "MikeJorge/mm-scientific-methodology",
+  "scientific_version": "1.0.3",
+  "publication_executed": false,
+  "publication_state_note": "This immutable flag records manifest preparation. A separate execution receipt establishes later deployment; do not rewrite this record retroactively.",
+  "parent_r1": {
+    "filename": "MM_METHODOLOGY_V103_EN_US_TARGETED_EDITORIAL_R1_CANDIDATE_NOT_DEPLOYED_v1.0.1.zip",
+    "size_bytes": 750898,
+    "sha256": "e7da9a2cad8deb50cb64649b4e172608ba9c9d9112819799aaa5187fb11baa74",
+    "native_browser_evidence_scope": "Exact R1 parent identity; not a new browser run on this derivative."
+  },
+  "site_release": {
+    "filename": "MM_METHODOLOGY_V103_EN_US_SITE_v1.0.0.zip",
+    "repository_path": "releases/v1.0.3/MM_METHODOLOGY_V103_EN_US_SITE_v1.0.0.zip",
+    "size_bytes": 750541,
+    "sha256": "63a548ef7ffc405280cd39331d360f3f6427b269bd67a22c904be88aec8e6cbd",
+    "entries": 26,
+    "expected_git_tree_sha1": "b8898263e12142ef66056c10ee46cf6cdad1f750",
+    "regular_file_mode": "100644",
+    "site_url": "https://mikejorge.github.io/mm-scientific-methodology/",
+    "tree_evidence_scope": "LOCALLY_COMPUTED_EXPECTED_TREE_NOT_OBSERVED_DEPLOYMENT"
+  },
+  "status_only_derivation": {
+    "exact_rules": 21,
+    "replacement_occurrences": 81,
+    "html_members_changed": 17,
+    "non_html_members_byte_identical": 9,
+    "allowed_attribute_changes": "16 meta-description content attributes",
+    "all_other_markup_and_attributes_preserved": true,
+    "historical_pre_blocks_preserved": 219,
+    "code_blocks_preserved": 525,
+    "manual_outer_records_preserved": 197,
+    "manual_nested_source_records_preserved": 197,
+    "meaning": "Current-edition/status wording only; no new publication-event, runtime, rights or scientific claim."
+  },
+  "files": [
+    {
+      "path": ".nojekyll",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "mode": "100644"
+    },
+    {
+      "path": "architecture-figure/index.html",
+      "size_bytes": 13728,
+      "sha256": "3345872abed8538ad0aac3ae077c8e0f35b2433d424e7137f429081fe4f88b0b",
+      "git_blob_sha1": "e3864f8b36a81a92eec7a3c0f193f42b45820a68",
+      "mode": "100644"
+    },
+    {
+      "path": "assets/figures/mm-development-architecture-v1.0.3.pdf",
+      "size_bytes": 36867,
+      "sha256": "994df91b223a2a72a19dc1897c4e2e30d9f7c51520afa7354756665ac7abb070",
+      "git_blob_sha1": "09a65edd851a3bf3aa8aa6d30ead963cb9f52d76",
+      "mode": "100644"
+    },
+    {
+      "path": "assets/figures/mm-development-architecture-v1.0.3.png",
+      "size_bytes": 483863,
+      "sha256": "cb3b797333b6d819bef2274e4ee92c081fca315f90c6d0bc5aad5c908b7b1bb9",
+      "git_blob_sha1": "47f75a122e51635ef32823da29f5fc7ab57d4baa",
+      "mode": "100644"
+    },
+    {
+      "path": "assets/figures/mm-development-architecture-v1.0.3.svg",
+      "size_bytes": 50028,
+      "sha256": "fcd00d37b821cdae8a106bf863d11311f7e9dd90700cef690ded9850706d6625",
+      "git_blob_sha1": "c8ec4ad29d11d953f707e62ba136acdfec63ed57",
+      "mode": "100644"
+    },
+    {
+      "path": "assets/figures/mm-local-execution-adapter-v1.0.6.pdf",
+      "size_bytes": 61763,
+      "sha256": "8fa10c936bc545c55aa315f5471f7a09b7e19f9bb0292143344f5844870bfded",
+      "git_blob_sha1": "976bfc21acbe4bfb7f338a7c113eae98adea23b8",
+      "mode": "100644"
+    },
+    {
+      "path": "assets/figures/mm-local-execution-adapter-v1.0.6.svg",
+      "size_bytes": 39143,
+      "sha256": "eef2e70870c211d5343aacf491543d41873b5e4c60e60d3cd9b6feab2e69845a",
+      "git_blob_sha1": "1107f1f4aff2f2adec2b046a64e5f86ffea953b1",
+      "mode": "100644"
+    },
+    {
+      "path": "assets/mm.css",
+      "size_bytes": 10124,
+      "sha256": "e2651ca7e364e9e7264747306da502e3ae76218c389a4e3f7bfefa5ea5160bc3",
+      "git_blob_sha1": "471552ab0d956cbefe490ee9540ff7c2a7e5134d",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/architecture-manual-crosswalk/index.html",
+      "size_bytes": 23544,
+      "sha256": "e3389b8047af0b0bf739461c789cc1b3aaf49517cd67acd8f24d1b387578fe49",
+      "git_blob_sha1": "531071069b20e1b6179f45d031784dadc9cfa0de",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/audience-pathways/index.html",
+      "size_bytes": 8060,
+      "sha256": "e5e61fb4cc919820e5b3aef3619b43f3cdd98e4f54a5806e97c541aecc25c9b3",
+      "git_blob_sha1": "8716e7ad2ca02e03f27bc3a5bcba57ebf9585ff4",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/certified-identities/index.html",
+      "size_bytes": 9169,
+      "sha256": "a7d0c16cbb271c5b3746a6abe1faa023fe765b5a2fc3c00caf1d243b0d750730",
+      "git_blob_sha1": "3a08f87c2a437eddfca0195396f72593bdd9ec4b",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/conservation-crosswalk/index.html",
+      "size_bytes": 30569,
+      "sha256": "91bd8c52ed7e340087058d8ab07007ae90de384c35f76d2b8e3e1619d72305d6",
+      "git_blob_sha1": "f4ed7af0fbf03bf50ee49dc55a6b94734d5a16bf",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/evidence-overlay/index.html",
+      "size_bytes": 18148,
+      "sha256": "28c140b089f7e7e1d594f82a20f2970d7954a574079ed5b02690e4b6d594f828",
+      "git_blob_sha1": "8ee62a274ea6013545222de6c94d2502b7d39bb4",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/glossary/index.html",
+      "size_bytes": 30229,
+      "sha256": "90d21e2eb5b68e2a2a6e7598c26c1d7fa579668c203d03e1f6bcbc39cb8708a1",
+      "git_blob_sha1": "054d4d04e59deafb634400a0cfa9a9cf0b306bf2",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/historical-assurance-lessons/index.html",
+      "size_bytes": 8568,
+      "sha256": "60416670cfdb0219c4578a0bb9dd7fad23f82bca4d13c0880811badb67d5173c",
+      "git_blob_sha1": "dd80fddadfb6df50656885b334f83b171c8da3c3",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/historical-build-qa/index.html",
+      "size_bytes": 7016,
+      "sha256": "04cc673c6da7ff9a4dfade77582240e0848bd752dce4a850cd8b54f0f1027e86",
+      "git_blob_sha1": "824385a568fba7b4220730dbd3587234c58eda29",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/index.html",
+      "size_bytes": 9964,
+      "sha256": "e690b99d61c2c9b85aa1d9f60df8b1666e37d7058db3e7426d0b90ff5130c161",
+      "git_blob_sha1": "19482400c97147dbdd35236d64c999946ed736d8",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/manual-requirements/index.html",
+      "size_bytes": 358581,
+      "sha256": "b6b3026c369cf82c70f66108ac3fc5945b6d9291e926c184b15811f51582cf14",
+      "git_blob_sha1": "467274ae909dd81d2427e8d07f2eda5e18a47f78",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/playbooks-checklists/index.html",
+      "size_bytes": 29810,
+      "sha256": "9d7bf1b548e83237599c963ee8b4ef21d3c4184c829a5c69ff3024a46eb187d3",
+      "git_blob_sha1": "fee100c9ad7a43ffc9d5c78006099c11e29c73a7",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/source-reference-register/index.html",
+      "size_bytes": 17833,
+      "sha256": "00ea8c9716e100bbb595ba591c82f610fb0339e9f797af10b6fd5b4fc79e4036",
+      "git_blob_sha1": "6e4711bbef3de53d09ac4d6798d55ad24732b6f2",
+      "mode": "100644"
+    },
+    {
+      "path": "downloads/mm-methodology-v1.0.2-reproducibility-supplement.zip",
+      "size_bytes": 77416,
+      "sha256": "f1acba06eadfa3aa19bed8eb16798b9d9edb09f977e942dedbd6461e1180c4a9",
+      "git_blob_sha1": "b745516a119505326cfd0112d456d2d1e19d5a72",
+      "mode": "100644"
+    },
+    {
+      "path": "index.html",
+      "size_bytes": 103898,
+      "sha256": "104036e84e04628b87f766d3c227fa4afc3c7fccd1e9d27daad799c1d38b5481",
+      "git_blob_sha1": "063f23c262acd5c3ab17bc86b98af95a5efb26dd",
+      "mode": "100644"
+    },
+    {
+      "path": "legal/copyright-licensing/index.html",
+      "size_bytes": 12280,
+      "sha256": "c3389a5ae949103fa3cf260c0ad57dc4abb0aef05a0713d5066c00cce6851a9d",
+      "git_blob_sha1": "a3021c4e1632c34a58ed5ad7a5a888843fac587b",
+      "mode": "100644"
+    },
+    {
+      "path": "legal/privacy/index.html",
+      "size_bytes": 12081,
+      "sha256": "0c6670d36440bf7b1c09e632b8c241fd5f61bcad3d799d8320f0e3d2d910e863",
+      "git_blob_sha1": "eb3d7c8e27879dec94a73274cd63d2d4d8f313c3",
+      "mode": "100644"
+    },
+    {
+      "path": "local-execution-adapter/index.html",
+      "size_bytes": 16521,
+      "sha256": "a384e444be7c5a1c1536d12ce291642f0f23d862d6937d0858a3c17e7a54f1ca",
+      "git_blob_sha1": "c0c67204cbdc45e303e9da4f7041caf113cbe2e5",
+      "mode": "100644"
+    },
+    {
+      "path": "sitemap.xml",
+      "size_bytes": 1843,
+      "sha256": "5b1c7215ea03ee00461d5cd5e0236134bfa6ee8e297777118518dfc3c6e33661",
+      "git_blob_sha1": "26b9b8ed5dbb15a04d9efe937d6856ca27d00410",
+      "mode": "100644"
+    }
+  ],
+  "notes": [
+    "The expected static tree is a local computation, not an invented remote commit.",
+    "The v1.0.2 scientific supplement keeps its exact original filename and bytes.",
+    "Publication, independent scientific validation, runtime authorization and static artifact identity are separate propositions.",
+    "No source runner, scientific software or MkDocs build was executed in this distribution preparation."
+  ]
+}
