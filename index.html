@@ -1,76 +1,72 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <meta content="light dark" name="color-scheme"/>
-<title>Methodology · MM Scientific Software Development Methodology</title>
+<title>Methodology &middot; MM Scientific Software Development Methodology</title>
 <link href="assets/mm.css" rel="stylesheet"/>
-<meta content="MM scientific software development and assurance methodology v1.0.2: governed architecture, reproducibility, traceability, and controlled publication figures." name="description"/><meta content="#10293f" name="theme-color"/><meta content="strict-origin-when-cross-origin" name="referrer"/><meta content="default-src 'self'; script-src 'none'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; object-src 'none'; frame-src 'none'; base-uri 'none'; form-action 'none'" http-equiv="Content-Security-Policy"/></head>
+<meta content="MM scientific software development and assurance methodology v1.0.3: governed architecture, reproducibility, traceability, and controlled publication figures." name="description"/><meta content="#10293f" name="theme-color"/><meta content="strict-origin-when-cross-origin" name="referrer"/><meta content="default-src 'self'; script-src 'none'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; object-src 'none'; frame-src 'none'; base-uri 'none'; form-action 'none'" http-equiv="Content-Security-Policy"/></head>
 <body>
 <a class="skip-link" href="#main-content">Skip to content</a>
 <header class="site-header">
 <div class="wrap">
 <p class="eyebrow">Module Minimum (MM)</p>
 <p class="site-title">MM Scientific Software Development Methodology</p>
-<p class="status">Controlled derivative · not normative authority · not runtime authorization</p>
-<p class="status"><strong>Author and Principal Investigator:</strong> Michael Allim Jorge · <a href="https://orcid.org/0000-0002-7288-2095" rel="me noopener">ORCID 0000-0002-7288-2095</a></p>
+<p class="status">Methodology v1.0.3. Non-normative documentation; scientific runtime not authorized.</p>
+<p class="status"><strong>Author and Principal Investigator:</strong> Michael Allim Jorge &middot; <a href="https://orcid.org/0000-0002-7288-2095" rel="me noopener">ORCID 0000-0002-7288-2095</a></p>
 </div>
-</header><details class="mobile-menu"><summary>Explore methodology sections</summary><nav aria-label="Mobile primary navigation"><ul><li><a aria-current="page" href=".">Methodology</a></li><li><a href="architecture-figure/">Architecture figure</a></li><li><a href="local-execution-adapter/">Local execution environment</a></li><li><a href="audit/index.html">Audit &amp; traceability</a><ul><li><a href="audit/">Overview</a></li><li><a href="audit/audience-pathways/">Audience pathways</a></li><li><a href="audit/glossary/">Glossary</a></li><li><a href="audit/source-reference-register/">Source &amp; reference register</a></li><li><a href="audit/conservation-crosswalk/">Content-conservation crosswalk</a></li><li><a href="audit/architecture-manual-crosswalk/">Architecture ↔ Manual crosswalk</a></li><li><a href="audit/manual-requirements/">Manual requirements</a></li><li><a href="audit/playbooks-checklists/">Playbooks &amp; checklists</a></li><li><a href="audit/certified-identities/">Certified identities &amp; hashes</a></li><li><a href="audit/evidence-overlay/">Evidence overlay</a></li><li><a href="audit/historical-assurance-lessons/">Historical assurance lessons</a></li><li><a href="audit/historical-build-qa/">Historical build / QA receipt</a></li></ul></li></ul></nav></details>
+</header><details class="mobile-menu"><summary>Explore methodology sections</summary><nav aria-label="Mobile primary navigation"><ul><li><a aria-current="page" href=".">Methodology</a></li><li><a href="architecture-figure/">Architecture figure</a></li><li><a href="local-execution-adapter/">Local execution environment</a></li><li><a href="audit/index.html">Audit &amp; traceability</a><ul><li><a href="audit/">Overview</a></li><li><a href="audit/audience-pathways/">Audience pathways</a></li><li><a href="audit/glossary/">Glossary</a></li><li><a href="audit/source-reference-register/">Source &amp; reference register</a></li><li><a href="audit/conservation-crosswalk/">Content-conservation crosswalk</a></li><li><a href="audit/architecture-manual-crosswalk/">Architecture and Manual crosswalk</a></li><li><a href="audit/manual-requirements/">Manual requirements</a></li><li><a href="audit/playbooks-checklists/">Playbooks &amp; checklists</a></li><li><a href="audit/certified-identities/">Certified identities &amp; hashes</a></li><li><a href="audit/evidence-overlay/">Evidence overlay</a></li><li><a href="audit/historical-assurance-lessons/">Historical assurance lessons</a></li><li><a href="audit/historical-build-qa/">Historical build / QA receipt</a></li></ul></li></ul></nav></details>
 <div class="layout wrap">
 <nav aria-label="Primary navigation" class="site-nav">
 <h2>Contents</h2>
-<ul><li><a aria-current="page" href=".">Methodology</a></li><li><a href="architecture-figure/">Architecture figure</a></li><li><a href="local-execution-adapter/">Local execution environment</a></li><li><a href="audit/index.html">Audit &amp; traceability</a><ul><li><a href="audit/">Overview</a></li><li><a href="audit/audience-pathways/">Audience pathways</a></li><li><a href="audit/glossary/">Glossary</a></li><li><a href="audit/source-reference-register/">Source &amp; reference register</a></li><li><a href="audit/conservation-crosswalk/">Content-conservation crosswalk</a></li><li><a href="audit/architecture-manual-crosswalk/">Architecture ↔ Manual crosswalk</a></li><li><a href="audit/manual-requirements/">Manual requirements</a></li><li><a href="audit/playbooks-checklists/">Playbooks &amp; checklists</a></li><li><a href="audit/certified-identities/">Certified identities &amp; hashes</a></li><li><a href="audit/evidence-overlay/">Evidence overlay</a></li><li><a href="audit/historical-assurance-lessons/">Historical assurance lessons</a></li><li><a href="audit/historical-build-qa/">Historical build / QA receipt</a></li></ul></li></ul>
+<ul><li><a aria-current="page" href=".">Methodology</a></li><li><a href="architecture-figure/">Architecture figure</a></li><li><a href="local-execution-adapter/">Local execution environment</a></li><li><a href="audit/index.html">Audit &amp; traceability</a><ul><li><a href="audit/">Overview</a></li><li><a href="audit/audience-pathways/">Audience pathways</a></li><li><a href="audit/glossary/">Glossary</a></li><li><a href="audit/source-reference-register/">Source &amp; reference register</a></li><li><a href="audit/conservation-crosswalk/">Content-conservation crosswalk</a></li><li><a href="audit/architecture-manual-crosswalk/">Architecture and Manual crosswalk</a></li><li><a href="audit/manual-requirements/">Manual requirements</a></li><li><a href="audit/playbooks-checklists/">Playbooks &amp; checklists</a></li><li><a href="audit/certified-identities/">Certified identities &amp; hashes</a></li><li><a href="audit/evidence-overlay/">Evidence overlay</a></li><li><a href="audit/historical-assurance-lessons/">Historical assurance lessons</a></li><li><a href="audit/historical-build-qa/">Historical build / QA receipt</a></li></ul></li></ul>
 <h2>On this page</h2>
 <ul><li><a href="#mm-scientific-software-development-and-assurance-methodology">MM Scientific Software Development and Assurance Methodology</a></li></ul>
 </nav>
-<main class="content" id="main-content" tabindex="-1"><h1 id="mm-scientific-software-development-and-assurance-methodology">MM Scientific Software Development and Assurance Methodology<a class="headerlink" href="#mm-scientific-software-development-and-assurance-methodology" title="Permanent link">¶</a></h1>
-<p><strong>Version:</strong> 1.0.2<br/>
-<strong>Project:</strong> Artigo 2 - MM<br/>
-<strong>Document class:</strong> controlled human-readable methodological derivative<br/>
-<strong>Normative status:</strong> non-normative; certified project authorities control<br/>
-<strong>Runtime consequence:</strong> none<br/>
-<strong>Publication consequence:</strong> none</p>
+<main class="content" id="main-content" tabindex="-1"><h1 id="mm-scientific-software-development-and-assurance-methodology">MM Scientific Software Development and Assurance Methodology<a class="headerlink" href="#mm-scientific-software-development-and-assurance-methodology" title="Permanent link">&para;</a></h1><p class="editorial-scope"><strong>Editorial revision notice (November 18, 2026).</strong> This is the version 1.0.3 documentary edition, with editorial changes to language, definitions, and navigation. The published version 1.0.2 documentary snapshot remains preserved at its frozen tag and Git tree. Certified architecture, Manual, and Evidence Base requirements are unchanged; this edition does not confer scientific-runtime authority.</p>
+<p><strong>Editorial edition:</strong> v1.0.3.<br/><strong>Predecessor:</strong> v1.0.2, published on November 17, 2026.<br/><strong>Project:</strong> Article 2, Module Minimum (MM).<br/><strong>Document type:</strong> non-normative scientific methodology and technical reference.<br/><strong>Controlling authorities:</strong> certified project Architecture, Manual, Evidence Base, and applicable run-specific records.<br/><strong>Runtime authority:</strong> none conferred by this document.</p>
 <blockquote>
-<p><strong>Control rule.</strong> This Markdown explains and operationalizes the development methodology supported by the certified MM authorities. It does <strong>not</strong> supersede the certified Architecture, Manual, Project Evidence Base, exact Git commits/trees, certified packages, or run-specific Gate authorities. Any discrepancy is a <code>HOLD</code>, not an editorial choice.</p>
+<p><strong>Authority boundary.</strong> This publication explains the project&rsquo;s documented software-development and assurance methodology. The certified Scientific Execution Architecture, Scientific Software Development and Assurance Manual, Project Evidence Base, and their exact source identities remain controlling. Editorial interpretation cannot amend a certified requirement, close an evidence gap, or authorize a scientific execution. Material conflict with those records requires a documented HOLD and prospective resolution.</p>
 </blockquote>
-<p><strong>Author and Principal Investigator:</strong> Michael Allim Jorge · ORCID <a href="https://orcid.org/0000-0002-7288-2095">0000-0002-7288-2095</a></p>
-<h2 id="how-to-read-this-methodology">How to read this methodology<a class="headerlink" href="#how-to-read-this-methodology" title="Permanent link">¶</a></h2>
-<p>The publication is intentionally layered so that different expert readers can reconstruct the same governed system without relying on tacit project knowledge:</p>
+<p><strong>Author and principal investigator:</strong> Michael Allim Jorge. <strong>Open Researcher and Contributor ID (ORCID iD):</strong> <a href="https://orcid.org/0000-0002-7288-2095">0000-0002-7288-2095</a>.</p>
+<h2 id="how-to-read-this-methodology">How to read this methodology<a class="headerlink" href="#how-to-read-this-methodology" title="Permanent link">&para;</a></h2>
+<p>The document provides an accessible account of the scientific-development method and a separately identifiable reconstruction record. Readers should follow the pathway appropriate to the question they need to verify; no pathway substitutes for the controlling source evidence.</p>
 <ul>
-<li><strong>Scientists:</strong> scientific question → intended use → modular model/system → verification/validation → uncertainty and credibility.</li>
-<li><strong>Senior developers and solution architects:</strong> authority → architecture → modules/contracts → Gate-governed SDLC → tests/evidence → release/readback.</li>
-<li><strong>Auditors:</strong> claim → AR/DM requirement → applicability/responsibility → verification/evidence → source/authority → terminal state.</li>
-<li><strong>Nature Computational Science reviewers/editors:</strong> methodological contribution → generalizability → scientific credibility → reproducibility → limitations/non-claims.</li>
+<li><strong>Scientific readers:</strong> identify the question, declared intended use, model assumptions, verification evidence, validation evidence, and uncertainty limits.</li>
+<li><strong>Software engineers and architects:</strong> examine authority, architecture, versioned interfaces, the software development life cycle (SDLC), tests, and release readback.</li>
+<li><strong>Auditors:</strong> trace a claim to its Architecture requirement record (AR), Manual requirement record (DM), applicability rule, responsible actor, verification evidence, and terminal decision.</li>
+<li><strong>Interdisciplinary reviewers:</strong> assess the method&rsquo;s contribution, transferability, scientific credibility, reproducibility, and explicitly stated limitations.</li>
 </ul>
-<p>The main narrative stays readable; the complete reconstruction layer is provided under <strong>Audit &amp; Traceability</strong>.</p>
-<h2 id="1-purpose">1. Purpose<a class="headerlink" href="#1-purpose" title="Permanent link">¶</a></h2>
-<p>This document defines the <strong>scientific software development and assurance methodology</strong> used to develop, verify, validate, integrate, release, and govern the Module Minimum (MM/MHSMM) scientific software system. Its purpose is to make the development method independently inspectable, reproducible, traceable, and suitable for rigorous scientific peer review.</p>
-<p>The methodology is derived from the project's certified <strong>Scientific Execution Architecture v1.0.2</strong>, certified <strong>Scientific Software Development &amp; Assurance Manual v1.0.1 RC3</strong>, certified <strong>Project Evidence Base v1.0.0</strong>, qualified local execution-adapter record, Harness Reliability Profile, and controlled Technical Reference. It is also informed by NASA software engineering, software assurance, IV&amp;V, and model/simulation credibility guidance, without claiming NASA compliance, endorsement, affiliation, or certification.</p>
-<p>The method is designed for a multidisciplinary scientific system in which geospatial processing, mechanistic plant modeling, animal response, stochastic economics, uncertainty quantification, data engineering, provenance, and scientific inference interact. In this context, software correctness is necessary but not sufficient: the project must also establish that the <strong>scientific problem, requirements, architecture, interfaces, tests, controls, and acceptance criteria are the right ones for the intended scientific use</strong>.</p>
-<h2 id="2-the-governing-assurance-question">2. The governing assurance question<a class="headerlink" href="#2-the-governing-assurance-question" title="Permanent link">¶</a></h2>
-<p>The central assurance question is deliberately two-dimensional:</p>
+<p>The principal narrative explains methodological decisions. The <a href="audit/">Audit and Traceability</a> collection supplies the certified identifiers, requirement registers, provenance distinctions, and limits necessary to inspect the evidence behind those explanations.</p>
+<h2 id="1-purpose">1. Purpose<a class="headerlink" href="#1-purpose" title="Permanent link">&para;</a></h2>
+<p>The Module Minimum (MM) scientific software development and assurance methodology describes how a multidisciplinary computational research system is specified, developed, examined, integrated, and released under explicit evidence and authority constraints. MHSMM is the controlled identifier for the project economic and risk modeling system. The admitted historical glossary does not establish a reliable long-form expansion of the identifier. The present document describes the engineering method, not an independently validated or installable model runtime.</p>
+<p>The methodological baseline draws on the certified Scientific Execution Architecture, version 1.0.2; the Scientific Software Development and Assurance Manual, version 1.0.1 release candidate 3 (RC3); the Project Evidence Base, version 1.0.0; and separately controlled execution-adapter, harness, and technical-reference records. Guidance from the National Aeronautics and Space Administration (NASA), including software assurance and independent verification and validation (IV&amp;V), informs selected practices. Use of that guidance does not establish NASA compliance, endorsement, or certification.</p>
+<p>The research system combines geospatial transformations, mechanistic plant and forage modeling, animal-response models, stochastic economic analysis, data engineering, and uncertainty assessment. A correct implementation can still answer an incorrectly posed scientific question. Assurance must therefore examine the estimand, intended use, assumptions, model structure, data semantics, interface contracts, controls, and decision criteria in addition to source code and tests.</p>
+<h2 id="2-the-governing-assurance-question">2. The governing assurance question<a class="headerlink" href="#2-the-governing-assurance-question" title="Permanent link">&para;</a></h2>
+<p>Scientific credibility requires evidence for two distinct questions: whether the implemented system satisfies its specified requirements and whether those requirements and the implemented system are appropriate for the stated scientific use.</p>
 <ol>
 <li><strong>Was the system built correctly?</strong><br/>
    Does the implementation conform to the specified requirements, architecture, interfaces, contracts, numerical rules, security constraints, and release criteria?</li>
 <li><strong>Was the correct system built?</strong><br/>
    Do the requirements, architecture, controls, tests, and acceptance criteria represent the intended scientific use and the actual scientific question?</li>
 </ol>
-<p>NASA software engineering guidance distinguishes these dimensions as <strong>verification</strong> and <strong>validation</strong>. Verification evaluates whether software products satisfy specified requirements and are produced correctly; validation evaluates whether the as-built product fulfills its intended use in its intended environment. NASA IV&amp;V guidance further requires independent examination of artifacts for properties including <strong>correctness, completeness, consistency, traceability, and testability</strong> across requirements, architecture/design, code, interfaces, and testing [EXT-NASA-NPR7150], [EXT-NASA-SWE067], [EXT-NASA-IVV], [EXT-NASA-SA].</p>
-<p>For MM, this distinction is a methodological invariant:</p>
+<p>Verification examines conformity to specified requirements and design expectations; validation examines suitability for intended use under the declared operating conditions. NASA software-engineering and IV&amp;V guidance applies these questions across requirements, architecture, implementation, interfaces, and tests. The project cites this guidance as a methodological source, not as evidence that NASA reviewed the MM implementation <a class="source-citation" href="audit/source-reference-register/index.html#source-r02">[R02]</a>, <a class="source-citation" href="audit/source-reference-register/index.html#source-ext-nasa-swe067">[EXT-NASA-SWE067]</a>, <a class="source-citation" href="audit/source-reference-register/index.html#source-ext-nasa-ivv">[EXT-NASA-IVV]</a>, <a class="source-citation" href="audit/source-reference-register/index.html#source-ext-nasa-sa">[EXT-NASA-SA]</a>.</p>
+<p>For a given development Gate, verification must identify the specification and the objective evidence demonstrating that its obligations were met.</p>
 <pre><code class="language-text">IMPLEMENTATION_CONFORMS_TO_REQUIREMENTS
         does not imply
 REQUIREMENTS_REPRESENT_THE_RIGHT_SCIENTIFIC_SYSTEM
 </code></pre>
-<p>and:</p>
+<p>Validation must independently identify the scientific purpose, applicable domain, and evidence supporting the relevance of the outputs to that purpose.</p>
 <pre><code class="language-text">REPRODUCIBLE_EXECUTION
         does not imply
 SCIENTIFIC_VALIDITY
 </code></pre>
-<p>A Gate cannot receive a scientific PASS merely because code ran successfully, a build was reproducible, or outputs were produced. The controlling evidence must support both the implementation claim and the intended-use/scientific-validity claim that applies to that Gate.</p>
-<h2 id="3-authority-hierarchy-and-evidence-discipline">3. Authority hierarchy and evidence discipline<a class="headerlink" href="#3-authority-hierarchy-and-evidence-discipline" title="Permanent link">¶</a></h2>
-<h3 id="31-certified-controlling-authorities">3.1 Certified controlling authorities<a class="headerlink" href="#31-certified-controlling-authorities" title="Permanent link">¶</a></h3>
-<p>The current certified baseline represented by this methodology is:</p>
+<p>Successful execution, a passing software test, or byte-for-byte reproducibility does not by itself establish scientific validity. A positive terminal determination requires the evidence prescribed for both implementation correctness and intended-use adequacy, insofar as each is applicable to the Gate.</p>
+<h2 id="3-authority-hierarchy-and-evidence-discipline">3. Authority hierarchy and evidence discipline<a class="headerlink" href="#3-authority-hierarchy-and-evidence-discipline" title="Permanent link">&para;</a></h2>
+<h3 id="31-certified-controlling-authorities">3.1 Certified controlling authorities<a class="headerlink" href="#31-certified-controlling-authorities" title="Permanent link">&para;</a></h3>
+<p>The project&rsquo;s certified Architecture, Manual, and Evidence Base have separate controlling identities. Their version numbers alone are not sufficient to determine authority; the certified Git objects and receipts listed in the identity register establish the frozen source states.</p>
 <table>
 <thead>
 <tr>
@@ -102,77 +98,78 @@ SCIENTIFIC_VALIDITY
 </tr>
 </tbody>
 </table>
-<p>The Architecture is the superior constitutional authority. The Manual is a subordinate normative refinement: it may operationalize, restrict, or add evidence requirements, but it cannot make an architecturally forbidden behavior admissible.</p>
-<p>Formally, the certified relationship is:</p>
-<pre><code class="language-text">B(Architecture ∧ Manual) ⊆ B(Architecture)
+<p>The certified Architecture has precedence over the subordinate Manual. The Manual can specify procedures, responsibilities, tests, and further restrictions, but cannot permit conduct excluded by the Architecture. An inconsistency therefore requires adjudication rather than discretionary selection between the two texts.</p>
+<p>The permissible behavior under both authorities is the intersection of their constraints. This relationship is expressed formally in the preserved specification immediately below.</p>
+<pre><code class="language-text">B(Architecture &and; Manual) &sube; B(Architecture)
 Override(Manual, Architecture) = false
 </code></pre>
-<h3 id="32-evidence-classification">3.2 Evidence classification<a class="headerlink" href="#32-evidence-classification" title="Permanent link">¶</a></h3>
-<p>Every material claim should be labeled internally by its evidentiary status:</p>
+<h3 id="32-evidence-classification">3.2 Evidence classification<a class="headerlink" href="#32-evidence-classification" title="Permanent link">&para;</a></h3>
+<p>Material statements must be classified according to their evidentiary basis. The classification distinguishes direct observations, derived analyses, historical records, and statements not established by available evidence.</p>
 <ul>
-<li><strong>DIRECT</strong> — measured or read directly from admitted bytes, a runtime observation, or an authoritative source;</li>
-<li><strong>BOUND</strong> — established through an exact cryptographic or referential binding to a DIRECT authority;</li>
-<li><strong>DERIVED</strong> — logically derived from admitted predicates or source relationships;</li>
-<li><strong>HISTORICAL</strong> — valid as a preserved prior observation but not freshly re-measured;</li>
-<li><strong>NOT_ESTABLISHED</strong> — not proven by the available evidence.</li>
+<li><strong>DIRECT</strong>: measured or read directly from admitted bytes, a runtime observation, or an authoritative source;</li>
+<li><strong>BOUND</strong>: established through an exact cryptographic or referential binding to a DIRECT authority;</li>
+<li><strong>DERIVED</strong>: logically derived from admitted predicates or source relationships;</li>
+<li><strong>HISTORICAL</strong>: valid as a preserved prior observation but not freshly re-measured;</li>
+<li><strong>NOT_ESTABLISHED</strong>: not proven by the available evidence.</li>
 </ul>
-<p>No <code>DERIVED</code> statement may be presented as a fresh physical observation. No <code>HISTORICAL</code> result may be silently promoted into current runtime authorization. No gap may be filled by conversational plausibility.</p>
-<h3 id="33-project-source-discipline">3.3 Project Source discipline<a class="headerlink" href="#33-project-source-discipline" title="Permanent link">¶</a></h3>
-<p>Project Sources form a canonical reusable working knowledge base, not the complete event log. Intermediate attempts, commands, transient failures, and superseded states remain in conversation/Gate provenance; durable authorities and terminal states are represented in canonical sources. This prevents event history from being mistaken for the active scientific baseline.</p>
-<h3 id="34-historical-certification-state-versus-current-publication-state">3.4 Historical certification state versus current publication state<a class="headerlink" href="#34-historical-certification-state-versus-current-publication-state" title="Permanent link">¶</a></h3>
-<p>Historical certification identities are preserved as evidence and must remain date/version scoped. They are not silently promoted into the current publication, repository, or runtime state. The <strong>Audit &amp; Traceability</strong> pages therefore separate historical Architecture/Manual freeze identities from the current methodology-review candidate and from any later Pages deployment state.</p>
-<h2 id="4-architecture-of-the-mm-scientific-system">4. Architecture of the MM scientific system<a class="headerlink" href="#4-architecture-of-the-mm-scientific-system" title="Permanent link">¶</a></h2>
-<p>MM separates <strong>scientific modules</strong> from the <strong>execution-control infrastructure</strong> that governs them.</p>
-<h3 id="41-scientific-modules">4.1 Scientific modules<a class="headerlink" href="#41-scientific-modules" title="Permanent link">¶</a></h3>
+<p>A derived analysis is not a newly observed measurement. A historical PASS does not establish current execution authority, and a historical HOLD must not be erased by a later unrelated success. Where the evidence is insufficient, the document reports that limitation rather than replacing it with an assumption.</p>
+<h3 id="33-project-source-discipline">3.3 Project Source discipline<a class="headerlink" href="#33-project-source-discipline" title="Permanent link">&para;</a></h3>
+<p>Project Sources preserve reusable, adjudicated knowledge, including governing authorities and durable terminal decisions. They are distinct from event logs, exploratory attempts, and transient tool output. The latter remain part of the provenance record but do not automatically enter the active scientific baseline.</p>
+<h3 id="34-historical-certification-state-versus-current-publication-state">3.4 Historical certification state versus current publication state<a class="headerlink" href="#34-historical-certification-state-versus-current-publication-state" title="Permanent link">&para;</a></h3>
+<p>Certification and publication are separate events. The historical Architecture and Manual identities document their respective freezes; the MM methodology v1.0.2 website was subsequently published on November 17, 2026 and assigned a versioned GitHub release on November 18, 2026. Neither event grants authorization to run scientific software. This text is the version 1.0.3 documentary edition.</p>
+<h2 id="4-architecture-of-the-mm-scientific-system">4. Architecture of the MM scientific system<a class="headerlink" href="#4-architecture-of-the-mm-scientific-system" title="Permanent link">&para;</a></h2>
+<p>The architecture separates domain models and the contracts through which they exchange data from the governance mechanisms used to authorize, observe, and assess their execution. This separation permits scientific modules to evolve without silently changing the authority or semantics of another component.</p>
+<h3 id="41-scientific-modules">4.1 Scientific modules<a class="headerlink" href="#41-scientific-modules" title="Permanent link">&para;</a></h3>
+<p>Google Earth Engine (GEE) denotes the geospatial processing environment in the module schematic; its inclusion does not authorize a scientific run.</p>
 <pre><code class="language-text">MM SCIENTIFIC SYSTEM
-│
-├── MM-ENVIRONMENT
-│   └── climate, soil, terrain, land cover, geospatial support, GEE
-│
-├── MM-PLANT
-│   └── DSSAT / forage / plant response
-│
-├── MM-ANIMAL
-│   └── animal production and biological constraints
-│
-├── MM-ECONOMIC
-│   └── economics, risk, Monte Carlo, decision outputs
-│
-├── MM-INTEGRATION-CORE
-│   └── contract-bound cross-module orchestration
-│
-└── MM-DATA-CATALOG
-    └── data contracts, metadata, quality, provenance, catalog interfaces
+&boxv;
+&boxvr;&boxh;&boxh; MM-ENVIRONMENT
+&boxv;   &boxur;&boxh;&boxh; climate, soil, terrain, land cover, geospatial support, GEE
+&boxv;
+&boxvr;&boxh;&boxh; MM-PLANT
+&boxv;   &boxur;&boxh;&boxh; DSSAT / forage / plant response
+&boxv;
+&boxvr;&boxh;&boxh; MM-ANIMAL
+&boxv;   &boxur;&boxh;&boxh; animal production and biological constraints
+&boxv;
+&boxvr;&boxh;&boxh; MM-ECONOMIC
+&boxv;   &boxur;&boxh;&boxh; economics, risk, Monte Carlo, decision outputs
+&boxv;
+&boxvr;&boxh;&boxh; MM-INTEGRATION-CORE
+&boxv;   &boxur;&boxh;&boxh; contract-bound cross-module orchestration
+&boxv;
+&boxur;&boxh;&boxh; MM-DATA-CATALOG
+    &boxur;&boxh;&boxh; data contracts, metadata, quality, provenance, catalog interfaces
 </code></pre>
-<p>Modules are independently evolvable but may interact only through explicit, versioned contracts. An internal state in one module is not an implicit API for another module.</p>
+<p>Modules can be developed and qualified separately, but an interface must be declared and versioned before another module relies on it. Private memory, undocumented files, and internal database state do not constitute an application programming interface (API).</p><p>The plant and forage component may use the Decision Support System for Agrotechnology Transfer (DSSAT). Its inclusion describes a model interface, not evidence that DSSAT has been run under a certified MM Gate.</p>
 <pre><code class="language-text">MODULE OUTPUT
-      ↓
+      &darr;
 VERSIONED DATA CONTRACT
-      ↓
+      &darr;
 CATALOG RECORD
-      ↓
+      &darr;
 PROVENANCE / EVIDENCE BINDING
-      ↓
+      &darr;
 INTEGRATION ADAPTER
-      ↓
+      &darr;
 CONSUMER MODULE
 </code></pre>
-<h3 id="42-minimum-inter-module-contract">4.2 Minimum inter-module contract<a class="headerlink" href="#42-minimum-inter-module-contract" title="Permanent link">¶</a></h3>
-<p>Each material interface must specify, as applicable:</p>
+<h3 id="42-minimum-inter-module-contract">4.2 Minimum inter-module contract<a class="headerlink" href="#42-minimum-inter-module-contract" title="Permanent link">&para;</a></h3>
+<p>Every material producer-to-consumer interface requires an explicit contract. The minimum specification addresses the following elements, with nonapplicability justified where appropriate.</p>
 <ul>
 <li>schema and semantic version;</li>
 <li>variable definition and scientific meaning;</li>
 <li>units and dimensional conventions;</li>
 <li>valid domain/ranges and biological or physical constraints;</li>
 <li>missingness, null semantics, and forbidden implicit defaults;</li>
-<li>spatial reference, including CRS, coordinate operation where material, axis semantics, grid/affine transform, resolution, extent, support, mask, and resampling rules;</li>
+<li>spatial reference, including coordinate reference system (CRS), coordinate operation where material, axis semantics, grid/affine transform, resolution, extent, support, mask, and resampling rules;</li>
 <li>temporal reference, aggregation window, calendar, and time-zone semantics;</li>
 <li>provenance, acquisition/version identity, transformations, and evidence links;</li>
 <li>compatibility/deprecation rules;</li>
 <li>positive, negative, boundary, and off-nominal contract tests.</li>
 </ul>
-<h2 id="5-four-plane-execution-control-core-and-cross-cutting-datacatalog-governance">5. Four-plane execution-control core and cross-cutting Data/Catalog governance<a class="headerlink" href="#5-four-plane-execution-control-core-and-cross-cutting-datacatalog-governance" title="Permanent link">¶</a></h2>
-<p>The MM scientific system is governed by a <strong>four-plane execution-control core</strong> plus a <strong>cross-cutting Data/Catalog governance layer</strong>. This classification preserves the controlled Technical Reference and the certified Architecture interpretation represented by Figure 1.</p>
+<h2 id="5-four-plane-execution-control-core-and-cross-cutting-datacatalog-governance">5. Four-plane execution-control core and cross-cutting Data/Catalog governance<a class="headerlink" href="#5-four-plane-execution-control-core-and-cross-cutting-datacatalog-governance" title="Permanent link">&para;</a></h2>
+<p>The controlled technical reference describes four execution-control planes: Control, Execution, Authority, and Evidence. Data and catalog governance operate across those planes and the scientific modules. They do not constitute a fifth execution-control plane. The published development architecture illustrates this distinction without changing the certified source hierarchy.</p>
 <table>
 <thead>
 <tr>
@@ -195,7 +192,7 @@ CONSUMER MODULE
 <tr>
 <td><strong>Authority Plane</strong></td>
 <td>stores immutable controlling identities and precedence</td>
-<td>no implicit “latest”</td>
+<td>no implicit &ldquo;latest&rdquo;</td>
 </tr>
 <tr>
 <td><strong>Evidence / Provenance Plane</strong></td>
@@ -204,7 +201,7 @@ CONSUMER MODULE
 </tr>
 </tbody>
 </table>
-<p><strong>Data/Catalog governance is first-class but cross-cutting.</strong> It governs computational data contracts, dataset/service discovery, provenance vocabularies, graph constraints, quality metadata, and catalog federation across the scientific modules. It does not become a fifth execution-control plane and catalog metadata never substitutes for exact computational semantics.</p>
+<p>The cross-cutting data and catalog function governs computational interfaces, dataset discovery, provenance descriptions, graph constraints, and quality metadata. It does not replace a scientific variable definition, a spatial-support contract, or an authoritative computation record. Catalog conformance and scientific validity require different evidence.</p>
 <pre><code class="language-text">FOUR-PLANE EXECUTION-CONTROL CORE
     Control
     Execution
@@ -218,10 +215,10 @@ CROSS-CUTTING GOVERNANCE
     Provenance vocabularies
     Graph validation
 </code></pre>
-<p>The local Linux/Codex environment is an <strong>Execution Adapter</strong>, not the Architecture itself. Figure 1 is the publication-facing architecture view; Figure 2 is the bounded local implementation view.</p>
-<p>For exact historical and certified traceability, see <strong>Audit &amp; Traceability → Architecture ↔ Manual crosswalk</strong> and <strong>Certified identities &amp; hashes</strong>.</p>
-<h2 id="6-gate-governed-scientific-development">6. Gate-governed scientific development<a class="headerlink" href="#6-gate-governed-scientific-development" title="Permanent link">¶</a></h2>
-<p>A <strong>Gate</strong> is a versioned stateful control boundary. It binds:</p>
+<p>The local Linux environment and its controlled toolchain implement a bounded execution adapter. They do not define the Architecture. Figure 1 describes the governed scientific system; Figure 2 documents the local adapter and its qualified operating boundaries.</p>
+<p>The <a href="audit/architecture-manual-crosswalk/">Architecture and Manual crosswalk</a> and <a href="audit/certified-identities/">certified identity register</a> identify the corresponding controlled records. The published figures should be read with those records, not as independent normative specifications.</p>
+<h2 id="6-gate-governed-scientific-development">6. Gate-governed scientific development<a class="headerlink" href="#6-gate-governed-scientific-development" title="Permanent link">&para;</a></h2>
+<p>A Gate is a versioned decision and execution-control boundary. It identifies the authorized inputs, controlling records, responsible actors, qualified capabilities, decision rules, permitted effects, and evidence needed to determine its terminal state.</p>
 <ul>
 <li>exact input authorities;</li>
 <li>scientific question and intended decision;</li>
@@ -236,8 +233,8 @@ CROSS-CUTTING GOVERNANCE
 <li>next allowed state;</li>
 <li><code>STOP=true</code>.</li>
 </ul>
-<p>A successful tool invocation is never sufficient evidence of a scientifically valid state.</p>
-<h3 id="61-minimum-gate-contract">6.1 Minimum Gate contract<a class="headerlink" href="#61-minimum-gate-contract" title="Permanent link">¶</a></h3>
+<p>A tool reporting success establishes at most that a specified operation returned successfully. Scientific acceptance requires a separate examination of the operation's identity, output, limitations, and the evidence required by the governing Gate.</p>
+<h3 id="61-minimum-gate-contract">6.1 Minimum Gate contract<a class="headerlink" href="#61-minimum-gate-contract" title="Permanent link">&para;</a></h3>
 <pre><code class="language-text">GATE_ID
 MODE / FAIL_CLOSED_POLICY
 CERTIFIED_INPUT_AUTHORITIES
@@ -256,18 +253,18 @@ PASS / HOLD FIELD SET
 NEXT_ALLOWED
 STOP=true
 </code></pre>
-<h3 id="62-total-and-exclusive-terminal-partition">6.2 Total and exclusive terminal partition<a class="headerlink" href="#62-total-and-exclusive-terminal-partition" title="Permanent link">¶</a></h3>
-<p>Before consequential execution, the admissible state space must map to a <strong>total and exclusive</strong> terminal partition:</p>
+<h3 id="62-total-and-exclusive-terminal-partition">6.2 Total and exclusive terminal partition<a class="headerlink" href="#62-total-and-exclusive-terminal-partition" title="Permanent link">&para;</a></h3>
+<p>Before consequential execution, the admissible input and outcome space must be divided into terminal classes that are exhaustive and mutually exclusive. The formal requirement is stated below.</p>
 <pre><code class="language-text">for every admissible state s:
     exactly one terminal class C_i(s) is true
 </code></pre>
-<p>The partition must explicitly cover missing values, invalid values, null states, empty support, partial support, control failure, transport failure, off-nominal behavior, and unrelated failure modes. A natural-language statement that cases are “complete” is insufficient when mechanical enumeration or executable validation is feasible.</p>
-<h3 id="63-fail-closed-rule">6.3 Fail-closed rule<a class="headerlink" href="#63-fail-closed-rule" title="Permanent link">¶</a></h3>
-<p>Missing, ambiguous, contradictory, stale, unclassified, or insufficient evidence yields <code>HOLD</code>, never inferred PASS or authorization.</p>
-<h2 id="7-scientific-software-development-lifecycle">7. Scientific software development lifecycle<a class="headerlink" href="#7-scientific-software-development-lifecycle" title="Permanent link">¶</a></h2>
-<p>The MM lifecycle is an evidence-producing sequence, not a coding-first workflow.</p>
-<h3 id="phase-0-scientific-need-and-intended-use">Phase 0 — Scientific need and intended use<a class="headerlink" href="#phase-0-scientific-need-and-intended-use" title="Permanent link">¶</a></h3>
-<p>Define:</p>
+<p>The terminal partition must cover valid outcomes as well as missing observations, invalid inputs, null states, empty or partial spatial support, control failure, transport failure, and unrelated exceptions. Where an executable partition check is feasible, an informal assertion of completeness is insufficient.</p>
+<h3 id="63-fail-closed-rule">6.3 Fail-closed rule<a class="headerlink" href="#63-fail-closed-rule" title="Permanent link">&para;</a></h3>
+<p>A Gate enters HOLD when the available evidence is missing, stale, contradictory, ambiguous, or otherwise inadequate to establish the required predicate. The system does not infer PASS or permission from an absence of recorded failure.</p>
+<h2 id="7-scientific-software-development-lifecycle">7. Scientific software development lifecycle<a class="headerlink" href="#7-scientific-software-development-lifecycle" title="Permanent link">&para;</a></h2>
+<p>The development process is organized around progressively stronger evidence, beginning with a defensible scientific question and ending with an independently inspected release state. Its twelve operational phases, numbered 0 through 11, are distinct from the nine visual stages in Figure 1. The figure summarizes major evidence-producing activities; it is not a one-to-one phase map and does not authorize omission of any phase.</p>
+<p><strong>Relationship to Figure 1.</strong> The figure contains nine schematic stages: scientific need, requirements, architecture, detailed design, implementation, verification, validation, independent readback and assurance, and freeze or release candidate. Section 7 describes twelve operational phases, numbered 0 to 11. The additional detailed topics include integrated verification and validation, uncertainty and sensitivity analysis, controlled release, independent readback, and freeze or certification. These texts describe different levels of detail; no certified one-to-one correspondence is claimed. The full operational phases remain applicable regardless of what is condensed in the illustration.</p><h3 id="phase-0-scientific-need-and-intended-use">Phase 0. Scientific need and intended use<a class="headerlink" href="#phase-0-scientific-need-and-intended-use" title="Permanent link">&para;</a></h3>
+<p>The project first specifies the question the scientific software must answer, its intended users and decisions, and the physical and inferential domain in which its output is expected to be meaningful. The record identifies the proposed estimand and the assumptions required to interpret it.</p>
 <ul>
 <li>scientific question;</li>
 <li>intended use and decision context;</li>
@@ -277,9 +274,9 @@ STOP=true
 <li>consequences of false positive, false negative, and unsupported outputs;</li>
 <li>materiality and risk.</li>
 </ul>
-<p><strong>Validation question:</strong> Is the proposed software problem the problem that actually needs to be solved?</p>
-<h3 id="phase-1-requirements-engineering">Phase 1 — Requirements engineering<a class="headerlink" href="#phase-1-requirements-engineering" title="Permanent link">¶</a></h3>
-<p>Requirements must be:</p>
+<p>The validation question at this stage is whether the proposed computational problem corresponds to the intended scientific decision. A technically solvable problem is not necessarily the appropriate one.</p>
+<h3 id="phase-1-requirements-engineering">Phase 1. Requirements engineering<a class="headerlink" href="#phase-1-requirements-engineering" title="Permanent link">&para;</a></h3>
+<p>Requirements must be uniquely identifiable, traceable to a justified purpose, sufficiently atomic to test, and explicit about scientific meaning, interfaces, quality attributes, and acceptance criteria. Requirement statements must distinguish necessary behavior from implementation convenience.</p>
 <ul>
 <li>correct relative to the scientific need;</li>
 <li>complete for the declared scope;</li>
@@ -290,16 +287,16 @@ STOP=true
 <li>individually verifiable or otherwise explicitly justified;</li>
 <li>testable where testability is required.</li>
 </ul>
-<p>Requirements must not be approved merely because they are implementable.</p>
-<h3 id="phase-2-architecture-and-interface-design">Phase 2 — Architecture and interface design<a class="headerlink" href="#phase-2-architecture-and-interface-design" title="Permanent link">¶</a></h3>
-<p>Architecture allocates requirements to modules, components, interfaces, authorities, data contracts, and execution boundaries. The review asks both:</p>
+<p>Implementability alone does not establish that a requirement is necessary, scientifically appropriate, or sufficiently specified. Requirements require substantive review before implementation.</p>
+<h3 id="phase-2-architecture-and-interface-design">Phase 2. Architecture and interface design<a class="headerlink" href="#phase-2-architecture-and-interface-design" title="Permanent link">&para;</a></h3>
+<p>Architectural design assigns requirements to bounded scientific modules, controlled interfaces, data contracts, and execution responsibilities. Reviewers examine both whether the architecture can satisfy the specification and whether its boundaries preserve the scientific and evidentiary assumptions on which that specification depends.</p>
 <ul>
 <li><strong>verification:</strong> does the architecture satisfy the baselined requirements?;</li>
 <li><strong>validation:</strong> is the architecture suitable for the intended scientific use and credible under realistic operating/scientific conditions?</li>
 </ul>
-<p>All material cross-module relations must be explicit and versioned.</p>
-<h3 id="phase-3-detailed-design-and-algorithm-specification">Phase 3 — Detailed design and algorithm specification<a class="headerlink" href="#phase-3-detailed-design-and-algorithm-specification" title="Permanent link">¶</a></h3>
-<p>The design record must identify:</p>
+<p>Changes to a material cross-module relationship require a versioned interface and an impact assessment covering producers, consumers, units, missing-value semantics, and the evidence needed to requalify affected behavior.</p>
+<h3 id="phase-3-detailed-design-and-algorithm-specification">Phase 3. Detailed design and algorithm specification<a class="headerlink" href="#phase-3-detailed-design-and-algorithm-specification" title="Permanent link">&para;</a></h3>
+<p>Detailed design identifies the numerical and statistical methods, their domains of validity, assumptions, algorithms, error controls, input and output representations, and the specific evidence by which implementation will be examined. Alternative methods must not be treated as interchangeable without justification.</p>
 <ul>
 <li>algorithm and mathematical formulation;</li>
 <li>assumptions and regularity conditions;</li>
@@ -312,8 +309,8 @@ STOP=true
 <li>negative and boundary behavior;</li>
 <li>evidence that the design remains traceable to requirements.</li>
 </ul>
-<h3 id="phase-4-implementation">Phase 4 — Implementation<a class="headerlink" href="#phase-4-implementation" title="Permanent link">¶</a></h3>
-<p>Implementation must preserve the approved architecture and design. Required controls include:</p>
+<h3 id="phase-4-implementation">Phase 4. Implementation<a class="headerlink" href="#phase-4-implementation" title="Permanent link">&para;</a></h3>
+<p>Implementation must conform to the reviewed architecture and design. Explicit dependencies, controlled configuration, reproducible computational environments, boundary-aware error handling, and tests for scientifically significant operations are part of the implementation record.</p>
 <ul>
 <li>version-controlled exact source;</li>
 <li>deterministic or explicitly characterized build process;</li>
@@ -325,8 +322,8 @@ STOP=true
 <li>no silent fallback that changes scientific semantics;</li>
 <li>explicit treatment of errors and unknown states.</li>
 </ul>
-<h3 id="phase-5-verification">Phase 5 — Verification<a class="headerlink" href="#phase-5-verification" title="Permanent link">¶</a></h3>
-<p>Verification establishes that implementation products conform to specified requirements. Suitable methods include, depending on the object:</p>
+<h3 id="phase-5-verification">Phase 5. Verification<a class="headerlink" href="#phase-5-verification" title="Permanent link">&para;</a></h3>
+<p>Verification compares software artifacts with their governing requirements. Depending on the component, evidence may comprise static inspection, automated unit tests, interface tests, negative and boundary cases, regression comparisons, or exact-byte reconstruction.</p>
 <ul>
 <li>static analysis;</li>
 <li>peer inspection;</li>
@@ -339,9 +336,9 @@ STOP=true
 <li>independent oracle comparison;</li>
 <li>off-nominal and boundary tests.</li>
 </ul>
-<p>Each requirement must have an explicit verification method and minimum objective evidence.</p>
-<h3 id="phase-6-validation">Phase 6 — Validation<a class="headerlink" href="#phase-6-validation" title="Permanent link">¶</a></h3>
-<p>Validation establishes that the as-built scientific software is suitable for its intended use. Depending on the module, this can require:</p>
+<p>Every applicable requirement must have a stated verification method and identifiable objective evidence. A general assertion that testing was performed does not demonstrate coverage.</p>
+<h3 id="phase-6-validation">Phase 6. Validation<a class="headerlink" href="#phase-6-validation" title="Permanent link">&para;</a></h3>
+<p>Validation concerns the scientific appropriateness of an implemented system for its stated use. It may require comparison with observations, independent models, known physical limits, external reference cases, or domain-specific acceptance criteria established before results are examined.</p>
 <ul>
 <li>comparison with analytical solutions;</li>
 <li>comparison with trusted benchmark/reference implementations;</li>
@@ -353,9 +350,9 @@ STOP=true
 <li>operationally representative scenarios;</li>
 <li>evaluation of model-form limitations and boundary conditions.</li>
 </ul>
-<p>Validation evidence must be scientifically relevant to the declared use; passing unit tests alone does not establish model validity.</p>
-<h3 id="phase-7-integration-verification-and-validation">Phase 7 — Integration verification and validation<a class="headerlink" href="#phase-7-integration-verification-and-validation" title="Permanent link">¶</a></h3>
-<p>The integrated MM must be evaluated separately from its components. Integration assurance includes:</p>
+<p>Unit-test success is necessary for many implementations but cannot substitute for evidence that the modeled phenomena, assumptions, and outputs are suitable for the scientific question.</p>
+<h3 id="phase-7-integration-verification-and-validation">Phase 7. Integration verification and validation<a class="headerlink" href="#phase-7-integration-verification-and-validation" title="Permanent link">&para;</a></h3>
+<p>Components that pass separate tests can fail when coupled. Integrated verification and validation therefore examine contract compatibility, data lineage, transformations, synchronization, uncertainty propagation, and system-level behavior against declared acceptance criteria.</p>
 <ul>
 <li>contract compatibility;</li>
 <li>unit consistency;</li>
@@ -367,8 +364,8 @@ STOP=true
 <li>scenario reproducibility;</li>
 <li>integrated scientific behavior against independent expectations.</li>
 </ul>
-<h3 id="phase-8-uncertainty-sensitivity-and-robustness">Phase 8 — Uncertainty, sensitivity, and robustness<a class="headerlink" href="#phase-8-uncertainty-sensitivity-and-robustness" title="Permanent link">¶</a></h3>
-<p>The methodology distinguishes:</p>
+<h3 id="phase-8-uncertainty-sensitivity-and-robustness">Phase 8. Uncertainty, sensitivity, and robustness<a class="headerlink" href="#phase-8-uncertainty-sensitivity-and-robustness" title="Permanent link">&para;</a></h3>
+<p>Uncertainty assessment separates stochastic variability, parameter uncertainty, structural assumptions, measurement error, numerical approximation, and spatial or temporal support effects. These sources differ in interpretation and should not be combined without an explicit uncertainty model.</p>
 <ul>
 <li>parameter uncertainty;</li>
 <li>stochastic variability;</li>
@@ -378,22 +375,22 @@ STOP=true
 <li>spatial support/resolution uncertainty;</li>
 <li>scenario uncertainty.</li>
 </ul>
-<p>Sensitivity/uncertainty designs must be defined prospectively, with estimators, sampling schemes, dependence assumptions, random streams/seeds, convergence/precision criteria, and decision-relevant outputs recorded before execution.</p>
-<h3 id="phase-9-controlled-release">Phase 9 — Controlled release<a class="headerlink" href="#phase-9-controlled-release" title="Permanent link">¶</a></h3>
-<p>A release candidate must satisfy its frozen requirement, verification, validation, evidence, and compatibility criteria. Release is denied if required evidence is absent even when the implementation appears correct.</p>
-<h3 id="phase-10-independent-readback-and-assurance">Phase 10 — Independent readback and assurance<a class="headerlink" href="#phase-10-independent-readback-and-assurance" title="Permanent link">¶</a></h3>
-<p>A separate read-only reviewer reconstructs the decisive identities and predicates. The producer cannot self-certify its own mutable output.</p>
-<h3 id="phase-11-freeze-certification">Phase 11 — Freeze / certification<a class="headerlink" href="#phase-11-freeze-certification" title="Permanent link">¶</a></h3>
-<p>For durable certified authorities, the project uses an A→readback→B pattern:</p>
+<p>The sensitivity design must precede the simulation. It specifies input factors, ranges and dependencies, sampling methods, estimators, random-stream management, diagnostic criteria, and output measures that address the intended decision.</p>
+<h3 id="phase-9-controlled-release">Phase 9. Controlled release<a class="headerlink" href="#phase-9-controlled-release" title="Permanent link">&para;</a></h3>
+<p>A candidate release is admitted only when requirements, implementation checks, scientific validation evidence, interface compatibility, and provenance satisfy the predetermined criteria. Apparent correctness cannot compensate for a missing mandatory record.</p>
+<h3 id="phase-10-independent-readback-and-assurance">Phase 10. Independent readback and assurance<a class="headerlink" href="#phase-10-independent-readback-and-assurance" title="Permanent link">&para;</a></h3>
+<p>An independent reviewer reconstructs decisive identities and outcomes from the declared evidence. The actor who made an authorized change cannot rely on that act as independent certification of its correctness.</p>
+<h3 id="phase-11-freeze-certification">Phase 11. Freeze / certification<a class="headerlink" href="#phase-11-freeze-certification" title="Permanent link">&para;</a></h3>
+<p>For certified project authorities, the durable release pattern separates a content commit, an independently verified remote readback, and a subsequent certification commit. Each stage has its own identity and recorded conditions; the original notation is retained in the controlled specification.</p>
 <ol>
 <li><strong>Content Commit A</strong> establishes recoverable content.</li>
 <li>Complete readback/reconstruction verifies exact persisted bytes.</li>
 <li><strong>Certification Commit B</strong> records the zero-mismatch result.</li>
 </ol>
-<p>Certification does not authorize runtime.</p>
-<h2 id="8-verification-validation-and-ivv-inspired-completeness-checks">8. Verification, validation, and IV&amp;V-inspired completeness checks<a class="headerlink" href="#8-verification-validation-and-ivv-inspired-completeness-checks" title="Permanent link">¶</a></h2>
-<p>The following questions are mandatory review prompts for material MM changes.</p>
-<h3 id="81-requirements">8.1 Requirements<a class="headerlink" href="#81-requirements" title="Permanent link">¶</a></h3>
+<p>A frozen or certified source is not an authorization to run scientific workloads. Execution permission must be issued for the particular Gate, environment, inputs, and permitted effects.</p>
+<h2 id="8-verification-validation-and-ivv-inspired-completeness-checks">8. Verification, validation, and IV&amp;V-inspired completeness checks<a class="headerlink" href="#8-verification-validation-and-ivv-inspired-completeness-checks" title="Permanent link">&para;</a></h2>
+<p>For a material change, reviewers must examine the completeness and scientific relevance of requirements, architecture, implementation, tests, data contracts, and the stated intended use. The checks below specify the minimum questions to answer.</p>
+<h3 id="81-requirements">8.1 Requirements<a class="headerlink" href="#81-requirements" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Are all in-scope scientific/system requirements represented?</li>
 <li>Are requirements correct, complete, consistent, traceable, readable, and testable?</li>
@@ -401,7 +398,7 @@ STOP=true
 <li>Can each requirement be verified without reinterpretation after observing results?</li>
 <li>Are requirements that cannot be directly tested still objectively assessable by analysis/review?</li>
 </ul>
-<h3 id="82-architecture">8.2 Architecture<a class="headerlink" href="#82-architecture" title="Permanent link">¶</a></h3>
+<h3 id="82-architecture">8.2 Architecture<a class="headerlink" href="#82-architecture" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Does every in-scope requirement map to one or more architectural elements?</li>
 <li>Are architecture relationships and interfaces correct, consistent, complete, and traceable?</li>
@@ -409,21 +406,21 @@ STOP=true
 <li>Are undesired interactions and failure propagation considered?</li>
 <li>Is each authoritative boundary explicit?</li>
 </ul>
-<h3 id="83-detailed-design">8.3 Detailed design<a class="headerlink" href="#83-detailed-design" title="Permanent link">¶</a></h3>
+<h3 id="83-detailed-design">8.3 Detailed design<a class="headerlink" href="#83-detailed-design" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Is design traceable to requirements and architecture?</li>
 <li>Are interfaces internally consistent and externally complete?</li>
 <li>Are numerical and statistical assumptions explicit?</li>
 <li>Are all material negative/off-nominal states represented?</li>
 </ul>
-<h3 id="84-implementation">8.4 Implementation<a class="headerlink" href="#84-implementation" title="Permanent link">¶</a></h3>
+<h3 id="84-implementation">8.4 Implementation<a class="headerlink" href="#84-implementation" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Does code preserve architecture, contracts, and requirements?</li>
 <li>Are all invariants enforced by typed/executable predicates where feasible?</li>
 <li>Does the implementation reject invalid states rather than normalize them silently?</li>
 <li>Are exact versions/dependencies/build inputs recorded?</li>
 </ul>
-<h3 id="85-testing">8.5 Testing<a class="headerlink" href="#85-testing" title="Permanent link">¶</a></h3>
+<h3 id="85-testing">8.5 Testing<a class="headerlink" href="#85-testing" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Does every material requirement have adequate test or analysis coverage?</li>
 <li>Are tests correct and complete relative to the requirement set?</li>
@@ -432,10 +429,10 @@ STOP=true
 <li>Are acceptance criteria defined before observing the candidate?</li>
 <li>Are nominal, boundary, off-nominal, robustness, and failure-recovery cases included as applicable?</li>
 </ul>
-<h3 id="86-acceptance">8.6 Acceptance<a class="headerlink" href="#86-acceptance" title="Permanent link">¶</a></h3>
-<p>A candidate may pass only if the <strong>evidence package is complete enough to support the claim</strong>. Evidence completeness is therefore part of product assurance, not an administrative afterthought.</p>
-<h2 id="9-multi-agent-assurance-and-separation-of-duties">9. Multi-agent assurance and separation of duties<a class="headerlink" href="#9-multi-agent-assurance-and-separation-of-duties" title="Permanent link">¶</a></h2>
-<p>The certified architecture registers eleven core assurance roles but activates only the subset required by a Gate.</p>
+<h3 id="86-acceptance">8.6 Acceptance<a class="headerlink" href="#86-acceptance" title="Permanent link">&para;</a></h3>
+<p>Acceptance depends on the quality and completeness of the evidence needed to substantiate the claim. Documentary completeness is therefore a substantive assurance criterion, not merely a final administrative step.</p>
+<h2 id="9-multi-agent-assurance-and-separation-of-duties">9. Multi-agent assurance and separation of duties<a class="headerlink" href="#9-multi-agent-assurance-and-separation-of-duties" title="Permanent link">&para;</a></h2>
+<p>The Architecture identifies eleven core assurance competencies, designated A0 through A10, but requires only the roles appropriate to a Gate's materiality and scientific domain. Responsibility and independence are assigned before execution. In the role table, design of experiments (DOE) and uncertainty quantification (UQ) denote distinct scientific assurance competencies.</p>
 <table>
 <thead>
 <tr>
@@ -514,15 +511,15 @@ STOP=true
 </tr>
 </tbody>
 </table>
-<p>Conditional domain SMEs (<code>D-ENV</code>, <code>D-PLANT</code>, <code>D-ANIMAL</code>, <code>D-ECON</code>) are activated for materially affected modules.</p>
-<p>The single-writer invariant is:</p>
+<p>Domain subject-matter experts (SMEs) are engaged only when the corresponding scientific module is materially affected. The controlled identifiers are D-ENV for environment and geospatial matters, D-PLANT for plant and forage modeling, D-ANIMAL for animal response, and D-ECON for economic analysis. These are role codes, not additional scientific model modules.</p>
+<p>The single-writer rule separates the actor permitted to make authorized changes from the reviewers who assess those changes. The invariant is recorded in the following controlled notation.</p>
 <pre><code class="language-text">MUTABLE_AGENT_COUNT = 1
 SOLE_MUTABLE_AGENT = A1
 ALL_REVIEWERS = read-only
 </code></pre>
-<p>This structure reduces concurrent-write ambiguity and common-mode assurance failure. It does not make internal review equivalent to formal external IV&amp;V.</p>
-<h2 id="10-execution-classes-and-authorization-boundary">10. Execution classes and authorization boundary<a class="headerlink" href="#10-execution-classes-and-authorization-boundary" title="Permanent link">¶</a></h2>
-<p>The Architecture distinguishes execution classes, including:</p>
+<p>This separation reduces the risk of concurrent mutation, self-review, and shared analytical error. Internal multi-agent review remains internal assurance and must not be described as formal externally conducted independent verification and validation.</p>
+<h2 id="10-execution-classes-and-authorization-boundary">10. Execution classes and authorization boundary<a class="headerlink" href="#10-execution-classes-and-authorization-boundary" title="Permanent link">&para;</a></h2>
+<p>Execution activities are classified by their capacity to alter project state or external systems. Read-only examination, local nonproductive tests, protected scientific computation, and production operations have different authority and evidence requirements.</p>
 <pre><code class="language-text">ASSURANCE_TOOL_EXECUTION
 LOCAL_VERIFICATION_EXECUTION
 CONTROL_PREQUALIFICATION_RUNTIME
@@ -530,33 +527,33 @@ PRIMARY_SCIENTIFIC_RUNTIME
 ORACLE_RUNTIME
 PRODUCTION_RUNTIME
 </code></pre>
-<p>Authorization is separate from certification:</p>
-<pre><code class="language-text">FROZEN_CERTIFIED ≠ RUNTIME_AUTHORIZED
-PASS_PREVIOUS_GATE ≠ PERMISSION_TO_RUN
+<p>Certification concerns the identity and assurance status of an artifact. Runtime authorization concerns permission for a specified execution and is recorded separately. One state does not imply the other.</p>
+<pre><code class="language-text">FROZEN_CERTIFIED &ne; RUNTIME_AUTHORIZED
+PASS_PREVIOUS_GATE &ne; PERMISSION_TO_RUN
 </code></pre>
-<p>Each consequential runtime requires a separate Gate with its own inputs, capabilities, evidence plan, terminal partition, and side-effect budget.</p>
-<h2 id="11-local-execution-adapter-and-least-privilege">11. Local execution adapter and least privilege<a class="headerlink" href="#11-local-execution-adapter-and-least-privilege" title="Permanent link">¶</a></h2>
-<p>The qualified local adapter is currently represented as:</p>
+<p>Each consequential run requires an individually identified Gate, exact inputs and source revisions, qualified environment capabilities, defined terminal outcomes, an evidence plan, and an explicit budget for permitted side effects.</p>
+<h2 id="11-local-execution-adapter-and-least-privilege">11. Local execution adapter and least privilege<a class="headerlink" href="#11-local-execution-adapter-and-least-privilege" title="Permanent link">&para;</a></h2>
+<p>The recorded local implementation uses Windows Subsystem for Linux version 2 (WSL2), Ubuntu 24.04.4 long-term support (LTS), and a bounded filesystem and identity model. This is a historical implementation record; it should not be interpreted as evidence that an execution environment is presently active or authorized.</p>
 <pre><code class="language-text">Windows host
-    ↓
+    &darr;
 WSL2 / Ubuntu 24.04.4 LTS
-    ↓
+    &darr;
 /opt/mm
-    ├── input/      root-owned read-only
-    ├── review/     root-owned read-only
-    ├── output/     authorized A1 mutable surface
-    ├── scratch/    controlled execution state
-    └── toolchain/  root-owned immutable toolchain
+    &boxvr;&boxh;&boxh; input/      root-owned read-only
+    &boxvr;&boxh;&boxh; review/     root-owned read-only
+    &boxvr;&boxh;&boxh; output/     authorized A1 mutable surface
+    &boxvr;&boxh;&boxh; scratch/    controlled execution state
+    &boxur;&boxh;&boxh; toolchain/  root-owned immutable toolchain
 </code></pre>
-<p>Actors are separated:</p>
+<p>The adapter assigns administrative setup, mutable execution, and independent review to distinct operating-system identities. User identifiers (UIDs), group identifiers (GIDs), file permissions, and sandbox controls constrain their capabilities; a user name alone does not establish effective privilege.</p>
 <ul>
-<li><code>mmadmin</code> UID 1000 — administrative/bootstrap actor, not the scientific mutable actor;</li>
-<li><code>mm-a1</code> UID 1001 — sole mutable scientific actor, non-admin, no sudo/adm, zero effective/permitted/ambient capabilities in the qualified sandbox, <code>NoNewPrivs=1</code>;</li>
-<li><code>mm-review</code> UID 1003 — read-only independent reviewer role with restricted mutable surfaces.</li>
+<li><code>mmadmin</code> UID 1000: administrative/bootstrap actor, not the scientific mutable actor;</li>
+<li><code>mm-a1</code> UID 1001: sole mutable scientific actor, non-admin, no sudo/adm, zero effective/permitted/ambient capabilities in the qualified sandbox, <code>NoNewPrivs=1</code>;</li>
+<li><code>mm-review</code> UID 1003: read-only independent reviewer role with restricted mutable surfaces.</li>
 </ul>
-<p>The qualified adapter record demonstrates OS/toolchain boundary properties but explicitly does <strong>not</strong> authorize scientific, GEE, publication, GitHub-write, or production runtime.</p>
-<h2 id="12-harness-reliability-profile">12. Harness reliability profile<a class="headerlink" href="#12-harness-reliability-profile" title="Permanent link">¶</a></h2>
-<p>Prospective mutable execution is constrained by the Harness Reliability Profile. Core controls include:</p>
+<p>The qualification record supports the identified operating-system and toolchain boundaries. It does not establish or authorize scientific execution, Google Earth Engine (GEE) tasks, repository writes, release publication, or production operation outside a separately approved Gate.</p>
+<h2 id="12-harness-reliability-profile">12. Harness reliability profile<a class="headerlink" href="#12-harness-reliability-profile" title="Permanent link">&para;</a></h2>
+<p>The Harness Reliability Profile constrains mutable execution through explicit attempts, resources, tool capabilities, retry rules, side-effect allowances, and readback requirements. Its status must be assessed together with, rather than in place of, the governing Gate contract.</p>
 <ol>
 <li>one-shot execution (<code>MAX_ATTEMPTS=1</code>);</li>
 <li>no automatic retry;</li>
@@ -575,21 +572,21 @@ WSL2 / Ubuntu 24.04.4 LTS
 <li>explicit <code>STOP=true</code>;</li>
 <li>regression closure for each discovered harness defect.</li>
 </ol>
-<p>The Harness constrains execution but is not itself execution authority.</p>
-<h2 id="13-data-engineering-metadata-provenance-and-evidence">13. Data engineering, metadata, provenance, and evidence<a class="headerlink" href="#13-data-engineering-metadata-provenance-and-evidence" title="Permanent link">¶</a></h2>
-<h3 id="131-computational-contract-versus-catalog-metadata">13.1 Computational contract versus catalog metadata<a class="headerlink" href="#131-computational-contract-versus-catalog-metadata" title="Permanent link">¶</a></h3>
-<p>The project separates:</p>
+<p>A harness can enforce declared restrictions but cannot supply the missing authority to run a scientific task. Its successful operation must not be confused with the validity of the task's scientific assumptions.</p>
+<h2 id="13-data-engineering-metadata-provenance-and-evidence">13. Data engineering, metadata, provenance, and evidence<a class="headerlink" href="#13-data-engineering-metadata-provenance-and-evidence" title="Permanent link">&para;</a></h2>
+<h3 id="131-computational-contract-versus-catalog-metadata">13.1 Computational contract versus catalog metadata<a class="headerlink" href="#131-computational-contract-versus-catalog-metadata" title="Permanent link">&para;</a></h3>
+<p>A computational data contract defines machine-actionable semantics required by the producing and consuming scientific modules. Catalog metadata describes the discovery and reuse of the resulting datasets and services. The two serve different purposes and are examined separately.</p>
 <ul>
-<li>computational data contracts — exact interface semantics needed for execution;</li>
-<li>DCAT — dataset/service discovery;</li>
-<li>PROV-O — provenance/derivation relations;</li>
-<li>SHACL — graph constraint validation;</li>
-<li>DQV — data-quality metadata;</li>
-<li>Project Evidence Base — certified scientific/technical claims, decisions, conflicts, gaps, and evidence relations.</li>
+<li>computational data contracts: exact interface semantics needed for execution;</li>
+<li>DCAT: dataset/service discovery;</li>
+<li>PROV-O: provenance/derivation relations;</li>
+<li>SHACL: graph constraint validation;</li>
+<li>DQV: data-quality metadata;</li>
+<li>Project Evidence Base: certified scientific/technical claims, decisions, conflicts, gaps, and evidence relations.</li>
 </ul>
-<p>These layers are complementary and not interchangeable. The broader W3C Data Activity provides non-normative context for Linked Data, RDF/graph data, heterogeneous-source integration, evolving data models, and data governance; it does <strong>not</strong> replace the specific DCAT 3, PROV-O, SHACL, or DQV technical sources [R29], nor does any W3C citation establish W3C compliance.</p>
-<h3 id="132-data-quality-evidence">13.2 Data-quality evidence<a class="headerlink" href="#132-data-quality-evidence" title="Permanent link">¶</a></h3>
-<p>A material dataset/transformation should have a quality profile that records:</p>
+<p>The World Wide Web Consortium (W3C) provides standards and vocabularies for structured data, including the Resource Description Framework (RDF). The Data Catalog Vocabulary (DCAT), Provenance Ontology (PROV-O), Shapes Constraint Language (SHACL), and Data Quality Vocabulary (DQV) support distinct aspects of interoperability. Their use does not replace an executable data contract or, without further evidence, establish compliance with a W3C recommendation <a class="source-citation" href="audit/source-reference-register/index.html#source-r29">[R29]</a>.</p>
+<h3 id="132-data-quality-evidence">13.2 Data-quality evidence<a class="headerlink" href="#132-data-quality-evidence" title="Permanent link">&para;</a></h3>
+<p>A material dataset or transformation needs a documented quality profile identifying the source, data contract, checks performed, observed results, unsupported states, and the evidence supporting use in subsequent computation.</p>
 <ul>
 <li>schema validity;</li>
 <li>units and ranges;</li>
@@ -602,20 +599,20 @@ WSL2 / Ubuntu 24.04.4 LTS
 <li>freshness where material;</li>
 <li>required-versus-executed check equality.</li>
 </ul>
-<p>A declared <code>CERTIFIED</code> state without objective evidence is invalid.</p>
-<h3 id="133-evidence-base-evolution">13.3 Evidence Base evolution<a class="headerlink" href="#133-evidence-base-evolution" title="Permanent link">¶</a></h3>
-<p>The certified Project Evidence Base v1.0.0 is immutable and append-only in evolution. Its certified baseline retains one open conflict and nine open gaps; this methodology does not silently close them. New material evidence must be admitted prospectively through audited linkage.</p>
-<h3 id="134-dataweb-standards-and-role-separation">13.4 Data/Web standards and role separation<a class="headerlink" href="#134-dataweb-standards-and-role-separation" title="Permanent link">¶</a></h3>
+<p>The label CERTIFIED is not self-authenticating. A data-quality assessment must identify the executed tests, their results, and the authority against which those results were evaluated.</p>
+<h3 id="133-evidence-base-evolution">13.3 Evidence Base evolution<a class="headerlink" href="#133-evidence-base-evolution" title="Permanent link">&para;</a></h3>
+<p>The certified Project Evidence Base, version 1.0.0, remains a controlled historical baseline. It records one unresolved conflict and nine open gaps; no statement in this editorial edition resolves them. Later evidence can change the project record only through an authorized, independently reviewed prospective update.</p>
+<h3 id="134-dataweb-standards-and-role-separation">13.4 Data/Web standards and role separation<a class="headerlink" href="#134-dataweb-standards-and-role-separation" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong>DCAT 3</strong> supports dataset/service catalog interoperability [R12].</li>
-<li><strong>PROV-O</strong> represents interoperable provenance/derivation relations [R14].</li>
-<li><strong>SHACL</strong> validates RDF graph constraints; it does not establish scientific validity [R13].</li>
-<li><strong>DQV</strong> is a W3C Working Group Note for quality metadata and measurements; it is not a Recommendation and does not waive domain validation [R15].</li>
-<li><strong>W3C Data Activity</strong> is contextual guidance for Web/graph-data integration and governance [R29].</li>
+<li><strong>DCAT 3</strong> supports dataset/service catalog interoperability <a class="source-citation" href="audit/source-reference-register/index.html#source-r12">[R12]</a>.</li>
+<li><strong>PROV-O</strong> represents interoperable provenance/derivation relations <a class="source-citation" href="audit/source-reference-register/index.html#source-r14">[R14]</a>.</li>
+<li><strong>SHACL</strong> validates RDF graph constraints; it does not establish scientific validity <a class="source-citation" href="audit/source-reference-register/index.html#source-r13">[R13]</a>.</li>
+<li><strong>DQV</strong> is a W3C Working Group Note for quality metadata and measurements; it is not a Recommendation and does not waive domain validation <a class="source-citation" href="audit/source-reference-register/index.html#source-r15">[R15]</a>.</li>
+<li><strong>W3C Data Activity</strong> is contextual guidance for Web/graph-data integration and governance <a class="source-citation" href="audit/source-reference-register/index.html#source-r29">[R29]</a>.</li>
 </ul>
-<p>The MM computational data contract remains the execution-facing semantic authority for module interfaces; these external vocabularies are complementary interoperability/metadata mechanisms.</p>
-<h2 id="14-geospatial-and-gee-assurance">14. Geospatial and GEE assurance<a class="headerlink" href="#14-geospatial-and-gee-assurance" title="Permanent link">¶</a></h2>
-<p>Spatial correctness requires more than a syntactically valid CRS identifier. Official Earth Engine best-practice, projection, debugging, and API documentation are treated as living platform sources with freshness control [R18]–[R21]. Material geospatial operations must control, as applicable:</p>
+<p>The project&rsquo;s computational data contracts determine scientific semantics at module interfaces. External metadata vocabularies improve discovery, provenance, validation of representation, and communication, but do not independently determine whether a computed result is scientifically valid.</p>
+<h2 id="14-geospatial-and-gee-assurance">14. Geospatial and GEE assurance<a class="headerlink" href="#14-geospatial-and-gee-assurance" title="Permanent link">&para;</a></h2>
+<p>Geospatial assurance requires explicit treatment of coordinate reference systems (CRSs), datum transformations, grid alignment, resolution, spatial support, masks, resampling, and area semantics. Official Google Earth Engine documentation informs platform-specific behavior and must be assessed for version and freshness when material to a decision <a class="source-citation" href="audit/source-reference-register/index.html#source-r18">[R18]</a>&ndash;<a class="source-citation" href="audit/source-reference-register/index.html#source-r21">[R21]</a>.</p>
 <ul>
 <li>CRS definition;</li>
 <li>coordinate operation/datum transformation;</li>
@@ -629,9 +626,9 @@ WSL2 / Ubuntu 24.04.4 LTS
 <li>geodesic versus planar area conventions;</li>
 <li>task/export identity and receipt.</li>
 </ul>
-<p>A missing/non-observable value is not equivalent to a scientific zero. Empty support, partial support, and complete support are distinct states and should map to explicit terminal predicates.</p>
-<h2 id="15-mathematical-and-numerical-assurance">15. Mathematical and numerical assurance<a class="headerlink" href="#15-mathematical-and-numerical-assurance" title="Permanent link">¶</a></h2>
-<p>For mathematical/numerical components, the development record should establish, with reference where material to IEEE 754, JCGM/GUM guidance, and authoritative numerical-analysis literature [R22]–[R25]:</p>
+<p>An unobserved or masked value must not be interpreted as numerical zero without a justified rule. Empty support, partial coverage, complete coverage, and invalid geometry are distinct scientific states with potentially different terminal outcomes.</p>
+<h2 id="15-mathematical-and-numerical-assurance">15. Mathematical and numerical assurance<a class="headerlink" href="#15-mathematical-and-numerical-assurance" title="Permanent link">&para;</a></h2>
+<p>Numerical assurance addresses well-posedness, conditioning, algorithmic stability, rounding behavior, convergence, and error budgets. Where applicable, the record draws on Institute of Electrical and Electronics Engineers (IEEE) floating-point standards and guidance of the Joint Committee for Guides in Metrology (JCGM), including the Guide to the Expression of Uncertainty in Measurement (GUM), without claiming external certification <a class="source-citation" href="audit/source-reference-register/index.html#source-r22">[R22]</a>&ndash;<a class="source-citation" href="audit/source-reference-register/index.html#source-r25">[R25]</a>.</p>
 <ul>
 <li>well-posed problem and domain of validity;</li>
 <li>assumptions/regularity conditions;</li>
@@ -644,8 +641,8 @@ WSL2 / Ubuntu 24.04.4 LTS
 <li>negative/boundary behavior;</li>
 <li>exact artifact identity.</li>
 </ul>
-<h2 id="16-statistical-geostatistical-monte-carlo-and-uq-assurance">16. Statistical, geostatistical, Monte Carlo, and UQ assurance<a class="headerlink" href="#16-statistical-geostatistical-monte-carlo-and-uq-assurance" title="Permanent link">¶</a></h2>
-<p>Material statistical work should specify before execution, with DOE/UQ/sensitivity and dependence-aware validation methods grounded in the applicable sources [R11], [R23]–[R28]:</p>
+<h2 id="16-statistical-geostatistical-monte-carlo-and-uq-assurance">16. Statistical, geostatistical, Monte Carlo, and UQ assurance<a class="headerlink" href="#16-statistical-geostatistical-monte-carlo-and-uq-assurance" title="Permanent link">&para;</a></h2>
+<p>Statistical and geostatistical assurance requires a prospectively specified design of experiments (DOE), explicit sampling and dependence assumptions, justified uncertainty quantification (UQ), and fit-for-purpose validation. The assessment should record estimators, random-stream policy, convergence and precision diagnostics, and safeguards against spatial or temporal data leakage <a class="source-citation" href="audit/source-reference-register/index.html#source-r11">[R11]</a>, <a class="source-citation" href="audit/source-reference-register/index.html#source-r23">[R23]</a>&ndash;<a class="source-citation" href="audit/source-reference-register/index.html#source-r28">[R28]</a>.</p>
 <ul>
 <li>sampling design;</li>
 <li>probability distributions and parameterization;</li>
@@ -659,9 +656,9 @@ WSL2 / Ubuntu 24.04.4 LTS
 <li>uncertainty category being propagated or excluded;</li>
 <li>decision outputs and interpretation.</li>
 </ul>
-<p>Iteration count alone is not evidence of Monte Carlo adequacy; precision must be related to the scientific decision.</p>
-<h2 id="17-scientific-model-credibility">17. Scientific model credibility<a class="headerlink" href="#17-scientific-model-credibility" title="Permanent link">¶</a></h2>
-<p>NASA-HDBK-7009B is used by the project as a <strong>methodological evidence source</strong>, not as a claim of NASA compliance [EXT-NASA-HDBK7009B]. The project evidence overlay links it to:</p>
+<p>An iteration count does not establish adequate Monte Carlo precision. Numerical uncertainty and stochastic estimation error must be assessed against the magnitude and consequence of the intended scientific decision.</p>
+<h2 id="17-scientific-model-credibility">17. Scientific model credibility<a class="headerlink" href="#17-scientific-model-credibility" title="Permanent link">&para;</a></h2>
+<p>NASA Handbook 7009B is cited as a source on model and simulation credibility. The project uses its methodological distinctions when discussing intended use, evidence, limitations, and credibility assessment, without claiming NASA certification or a NASA review of MM <a class="source-citation" href="audit/source-reference-register/index.html#source-r04">[R04]</a>.</p>
 <ul>
 <li>modular model/system decomposition;</li>
 <li>explicit interfaces and interactions among submodels;</li>
@@ -671,16 +668,16 @@ WSL2 / Ubuntu 24.04.4 LTS
 <li>robustness of results;</li>
 <li>credibility considerations for AI-assisted modeling/simulation.</li>
 </ul>
-<p>For MM, model credibility is therefore evaluated at both component and integrated-system levels.</p>
-<h2 id="18-configuration-management-deterministic-packaging-and-exact-byte-authority">18. Configuration management, deterministic packaging, and exact-byte authority<a class="headerlink" href="#18-configuration-management-deterministic-packaging-and-exact-byte-authority" title="Permanent link">¶</a></h2>
-<h3 id="181-configuration-identity">18.1 Configuration identity<a class="headerlink" href="#181-configuration-identity" title="Permanent link">¶</a></h3>
-<p>A scientific result must bind to exact identities for material code, data, configuration, model version, contracts, and external dependencies. File name or modification time alone is insufficient.</p>
-<h3 id="182-deterministic-packaging">18.2 Deterministic packaging<a class="headerlink" href="#182-deterministic-packaging" title="Permanent link">¶</a></h3>
-<p>Where a package identity is itself evidence, the build process should define determinism rules such as path ordering, timestamp normalization, compression method, platform metadata, file modes, directory-entry behavior, and checksum coverage. When deterministic double-build is a requirement, both artifacts and their comparison must be independently inspectable.</p>
-<h3 id="183-readback">18.3 Readback<a class="headerlink" href="#183-readback" title="Permanent link">¶</a></h3>
-<p>A release/freeze process does not trust local success alone. Persisted artifacts are re-read from the authority surface, reconstructed where necessary, and compared to frozen expected bytes/hashes. Mismatch means HOLD.</p>
-<h3 id="184-living-external-source-control">18.4 Living external-source control<a class="headerlink" href="#184-living-external-source-control" title="Permanent link">¶</a></h3>
-<p>Stable standards/handbooks and living Web guidance are distinct source classes. A living source that can affect a requirement, implementation rule, or platform semantic <strong>must</strong> have:</p>
+<p>Credibility is assessed for each affected model component and for the coupled system. Confidence in a component cannot automatically be transferred to an integrated system with new interfaces, assumptions, or sources of uncertainty.</p>
+<h2 id="18-configuration-management-deterministic-packaging-and-exact-byte-authority">18. Configuration management, deterministic packaging, and exact-byte authority<a class="headerlink" href="#18-configuration-management-deterministic-packaging-and-exact-byte-authority" title="Permanent link">&para;</a></h2>
+<h3 id="181-configuration-identity">18.1 Configuration identity<a class="headerlink" href="#181-configuration-identity" title="Permanent link">&para;</a></h3>
+<p>A reproducible scientific result must be associated with exact, recoverable identities for relevant code, data, configurations, models, dependencies, and interface contracts. A filename, timestamp, or human-readable version label is insufficient as a sole identity.</p>
+<h3 id="182-deterministic-packaging">18.2 Deterministic packaging<a class="headerlink" href="#182-deterministic-packaging" title="Permanent link">&para;</a></h3>
+<p>When byte identity is a release property, the packaging procedure controls member ordering, timestamp normalization, compression method, platform metadata, file modes, directory-entry behavior, and checksum coverage. When deterministic double-build is required, both artifacts and their exact-byte comparison must remain independently inspectable.</p>
+<h3 id="183-readback">18.3 Readback<a class="headerlink" href="#183-readback" title="Permanent link">&para;</a></h3>
+<p>After persistence, the reviewer retrieves the artifact from the authoritative destination and compares its content with the frozen expected identity. A successful upload message is not proof of byte equality; a material mismatch results in HOLD.</p>
+<h3 id="184-living-external-source-control">18.4 Living external-source control<a class="headerlink" href="#184-living-external-source-control" title="Permanent link">&para;</a></h3>
+<p>Static standards and evolving online guidance have different change-control requirements. A living source must be identified by a documented access state and reevaluated when a change could affect a scientific requirement or platform assumption.</p>
 <ul>
 <li>explicit source URL/identifier;</li>
 <li>access date or snapshot identity;</li>
@@ -688,12 +685,12 @@ WSL2 / Ubuntu 24.04.4 LTS
 <li>impact analysis against affected requirements/contracts;</li>
 <li>prospective versioning before the source changes an MM rule.</li>
 </ul>
-<p>This restores the control represented historically in Technical Reference §17.1 and certified Manual requirement <strong>DM-0195</strong>. A new Web page, changed platform behavior, or revised guidance cannot silently alter a frozen MM requirement.</p>
-<p>ISO/IEC/IEEE standards are cited from public metadata unless licensed normative text is separately admitted. External guidance remains non-normative for MM unless a separate project authority explicitly changes that status.</p>
-<h2 id="19-independent-review-mutation-testing-and-adversarial-assurance">19. Independent review, mutation testing, and adversarial assurance<a class="headerlink" href="#19-independent-review-mutation-testing-and-adversarial-assurance" title="Permanent link">¶</a></h2>
-<p>Independent assurance is intended to challenge both the implementation and the specification/test system.</p>
-<h3 id="191-mutation-testing">19.1 Mutation testing<a class="headerlink" href="#191-mutation-testing" title="Permanent link">¶</a></h3>
-<p>Mutation suites should target:</p>
+<p>This principle is established in the historical Technical Reference, section 17.1, and in certified Manual requirement DM-0195. A revised online source does not amend a frozen project obligation without an authorized impact review and new version.</p>
+<p>The project references International Organization for Standardization (ISO), International Electrotechnical Commission (IEC), and IEEE standards using public bibliographic metadata unless licensed normative text is separately admitted. Citations inform engineering rationale; the project's certified records determine applicable local obligations.</p>
+<h2 id="19-independent-review-mutation-testing-and-adversarial-assurance">19. Independent review, mutation testing, and adversarial assurance<a class="headerlink" href="#19-independent-review-mutation-testing-and-adversarial-assurance" title="Permanent link">&para;</a></h2>
+<p>Independent assurance examines not only the software implementation but also whether the tests, decision predicates, and review process can detect scientifically significant failures.</p>
+<h3 id="191-mutation-testing">19.1 Mutation testing<a class="headerlink" href="#191-mutation-testing" title="Permanent link">&para;</a></h3>
+<p>Mutation testing deliberately introduces specified defects in a controlled candidate or validator to determine whether its assurance tests reject them. The mutation set must reflect the invariants material to the decision.</p>
 <ul>
 <li>canonical requirements/source;</li>
 <li>executable resolver or decision logic;</li>
@@ -703,57 +700,57 @@ WSL2 / Ubuntu 24.04.4 LTS
 <li>authority hashes;</li>
 <li>negative paths and failure classifications.</li>
 </ul>
-<p>A candidate cannot pass if a material mutation that should be rejected remains undetected.</p>
-<h3 id="192-common-mode-protection">19.2 Common-mode protection<a class="headerlink" href="#192-common-mode-protection" title="Permanent link">¶</a></h3>
-<p>Where feasible, an independent oracle should be separately implemented rather than calling the production resolver. Independent review should recompute decisive facts from admitted bytes instead of accepting preparer receipts as dispositive evidence.</p>
-<h3 id="193-evidence-completeness-lesson-from-attempt004">19.3 Evidence-completeness lesson from Attempt004<a class="headerlink" href="#193-evidence-completeness-lesson-from-attempt004" title="Permanent link">¶</a></h3>
-<p>The terminal Attempt004 lineage provides a methodological lesson without becoming a normative authority. Its final independent review reconstructed 45 checks: checks 1–44 passed in documentary/static scope, while check 45 held because the <strong>sealed negative-test matrix did not provide complete inspectable evidence for all mandatory negative classes</strong>. The finding explicitly did not establish a new runtime implementation failure or corrupted candidate bytes.</p>
-<p>The lesson is general:</p>
+<p>A material defect that escapes the prescribed mutation tests prevents a positive assurance determination until the test or implementation deficiency is resolved prospectively.</p>
+<h3 id="192-common-mode-protection">19.2 Common-mode protection<a class="headerlink" href="#192-common-mode-protection" title="Permanent link">&para;</a></h3>
+<p>An independent oracle should implement the expected decision semantics without delegating to the production resolver under examination. Reviewers should reconstruct decisive evidence from admitted sources instead of relying exclusively on the producer's summary.</p>
+<h3 id="193-evidence-completeness-lesson-from-attempt004">19.3 Evidence-completeness lesson from Attempt004<a class="headerlink" href="#193-evidence-completeness-lesson-from-attempt004" title="Permanent link">&para;</a></h3>
+<p>The Attempt004 record illustrates a documentary evidence failure, not a demonstrated new runtime defect. Its final independent review passed checks 1 through 44 within the static review scope and held check 45 because the sealed negative-test matrix did not make all mandatory negative classes independently inspectable. The original findings and candidate identities remain unchanged.</p>
+<p>The broader lesson is that the evidence needed to assess a negative claim must be defined before execution and supplied in a form that permits independent reconstruction.</p>
 <pre><code class="language-text">IMPLEMENTATION_GUARDS_APPEAR_CORRECT
         does not imply
 MANDATORY_ASSURANCE_EVIDENCE_IS_COMPLETE
 </code></pre>
-<p>Therefore, when a Gate requires a negative matrix, the actual fixtures/test sources and their coverage are part of the deliverable—not optional supporting prose.</p>
-<h3 id="194-audit-and-traceability-reconstruction">19.4 Audit and traceability reconstruction<a class="headerlink" href="#194-audit-and-traceability-reconstruction" title="Permanent link">¶</a></h3>
-<p>The publication exposes the detailed reconstruction layer separately from the main narrative. The audit area contains:</p>
+<p>If a Gate requires negative tests, the actual fixtures, test definitions, expected outcomes, and coverage record belong to the evidence package. A statement that the tests passed cannot replace the evidence that would allow their adequacy to be assessed.</p>
+<h3 id="194-audit-and-traceability-reconstruction">19.4 Audit and traceability reconstruction<a class="headerlink" href="#194-audit-and-traceability-reconstruction" title="Permanent link">&para;</a></h3>
+<p>This publication separates the explanatory methodology from its reconstruction records. The audit collection includes the certified identity register, requirements, source catalog, historical assurance outcomes, and crosswalks that link the presented method to controlled evidence.</p>
 <ul>
 <li>the <strong>50-record Architecture requirement/crosswalk index</strong>;</li>
 <li>the <strong>197-record Manual requirement register</strong>;</li>
 <li><strong>84 playbook rules</strong> across seven playbooks;</li>
 <li><strong>67 checklist items</strong> across five checklists;</li>
-<li>the Architecture↔Manual relationship, including the three Architecture-only controls;</li>
+<li>the Architecture&harr;Manual relationship, including the three Architecture-only controls;</li>
 <li>historical certified identities/hashes and chain-of-custody snapshot;</li>
 <li>the corrected Evidence Overlay/source register;</li>
-<li>the 111-row DOCX→v1.0.1→v1.0.2 content-conservation crosswalk;</li>
+<li>the 111-row content-conservation crosswalk from the historical DOCX through methodology versions 1.0.1 and 1.0.2;</li>
 <li>the historical document-generation/QA receipt.</li>
 </ul>
-<p>These views are non-normative human-readable projections. Certified machine-readable Architecture/Manual authorities remain controlling in any discrepancy.</p>
-<h2 id="20-agent-control-execution-plane-implementation-roadmap">20. Agent Control / Execution Plane implementation roadmap<a class="headerlink" href="#20-agent-control-execution-plane-implementation-roadmap" title="Permanent link">¶</a></h2>
-<p>The M0→M8 roadmap is a <strong>reference implementation and qualification track</strong> for the Agent Control / Execution Plane. It is not the normative Architecture itself and does not block production of this methodological derivative.</p>
+<p>These pages are explanatory projections of certified sources. Where their presentation and the underlying canonical records differ, the latter govern and the discrepancy must be recorded rather than silently resolved in prose.</p>
+<h2 id="20-agent-control-execution-plane-implementation-roadmap">20. Agent Control / Execution Plane implementation roadmap<a class="headerlink" href="#20-agent-control-execution-plane-implementation-roadmap" title="Permanent link">&para;</a></h2>
+<p>The Agent Control implementation roadmap identifies work packages M0 through M8 as an engineering and qualification sequence. It describes one implementation track, not the governing Architecture, and its milestones do not establish authorization for scientific runtime.</p>
 <pre><code class="language-text">M0   Architecture Review
- ↓
+ &darr;
 M1   Always-on Core Extraction
- ↓
+ &darr;
 M2   Skill Package Materialization
- ↓
+ &darr;
 M3   Static Validation
- ↓
+ &darr;
 M4   Read-only Routing Evaluation
- ↓
+ &darr;
 M4A  Prospective Behavioral DOE
- ↓
+ &darr;
 M5   Supply-chain Discovery Qualification
- ↓
+ &darr;
 M6   Harness Integration
- ↓
+ &darr;
 M7   Controlled Mutable Pilot
- ↓
+ &darr;
 M8   Freeze / Certification Candidate
 </code></pre>
-<p>Current durable sources used here establish <code>M0=PASS_FINAL_ADJUDICATED</code> and <code>M1=PASS_M1_CORE_EXTRACTION</code>. Separate historical M4 evidence records a pre-model infrastructure HOLD and <code>M4_BEHAVIORAL_RESULT=NOT_ESTABLISHED</code>; a later M4R1 design review records an F03 causal-cycle HOLD. <strong>No status for an intermediate milestone is inferred merely because a later milestone was attempted.</strong> Each milestone's own controlling record remains authoritative for its state.</p>
-<p>This roadmap may continue independently from the Methodology publication workstream.</p>
-<h2 id="21-development-change-acceptance-matrix">21. Development-change acceptance matrix<a class="headerlink" href="#21-development-change-acceptance-matrix" title="Permanent link">¶</a></h2>
-<p>Every material change should answer the following matrix before release.</p>
+<p>The cited project records establish M0 as finally adjudicated and M1 as successfully extracted. Historical M4 evidence records a pre-model infrastructure HOLD, with behavioral qualification not established. A subsequent M4R1 design review records an unresolved F03 causal-cycle finding. Intermediate milestones are not inferred from later attempts, and each status remains governed by its own documented authority.</p>
+<p>Engineering qualification of the Agent Control implementation may proceed under separate, expressly authorized controls. It is not a prerequisite for reading the published methodology, nor does publication waive an open implementation HOLD.</p>
+<h2 id="21-development-change-acceptance-matrix">21. Development-change acceptance matrix<a class="headerlink" href="#21-development-change-acceptance-matrix" title="Permanent link">&para;</a></h2>
+<p>The following acceptance matrix specifies the evidence and decisions that should accompany a material development change before integration or release. A row is not satisfied by the presence of an artifact name alone.</p>
 <table>
 <thead>
 <tr>
@@ -835,8 +832,8 @@ M8   Freeze / Certification Candidate
 </tr>
 </tbody>
 </table>
-<h2 id="22-claim-discipline-for-scientific-publications">22. Claim discipline for scientific publications<a class="headerlink" href="#22-claim-discipline-for-scientific-publications" title="Permanent link">¶</a></h2>
-<p>For manuscript-facing claims, the project should maintain a claim-to-evidence map. Every material claim should specify:</p>
+<h2 id="22-claim-discipline-for-scientific-publications">22. Claim discipline for scientific publications<a class="headerlink" href="#22-claim-discipline-for-scientific-publications" title="Permanent link">&para;</a></h2>
+<p>A manuscript claim-to-evidence register should identify the scientific claim, governing assumptions, relevant dataset or code version, verification or validation method, and the strength and limitations of supporting evidence.</p>
 <ul>
 <li>claim text;</li>
 <li>scientific object and scope;</li>
@@ -848,34 +845,34 @@ M8   Freeze / Certification Candidate
 <li>independent review status;</li>
 <li>manuscript destination (main text, Methods, Supplementary, repository).</li>
 </ul>
-<p>Claims unsupported by an admitted source are omitted or explicitly labeled <code>NOT_ESTABLISHED</code>.</p>
-<h2 id="23-publication-facing-reproducibility-profile">23. Publication-facing reproducibility profile<a class="headerlink" href="#23-publication-facing-reproducibility-profile" title="Permanent link">¶</a></h2>
-<p>This section is <strong>non-normative editorial guidance</strong>. It does not alter the certified MM authorities.</p>
-<h3 id="231-nature-computational-science-alignment">23.1 Nature Computational Science alignment<a class="headerlink" href="#231-nature-computational-science-alignment" title="Permanent link">¶</a></h3>
-<p>Nature Computational Science states that it publishes fundamental and applied work on computational techniques and mathematical models, including tools/frameworks that advance scientific research and methodologies that use computing in novel ways across scientific disciplines [EXT-NCS-AIMS]. This creates a plausible editorial scope for an MM paper centered on a reusable computational/scientific modeling framework, provided the manuscript demonstrates substantial conceptual or methodological significance rather than software engineering alone.</p>
-<p>The journal's policies state that research manuscripts with newly developed code central to the main claims may require a software submission checklist and code availability for peer-review evaluation [EXT-NCS-POLICY]. Nature Portfolio guidance also expects central custom code to be made available to editors/referees on request and encourages release that allows readers to repeat published results [EXT-NATURE-CODE].</p>
-<h3 id="232-computational-reproducibility">23.2 Computational reproducibility<a class="headerlink" href="#232-computational-reproducibility" title="Permanent link">¶</a></h3>
-<p>Nature-family computational reporting guidance emphasizes, for custom scientific code:</p>
+<p>A claim without admissible support must not be represented as established. If its status is material to the methodological account, it should be stated explicitly as NOT_ESTABLISHED together with the evidence needed to resolve it.</p>
+<h2 id="23-publication-facing-reproducibility-profile">23. Publication-facing reproducibility profile<a class="headerlink" href="#23-publication-facing-reproducibility-profile" title="Permanent link">&para;</a></h2>
+<p>This section describes publication-facing reporting practices rather than additional certified MM requirements. Its purpose is to make the methodology intelligible and inspectable by readers across computational science and applied research disciplines.</p>
+<h3 id="231-nature-computational-science-alignment">23.1 Nature Computational Science alignment<a class="headerlink" href="#231-nature-computational-science-alignment" title="Permanent link">&para;</a></h3>
+<p>Nature Computational Science considers contributions in computational methods, mathematical modeling, and tools that advance research across scientific disciplines. An MM manuscript could be within this broad subject area only if the actual contribution, evidence, generality, and scientific significance satisfy the journal's editorial criteria <a class="source-citation" href="audit/source-reference-register/index.html#source-ext-ncs-aims">[EXT-NCS-AIMS]</a>. This documentation is not itself a journal submission.</p>
+<p>Nature Portfolio emphasizes access to the code, data, and protocols needed to examine claims, with explicit disclosure of restrictions. Manuscripts that depend centrally on custom code may require code-availability statements and material for reviewer inspection <a class="source-citation" href="audit/source-reference-register/index.html#source-ext-ncs-policy">[EXT-NCS-POLICY]</a>, <a class="source-citation" href="audit/source-reference-register/index.html#source-ext-nature-code">[EXT-NATURE-CODE]</a>. Whether those policies apply to a particular submission must be assessed against its article type and claims.</p>
+<h3 id="232-computational-reproducibility">23.2 Computational reproducibility<a class="headerlink" href="#232-computational-reproducibility" title="Permanent link">&para;</a></h3>
+<p>Computational reproducibility requires enough information to identify the scientific question, source material, software and dependencies, parameterization, execution procedure, and the checks that distinguish agreement from a fortuitous result.</p>
 <ul>
 <li>evidence supporting result validity, such as convergence tests or comparison with analytical/trusted standard approaches;</li>
 <li>code availability;</li>
 <li>installation/running documentation;</li>
 <li>tests and use examples;</li>
-<li>explicit software versions and input files where relevant [EXT-NATURE-COMP-REPRO].</li>
+<li>explicit software versions and input files where relevant <a class="source-citation" href="audit/source-reference-register/index.html#source-ext-nature-comp-repro">[EXT-NATURE-COMP-REPRO]</a>.</li>
 </ul>
-<p>MM therefore treats documentation, version identity, testability, and result validation as publication-facing scientific evidence—not repository polish.</p>
-<h3 id="233-editorial-non-claim">23.3 Editorial non-claim<a class="headerlink" href="#233-editorial-non-claim" title="Permanent link">¶</a></h3>
-<p>A high journal metric or apparent scope match does not establish publishability. Editorial acceptance depends on novelty, significance, evidence, clarity, reproducibility, and the final scientific story. The methodology is designed to maximize defensibility and reviewer auditability, not to guarantee a specific journal outcome.</p>
-<h2 id="24-two-article-role-of-this-methodology">24. Two-article role of this methodology<a class="headerlink" href="#24-two-article-role-of-this-methodology" title="Permanent link">¶</a></h2>
-<p>The current MM editorial strategy separates:</p>
+<p>Versioned documentation, source identity, testability, and result validation contribute to the evidence needed for scientific review. Their value lies in the questions they enable readers to verify, not in repository presentation alone.</p>
+<h3 id="233-editorial-non-claim">23.3 Editorial non-claim<a class="headerlink" href="#233-editorial-non-claim" title="Permanent link">&para;</a></h3>
+<p>Neither a favorable scope interpretation nor a journal's citation metric predicts acceptance. Evaluation depends on the final manuscript, the originality and significance of its contribution, and the adequacy of the supporting scientific evidence.</p>
+<h2 id="24-two-article-role-of-this-methodology">24. Two-article role of this methodology<a class="headerlink" href="#24-two-article-role-of-this-methodology" title="Permanent link">&para;</a></h2>
+<p>The project maintains two distinct editorial purposes. One manuscript concerns the model as a reusable scientific instrument and the evidence supporting its reproducibility and trustworthiness. The other concerns substantive agricultural, economic, and environmental findings that may be obtained through separately authorized model execution.</p><p>Research software reuse is discussed using the principles of findability, accessibility, interoperability, and reusability (FAIR). The corresponding FAIR Principles for Research Software (FAIR4RS) are cited as reporting and reuse guidance; neither acronym is an external certification.</p>
 <ul>
 <li><strong>RAFE-1 / Data- or Resource-oriented paper:</strong> the MM/MHSMM scientific instrument, reusable computational representation, FAIR/provenance layer, reproducibility, certified Architecture/Manual, Gate model, assurance, readback, and release/reuse;</li>
 <li><strong>RAFE-2 / Research paper:</strong> substantive agricultural, economic, environmental, spatial, uncertainty, and land-use knowledge obtained from qualified scientific execution.</li>
 </ul>
-<p>This methodology is principally an RAFE-1 asset. RAFE-2 should describe only the assurance material necessary to establish credibility of its scientific results, avoiding duplication of the full infrastructure narrative.</p>
-<h2 id="25-resumption-of-scientific-development">25. Resumption of scientific development<a class="headerlink" href="#25-resumption-of-scientific-development" title="Permanent link">¶</a></h2>
-<p>The Methodology workstream and the Agent Control qualification workstream are distinct. Completion of this Markdown does not authorize primary scientific runtime, but it can serve as the controlled methodological baseline for renewed scientific development.</p>
-<p>A new scientific development Gate may authorize, as appropriate:</p>
+<p>The internal markers RAFE-1 and RAFE-2 identify those two manuscript tracks; they are project routing codes, not external journal article categories. This methodological document primarily supports the first track. The second should cite only the assurance details necessary to support its substantive inferences and avoid repeating the full engineering account.</p>
+<h2 id="25-resumption-of-scientific-development">25. Resumption of scientific development<a class="headerlink" href="#25-resumption-of-scientific-development" title="Permanent link">&para;</a></h2>
+<p>Publication of the methodology and qualification of a scientific execution environment are separate activities. The published v1.0.2 baseline may inform a new development Gate, but this v1.0.3 documentary edition does not authorize scientific computation or activate an execution adapter.</p>
+<p>A subsequent scientific-development Gate can authorize only the specific changes, tests, and computational tasks supported by its declared authority, inputs, capability assessment, and prospective acceptance criteria.</p>
 <ul>
 <li>scientific design and model specification;</li>
 <li>data-contract development;</li>
@@ -887,22 +884,22 @@ M8   Freeze / Certification Candidate
 <li>DSSAT/MM integration development;</li>
 <li>documentation and test development.</li>
 </ul>
-<p>A consequential <strong>primary scientific runtime</strong> remains separately authorized under the Architecture and Manual, with Gate-specific requirements and execution-plane qualification.</p>
-<h2 id="26-known-limitations-and-unresolved-states">26. Known limitations and unresolved states<a class="headerlink" href="#26-known-limitations-and-unresolved-states" title="Permanent link">¶</a></h2>
-<p>This document intentionally preserves the following non-claims and separates historical certification snapshots from current publication state:</p>
+<p>A primary scientific runtime remains prohibited until a separate run-specific authorization satisfies the certified Architecture and Manual. Editorial approval of documentation has no bearing on that restriction.</p>
+<h2 id="26-known-limitations-and-unresolved-states">26. Known limitations and unresolved states<a class="headerlink" href="#26-known-limitations-and-unresolved-states" title="Permanent link">&para;</a></h2><p class="editorial-context">The original source text records restrictions and candidate states as they were known before the November 2026 public release. These historical values are retained for auditability; the published v1.0.2 tag and website were subsequently established, while scientific runtime remained separately unauthorized.</p>
+<p>The following limitations record scientific and operational boundaries and distinguish the historical candidate state from current publication status. The frozen technical statements remain available as historical evidence; subsequent publishing events are documented separately and do not cure unrelated assurance gaps.</p>
 <ol>
 <li>The certified Architecture and Manual do not automatically validate every future model, dataset, scenario, or runtime.</li>
 <li>The Project Evidence Base v1.0.0 retains one open conflict and nine open gaps at its certified baseline; this Markdown does not close them.</li>
 <li>The local execution adapter is qualified for defined boundary properties but does not itself authorize scientific runtime.</li>
-<li>The M0→M8 Agent Control implementation track is not fully certified; M4/M4R1 records include unresolved infrastructure/design HOLD states.</li>
+<li>The Agent Control implementation track spans M0 through M8 and includes the separately designated intermediate milestone M4A. It is not fully certified; M4 and M4R1 retain unresolved infrastructure or design HOLD states.</li>
 <li>Attempt004 is terminated/archived and is not reopened by this methodology.</li>
 <li>Internal multi-agent assurance is not represented as formal external IV&amp;V.</li>
 <li>Use of NASA, ISO/IEC/IEEE, NIST, W3C, FAIR4RS, Google, IEEE, JCGM, R Core, Nature Portfolio, or other external guidance does not imply external compliance or endorsement unless separately demonstrated.</li>
 <li>Historical repository commits, Codespace/local-workspace paths, archive receipts, and freeze-specific <code>NEXT_ALLOWED</code> values remain historical evidence; they do not define the current publication or runtime state.</li>
 <li>This v1.0.2 artifact is a review candidate until its own independent content-conservation, architecture-semantic, source-register, and site readbacks pass.</li>
 </ol>
-<h2 id="27-methodology-document-acceptance-criteria">27. Methodology document acceptance criteria<a class="headerlink" href="#27-methodology-document-acceptance-criteria" title="Permanent link">¶</a></h2>
-<p>This Markdown may be promoted from candidate to controlled methodological baseline only if all of the following pass:</p>
+<h2 id="27-methodology-document-acceptance-criteria">27. Methodology document acceptance criteria<a class="headerlink" href="#27-methodology-document-acceptance-criteria" title="Permanent link">&para;</a></h2><p class="editorial-context">This section preserves the original source-candidate acceptance criteria. It is not an instruction to undo the completed v1.0.2 publication. An independently reviewed editorial successor remains subject to a separate release decision.</p>
+<p>The acceptance criteria below governed the historical promotion of the original methodology source from a review candidate. Their recorded flags and conditions describe the earlier prepublication Gate and must not be read as the current state of the published v1.0.2 website. Publication of version 1.0.3 requires its own review and explicit approval.</p>
 <ul>
 <li>all controlling internal source identities are named;</li>
 <li>no certified authority is silently overridden;</li>
@@ -922,24 +919,24 @@ M8   Freeze / Certification Candidate
 <li><code>PUBLICATION_AUTHORIZED=false</code> remains true unless a separate publication Gate changes it;</li>
 <li><code>SCIENTIFIC_RUNTIME_AUTHORIZED=false</code> remains true unless a separate run Gate changes it.</li>
 </ul>
-<h2 id="28-mkdocs-implementation-profile">28. MkDocs implementation profile<a class="headerlink" href="#28-mkdocs-implementation-profile" title="Permanent link">¶</a></h2>
-<p>The Markdown is authored to remain readable as plain text and render cleanly in MkDocs. The accompanying starter configuration follows the official MkDocs custom-theme model: a custom theme uses a <code>main.html</code> Jinja2 template outside <code>docs_dir</code>, referenced by <code>theme.custom_dir</code> in <code>mkdocs.yml</code> [EXT-MKDOCS-THEMES].</p>
-<p>The documentation theme is a presentation layer only:</p>
+<h2 id="28-mkdocs-implementation-profile">28. MkDocs implementation profile<a class="headerlink" href="#28-mkdocs-implementation-profile" title="Permanent link">&para;</a></h2><p class="editorial-context">The renderer and website layout are implementation mechanisms. The historical text below describes the frozen preparation process, not a current permission to rebuild or deploy the candidate.</p>
+<p>The original methodology source was authored in Markdown and rendered as a static website with MkDocs. Its custom theme uses a <code>main.html</code> Jinja2 template outside <code>docs_dir</code>, selected through <code>theme.custom_dir</code> in <code>mkdocs.yml</code> <a class="source-citation" href="audit/source-reference-register/index.html#source-ext-mkdocs-themes">[EXT-MKDOCS-THEMES]</a>. The approved renderer and build evidence document the transformation into HTML; the resulting pages are a non-normative presentation layer. A future re-render would require a separately controlled build and review rather than an assumption of equivalence.</p>
+<p>The documentation theme controls typography, navigation, and the display of source-derived information. It does not determine scientific semantics or confer additional authority on the rendered output.</p>
 <pre><code class="language-text">CERTIFIED AUTHORITY
-      ↓
+      &darr;
 CONTROLLED METHODOLOGICAL SOURCE
-      ↓
+      &darr;
 INTEGRAL VERSIONED MARKDOWN
-      ↓
+      &darr;
 MKDOCS RENDERING
-      ↓
+      &darr;
 HUMAN-READABLE SITE
 </code></pre>
-<pre><code class="language-text">HUMAN-READABLE SITE ≠ SCIENTIFIC AUTHORITY
+<pre><code class="language-text">HUMAN-READABLE SITE &ne; SCIENTIFIC AUTHORITY
 </code></pre>
-<p>No GitHub Pages deployment is authorized by this artifact.</p>
-<h2 id="29-operating-checklist-for-future-mm-development-gates">29. Operating checklist for future MM development Gates<a class="headerlink" href="#29-operating-checklist-for-future-mm-development-gates" title="Permanent link">¶</a></h2>
-<p>Before any material development Gate:</p>
+<p>The v1.0.2 GitHub Pages publication is an observed historical event. This documentation grants no permission for a new repository write, replacement deployment, or scientific execution.</p>
+<h2 id="29-operating-checklist-for-future-mm-development-gates">29. Operating checklist for future MM development Gates<a class="headerlink" href="#29-operating-checklist-for-future-mm-development-gates" title="Permanent link">&para;</a></h2>
+<p>Every material development Gate should complete the following preparatory checks before authorized execution. Each answer must reference the governing source and the evidence by which completion can be verified.</p>
 <ol>
 <li>Name the Gate and exact parent authority.</li>
 <li>State the scientific question and intended use.</li>
@@ -960,75 +957,76 @@ HUMAN-READABLE SITE
 <li>Preserve historical failures; remediate prospectively.</li>
 <li>End with an explicit <code>NEXT_ALLOWED</code> and <code>STOP=true</code>.</li>
 </ol>
-<h2 id="30-references-and-source-authority">30. References and source authority<a class="headerlink" href="#30-references-and-source-authority" title="Permanent link">¶</a></h2>
-<h3 id="301-internal-controlling-and-explanatory-sources">30.1 Internal controlling and explanatory sources<a class="headerlink" href="#301-internal-controlling-and-explanatory-sources" title="Permanent link">¶</a></h3>
+<h2 id="30-references-and-source-authority">30. References and source authority<a class="headerlink" href="#30-references-and-source-authority" title="Permanent link">&para;</a></h2>
+<h3 id="301-internal-controlling-and-explanatory-sources">30.1 Internal controlling and explanatory sources<a class="headerlink" href="#301-internal-controlling-and-explanatory-sources" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong>[MM-CR08]</strong> <code>MM_CR08_ARCHITECTURE_AUTHORITY_AND_DECISION_LEDGER_v1.0.0</code> — certified Architecture authority and decision ledger.</li>
-<li><strong>[MM-CR07]</strong> <code>MM_CR07_MANUAL_AUTHORITY_AND_ASSURANCE_v1.0.0</code> — certified Manual authority and assurance state.</li>
-<li><strong>[MM-CR12]</strong> <code>MM_CR12_PROJECT_EVIDENCE_BASE_AUTHORITY_v1.0.0</code> — certified Evidence Base authority.</li>
-<li><strong>[MM-CR13]</strong> <code>MM_CR13_ARCHITECTURE_EVIDENCE_OVERLAY_PROVENANCE_v1.0.0</code> — NASA-HDBK-7009B evidence overlay and provenance.</li>
-<li><strong>[MM-CR04]</strong> <code>MM_CR04_MM_LOCAL_EXECUTION_ADAPTER_QUALIFICATION_v1.0.0</code> — qualified local adapter boundary; no runtime authorization.</li>
-<li><strong>[MM-HRP]</strong> <code>MM_HARNESS_RELIABILITY_PROFILE_v1.0.0</code> — prospective harness reliability profile.</li>
-<li><strong>[MM-CR06]</strong> <code>MM_CR06_TECHNICAL_REFERENCE_PUBLICATION_STATE_v1.0.0</code> — controlled publication state and Markdown/MkDocs architecture.</li>
-<li><strong>[MM-TDR]</strong> <code>MM_CERTIFIED_INFRASTRUCTURE_ARCHITECTURE_AND_MANUAL_TECHNICAL_REFERENCE_v1.0.0.docx</code> — controlled explanatory derivative, document <code>MM-TDR-INFRA-ARCH-MANUAL-001</code>; not normative.</li>
-<li><strong>[MM-CR17]</strong> <code>MM_CR17_AGENT_CONTROL_M1_ALWAYS_ON_CORE_EXTRACTION_AND_M2_HANDOFF_v1.0.0</code> — M0/M1 durable Agent Control state.</li>
-<li><strong>[MM-M4]</strong> <code>M4_INDEPENDENT_READBACK_REPORT</code> — historical M4 pre-model infrastructure HOLD/readback state.</li>
-<li><strong>[MM-M4R1]</strong> <code>MM_AGENT_CONTROL_M4R1_V1_0_2_INDEPENDENT_F03_DESIGN_REVIEW_HOLD_v1.0.0</code> — M4R1 F03 design HOLD.</li>
-<li><strong>[MM-A004]</strong> final Attempt004 v1.0.4 independent review and terminal archival state — historical assurance lesson only; not normative.</li>
-<li><strong>[MM-RAFE]</strong> <code>MM_RAFE_TWO_ARTICLE_EDITORIAL_STRATEGY_v1.0.0</code> — RAFE-1/RAFE-2 allocation strategy.</li>
-<li><strong>[MM-PSP]</strong> <code>MM_PROJECT_SOURCE_ADMISSION_POLICY_v1.0.0</code> — Project Source admission/retention policy.</li>
+<li><strong>[MM-CR08]</strong> <code>MM_CR08_ARCHITECTURE_AUTHORITY_AND_DECISION_LEDGER_v1.0.0</code>: certified Architecture authority and decision ledger.</li>
+<li><strong>[MM-CR07]</strong> <code>MM_CR07_MANUAL_AUTHORITY_AND_ASSURANCE_v1.0.0</code>: certified Manual authority and assurance state.</li>
+<li><strong>[MM-CR12]</strong> <code>MM_CR12_PROJECT_EVIDENCE_BASE_AUTHORITY_v1.0.0</code>: certified Evidence Base authority.</li>
+<li><strong>[MM-CR13]</strong> <code>MM_CR13_ARCHITECTURE_EVIDENCE_OVERLAY_PROVENANCE_v1.0.0</code>: NASA-HDBK-7009B evidence overlay and provenance.</li>
+<li><strong>[MM-CR04]</strong> <code>MM_CR04_MM_LOCAL_EXECUTION_ADAPTER_QUALIFICATION_v1.0.0</code>: qualified local adapter boundary; no runtime authorization.</li>
+<li><strong>[MM-HRP]</strong> <code>MM_HARNESS_RELIABILITY_PROFILE_v1.0.0</code>: prospective harness reliability profile.</li>
+<li><strong>[MM-CR06]</strong> <code>MM_CR06_TECHNICAL_REFERENCE_PUBLICATION_STATE_v1.0.0</code>: controlled publication state and Markdown/MkDocs architecture.</li>
+<li><strong>[MM-TDR]</strong> <code>MM_CERTIFIED_INFRASTRUCTURE_ARCHITECTURE_AND_MANUAL_TECHNICAL_REFERENCE_v1.0.0.docx</code>: controlled explanatory derivative, document <code>MM-TDR-INFRA-ARCH-MANUAL-001</code>; not normative.</li>
+<li><strong>[MM-CR17]</strong> <code>MM_CR17_AGENT_CONTROL_M1_ALWAYS_ON_CORE_EXTRACTION_AND_M2_HANDOFF_v1.0.0</code>: M0/M1 durable Agent Control state.</li>
+<li><strong>[MM-M4]</strong> <code>M4_INDEPENDENT_READBACK_REPORT</code>: historical M4 pre-model infrastructure HOLD/readback state.</li>
+<li><strong>[MM-M4R1]</strong> <code>MM_AGENT_CONTROL_M4R1_V1_0_2_INDEPENDENT_F03_DESIGN_REVIEW_HOLD_v1.0.0</code>: M4R1 F03 design HOLD.</li>
+<li><strong>[MM-A004]</strong> final Attempt004 v1.0.4 independent review and terminal archival state: historical assurance lesson only; not normative.</li>
+<li><strong>[MM-RAFE]</strong> <code>MM_RAFE_TWO_ARTICLE_EDITORIAL_STRATEGY_v1.0.0</code>: RAFE-1/RAFE-2 allocation strategy.</li>
+<li><strong>[MM-PSP]</strong> <code>MM_PROJECT_SOURCE_ADMISSION_POLICY_v1.0.0</code>: Project Source admission/retention policy.</li>
 </ul>
-<h3 id="302-external-methodological-technical-scientific-and-reporting-sources">30.2 External methodological, technical, scientific, and reporting sources<a class="headerlink" href="#302-external-methodological-technical-scientific-and-reporting-sources" title="Permanent link">¶</a></h3>
+<h3 id="302-external-methodological-technical-scientific-and-reporting-sources">30.2 External methodological, technical, scientific, and reporting sources<a class="headerlink" href="#302-external-methodological-technical-scientific-and-reporting-sources" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong>[R01]</strong> NASA. <em>NASA-HDBK-2203 — NASA Software Engineering Handbook</em>. https://standards.nasa.gov/node/182.</li>
-<li><strong>[R02]</strong> NASA. <em>NPR 7150.2D — NASA Software Engineering Requirements</em>. https://nodis3.gsfc.nasa.gov/displayDir.cfm?Internal_ID=N_PR_7150_002D_.</li>
-<li><strong>[R03]</strong> NASA. <em>NASA-STD-8739.8B — Software Assurance and Software Safety Standard</em>. https://standards.nasa.gov/standard/nasa/nasa-std-87398.</li>
-<li><strong>[R04]</strong> NASA. <em>NASA-HDBK-7009B — NASA Handbook for Models and Simulations: An Implementation Guide for NASA-STD-7009B</em>. https://standards.nasa.gov/standard/NASA/NASA-HDBK-7009.</li>
-<li><strong>[R05]</strong> NASA SWEHB. <em>Software Engineering and Assurance Handbook — living implementation guidance</em>. https://swehb.nasa.gov/.</li>
-<li><strong>[R06]</strong> ISO/IEC/IEEE. <em>ISO/IEC/IEEE 12207:2026 — Systems and software engineering — Software life cycle processes</em>. https://www.iso.org/standard/90219.html.</li>
-<li><strong>[R07]</strong> ISO/IEC/IEEE. <em>ISO/IEC/IEEE 15288:2023 — Systems and software engineering — System life cycle processes</em>. https://www.iso.org/standard/81702.html.</li>
-<li><strong>[R08]</strong> ISO/IEC/IEEE. <em>ISO/IEC/IEEE 24748-1:2024 — Systems and software engineering — Life cycle management — Part 1</em>. https://www.iso.org/standard/84709.html.</li>
-<li><strong>[R09]</strong> ISO/IEC/IEEE. <em>ISO/IEC/IEEE 16326:2019 — Systems and software engineering — Life cycle processes — Project management</em>. https://www.iso.org/standard/75276.html. Corrected successor URL; the historical DOCX hyperlink was defective.</li>
-<li><strong>[R10]</strong> NIST. <em>SP 800-218 — Secure Software Development Framework (SSDF) Version 1.1</em>. https://csrc.nist.gov/pubs/sp/800/218/final.</li>
-<li><strong>[R11]</strong> NIST/SEMATECH. <em>e-Handbook of Statistical Methods — Experimental Design</em>. https://itl.nist.gov/div898/handbook/pri/section1/pri11.htm.</li>
-<li><strong>[R12]</strong> W3C. <em>Data Catalog Vocabulary (DCAT) — Version 3</em>. https://www.w3.org/TR/vocab-dcat-3/.</li>
-<li><strong>[R13]</strong> W3C. <em>Shapes Constraint Language (SHACL)</em>. https://www.w3.org/TR/shacl/.</li>
-<li><strong>[R14]</strong> W3C. <em>PROV-O: The PROV Ontology</em>. https://www.w3.org/TR/prov-o/.</li>
-<li><strong>[R15]</strong> W3C. <em>Data on the Web Best Practices: Data Quality Vocabulary (DQV)</em>. https://www.w3.org/TR/vocab-dqv/. Status: W3C Working Group Note, not Recommendation.</li>
-<li><strong>[R16]</strong> Scientific Data. <em>Barker, M., Chue Hong, N. P., Katz, D. S., et al. — Introducing the FAIR Principles for research software</em>. https://doi.org/10.1038/s41597-022-01710-x. Corrected lead author: Michelle Barker.</li>
-<li><strong>[R17]</strong> R Core Team. <em>Writing R Extensions</em>. https://cran.r-project.org/doc/manuals/r-release/R-exts.html.</li>
-<li><strong>[R18]</strong> Google. <em>Google Earth Engine Coding Best Practices</em>. https://developers.google.com/earth-engine/guides/best_practices.</li>
-<li><strong>[R19]</strong> Google. <em>Google Earth Engine Projections</em>. https://developers.google.com/earth-engine/guides/projections.</li>
-<li><strong>[R20]</strong> Google. <em>Google Earth Engine Debugging Guide</em>. https://developers.google.com/earth-engine/guides/debugging.</li>
-<li><strong>[R21]</strong> Google. <em>Earth Engine API — ee.Projection.nominalScale</em>. https://developers.google.com/earth-engine/apidocs/ee-projection-nominalscale.</li>
-<li><strong>[R22]</strong> IEEE. <em>IEEE Std 754-2019 — IEEE Standard for Floating-Point Arithmetic</em>. https://standards.ieee.org/ieee/754/6210/.</li>
-<li><strong>[R23]</strong> JCGM/BIPM. <em>JCGM 100:2008(E) — Evaluation of measurement data — Guide to the expression of uncertainty in measurement</em>. https://doi.org/10.59161/JCGM100-2008E. JCGM 100:2008 remains the base guide; current amendment context is recorded prospectively where material.</li>
-<li><strong>[R24]</strong> JCGM/BIPM. <em>JCGM 101:2008 — Propagation of distributions using a Monte Carlo method</em>. https://doi.org/10.59161/JCGM101-2008.</li>
-<li><strong>[R25]</strong> SIAM. <em>Higham, N. J. — Accuracy and Stability of Numerical Algorithms, 2nd ed.</em>. https://doi.org/10.1137/1.9780898718027.</li>
-<li><strong>[R26]</strong> Elsevier. <em>Sobol, I. M. — Global sensitivity indices for nonlinear mathematical models and their Monte Carlo estimates</em>. https://doi.org/10.1016/S0378-4754(00)00270-6.</li>
-<li><strong>[R27]</strong> Elsevier. <em>Saltelli, A., et al. — Variance based sensitivity analysis of model output: Design and estimator for the total sensitivity index</em>. https://doi.org/10.1016/j.cpc.2009.09.018.</li>
-<li><strong>[R28]</strong> Wiley / Ecography. <em>Roberts, D. R., et al. — Cross-validation strategies for data with temporal, spatial, hierarchical, or phylogenetic structure</em>. https://doi.org/10.1111/ecog.02881.</li>
-<li><strong>[R29]</strong> W3C. <em>W3C Data Activity — Building the Web of Data</em>. https://www.w3.org/2013/data/. Contextual/non-normative umbrella source; does not replace DCAT/PROV-O/SHACL/DQV.</li>
+<li><strong><a class="source-citation" href="audit/source-reference-register/index.html#source-r01">[R01]</a></strong> NASA. <em>NASA-HDBK-2203: NASA Software Engineering Handbook</em>. https://standards.nasa.gov/node/182.</li>
+<li><strong><a class="source-citation" href="audit/source-reference-register/index.html#source-r02">[R02]</a></strong> NASA. <em>NPR 7150.2D: NASA Software Engineering Requirements</em>. https://nodis3.gsfc.nasa.gov/displayDir.cfm?Internal_ID=N_PR_7150_002D_.</li>
+<li><strong><a class="source-citation" href="audit/source-reference-register/index.html#source-r03">[R03]</a></strong> NASA. <em>NASA-STD-8739.8B: Software Assurance and Software Safety Standard</em>. https://standards.nasa.gov/standard/nasa/nasa-std-87398.</li>
+<li><strong><a class="source-citation" href="audit/source-reference-register/index.html#source-r04">[R04]</a></strong> NASA. <em>NASA-HDBK-7009B: NASA Handbook for Models and Simulations: An Implementation Guide for NASA-STD-7009B</em>. https://standards.nasa.gov/standard/NASA/NASA-HDBK-7009.</li>
+<li><strong><a class="source-citation" href="audit/source-reference-register/index.html#source-r05">[R05]</a></strong> NASA SWEHB. <em>Software Engineering and Assurance Handbook: living implementation guidance</em>. https://swehb.nasa.gov/.</li>
+<li><strong><a class="source-citation" href="audit/source-reference-register/index.html#source-r06">[R06]</a></strong> ISO/IEC/IEEE. <em>ISO/IEC/IEEE 12207:2026: Systems and software engineering: Software life cycle processes</em>. https://www.iso.org/standard/90219.html.</li>
+<li><strong><a class="source-citation" href="audit/source-reference-register/index.html#source-r07">[R07]</a></strong> ISO/IEC/IEEE. <em>ISO/IEC/IEEE 15288:2023: Systems and software engineering: System life cycle processes</em>. https://www.iso.org/standard/81702.html.</li>
+<li><strong><a class="source-citation" href="audit/source-reference-register/index.html#source-r08">[R08]</a></strong> ISO/IEC/IEEE. <em>ISO/IEC/IEEE 24748-1:2024: Systems and software engineering: Life cycle management: Part 1</em>. https://www.iso.org/standard/84709.html.</li>
+<li><strong><a class="source-citation" href="audit/source-reference-register/index.html#source-r09">[R09]</a></strong> ISO/IEC/IEEE. <em>ISO/IEC/IEEE 16326:2019: Systems and software engineering: Life cycle processes: Project management</em>. https://www.iso.org/standard/75276.html. Corrected successor URL; the historical DOCX hyperlink was defective.</li>
+<li><strong><a class="source-citation" href="audit/source-reference-register/index.html#source-r10">[R10]</a></strong> NIST. <em>SP 800-218: Secure Software Development Framework (SSDF) Version 1.1</em>. https://csrc.nist.gov/pubs/sp/800/218/final.</li>
+<li><strong><a class="source-citation" href="audit/source-reference-register/index.html#source-r11">[R11]</a></strong> NIST/SEMATECH. <em>e-Handbook of Statistical Methods: Experimental Design</em>. https://itl.nist.gov/div898/handbook/pri/section1/pri11.htm.</li>
+<li><strong><a class="source-citation" href="audit/source-reference-register/index.html#source-r12">[R12]</a></strong> W3C. <em>Data Catalog Vocabulary (DCAT): Version 3</em>. https://www.w3.org/TR/vocab-dcat-3/.</li>
+<li><strong><a class="source-citation" href="audit/source-reference-register/index.html#source-r13">[R13]</a></strong> W3C. <em>Shapes Constraint Language (SHACL)</em>. https://www.w3.org/TR/shacl/.</li>
+<li><strong><a class="source-citation" href="audit/source-reference-register/index.html#source-r14">[R14]</a></strong> W3C. <em>PROV-O: The PROV Ontology</em>. https://www.w3.org/TR/prov-o/.</li>
+<li><strong><a class="source-citation" href="audit/source-reference-register/index.html#source-r15">[R15]</a></strong> W3C. <em>Data on the Web Best Practices: Data Quality Vocabulary (DQV)</em>. https://www.w3.org/TR/vocab-dqv/. Status: W3C Working Group Note, not Recommendation.</li>
+<li><strong><a class="source-citation" href="audit/source-reference-register/index.html#source-r16">[R16]</a></strong> Scientific Data. <em>Barker, M., Chue Hong, N. P., Katz, D. S., et al.: Introducing the FAIR Principles for research software</em>. https://doi.org/10.1038/s41597-022-01710-x. Corrected lead author: Michelle Barker.</li>
+<li><strong><a class="source-citation" href="audit/source-reference-register/index.html#source-r17">[R17]</a></strong> R Core Team. <em>Writing R Extensions</em>. https://cran.r-project.org/doc/manuals/r-release/R-exts.html.</li>
+<li><strong><a class="source-citation" href="audit/source-reference-register/index.html#source-r18">[R18]</a></strong> Google. <em>Google Earth Engine Coding Best Practices</em>. https://developers.google.com/earth-engine/guides/best_practices.</li>
+<li><strong><a class="source-citation" href="audit/source-reference-register/index.html#source-r19">[R19]</a></strong> Google. <em>Google Earth Engine Projections</em>. https://developers.google.com/earth-engine/guides/projections.</li>
+<li><strong><a class="source-citation" href="audit/source-reference-register/index.html#source-r20">[R20]</a></strong> Google. <em>Google Earth Engine Debugging Guide</em>. https://developers.google.com/earth-engine/guides/debugging.</li>
+<li><strong><a class="source-citation" href="audit/source-reference-register/index.html#source-r21">[R21]</a></strong> Google. <em>Earth Engine API: ee.Projection.nominalScale</em>. https://developers.google.com/earth-engine/apidocs/ee-projection-nominalscale.</li>
+<li><strong><a class="source-citation" href="audit/source-reference-register/index.html#source-r22">[R22]</a></strong> IEEE. <em>IEEE Std 754-2019: IEEE Standard for Floating-Point Arithmetic</em>. https://standards.ieee.org/ieee/754/6210/.</li>
+<li><strong><a class="source-citation" href="audit/source-reference-register/index.html#source-r23">[R23]</a></strong> JCGM/BIPM. <em>JCGM 100:2008(E): Evaluation of measurement data: Guide to the expression of uncertainty in measurement</em>. https://doi.org/10.59161/JCGM100-2008E. JCGM 100:2008 remains the base guide; current amendment context is recorded prospectively where material.</li>
+<li><strong><a class="source-citation" href="audit/source-reference-register/index.html#source-r24">[R24]</a></strong> JCGM/BIPM. <em>JCGM 101:2008: Propagation of distributions using a Monte Carlo method</em>. https://doi.org/10.59161/JCGM101-2008.</li>
+<li><strong><a class="source-citation" href="audit/source-reference-register/index.html#source-r25">[R25]</a></strong> SIAM. <em>Higham, N. J.: Accuracy and Stability of Numerical Algorithms, 2nd ed.</em>. https://doi.org/10.1137/1.9780898718027.</li>
+<li><strong><a class="source-citation" href="audit/source-reference-register/index.html#source-r26">[R26]</a></strong> Elsevier. <em>Sobol, I. M.: Global sensitivity indices for nonlinear mathematical models and their Monte Carlo estimates</em>. https://doi.org/10.1016/S0378-4754(00)00270-6.</li>
+<li><strong><a class="source-citation" href="audit/source-reference-register/index.html#source-r27">[R27]</a></strong> Elsevier. <em>Saltelli, A., et al.: Variance based sensitivity analysis of model output: Design and estimator for the total sensitivity index</em>. https://doi.org/10.1016/j.cpc.2009.09.018.</li>
+<li><strong><a class="source-citation" href="audit/source-reference-register/index.html#source-r28">[R28]</a></strong> Wiley / Ecography. <em>Roberts, D. R., et al.: Cross-validation strategies for data with temporal, spatial, hierarchical, or phylogenetic structure</em>. https://doi.org/10.1111/ecog.02881.</li>
+<li><strong><a class="source-citation" href="audit/source-reference-register/index.html#source-r29">[R29]</a></strong> W3C. <em>W3C Data Activity: Building the Web of Data</em>. https://www.w3.org/2013/data/. Contextual/non-normative umbrella source; does not replace DCAT/PROV-O/SHACL/DQV.</li>
 </ul>
-<h4 id="publication-and-specific-assurance-references">Publication and specific assurance references<a class="headerlink" href="#publication-and-specific-assurance-references" title="Permanent link">¶</a></h4>
+<h4 id="publication-and-specific-assurance-references">Publication and specific assurance references<a class="headerlink" href="#publication-and-specific-assurance-references" title="Permanent link">&para;</a></h4>
 <ul>
-<li><strong>[EXT-NASA-SA]</strong> NASA. <em>Software Engineering Procedural Requirements, Standards, and Related Resources</em>. https://www.nasa.gov/intelligent-systems-division/software-management-office/nasa-software-engineering-procedural-requirements-standards-and-related-resources/.</li>
-<li><strong>[EXT-NASA-SWE067]</strong> NASA SWEHB. <em>SWE-067 — Verify Implementation</em>. https://swehb.nasa.gov/spaces/7150/pages/16450546/SWE-067+-+Verify+Implementation.</li>
-<li><strong>[EXT-NASA-IVV]</strong> NASA SWEHB. <em>NASA-STD-8739.8B 4.4.2 IV&amp;V Requirements</em>. https://swehb.nasa.gov/spaces/SITE/pages/122388487/8739.8B+4.4.2+IV+V+Requirements.</li>
-<li><strong>[EXT-NASA-IVV-REQ]</strong> NASA SWEHB. <em>Software Assurance and Software Safety requirements</em>. https://swehb.nasa.gov/spaces/SITE/pages/129991998/8739.8A+Ch+4+SOFTWARE+ASSURANCE+AND+SOFTWARE+SAFETY+REQUIREMENTS.</li>
-<li><strong>[EXT-MKDOCS-THEMES]</strong> MkDocs. <em>Developing Themes</em>. https://www.mkdocs.org/dev-guide/themes/.</li>
-<li><strong>[EXT-NCS-AIMS]</strong> Nature Portfolio. <em>Nature Computational Science — Aims &amp; Scope</em>. https://www.nature.com/natcomputsci/about/aims.</li>
-<li><strong>[EXT-NCS-POLICY]</strong> Nature Portfolio. <em>Nature Computational Science — Editorial Policies</em>. https://www.nature.com/natcomputsci/editorial-policies.</li>
-<li><strong>[EXT-NATURE-CODE]</strong> Nature Portfolio. <em>Initial submission — Computer code</em>. https://www.nature.com/nature/for-authors/initial-submission.</li>
-<li><strong>[EXT-NATURE-COMP-REPRO]</strong> Nature Communications. <em>Guidance on reproducibility for papers using computational tools</em>. https://www.nature.com/documents/Computational_tools_reporting_guidelines.pdf.</li>
-<li><strong>[EXT-NATURE-METRICS]</strong> Nature Portfolio. <em>Journal Metrics</em>. https://www.nature.com/nature-portfolio/about-journals/journal-metrics.</li>
+<li><strong><a class="source-citation" href="audit/source-reference-register/index.html#source-ext-nasa-sa">[EXT-NASA-SA]</a></strong> NASA. <em>Software Engineering Procedural Requirements, Standards, and Related Resources</em>. https://www.nasa.gov/intelligent-systems-division/software-management-office/nasa-software-engineering-procedural-requirements-standards-and-related-resources/.</li>
+<li><strong><a class="source-citation" href="audit/source-reference-register/index.html#source-ext-nasa-swe067">[EXT-NASA-SWE067]</a></strong> NASA SWEHB. <em>SWE-067: Verify Implementation</em>. https://swehb.nasa.gov/spaces/7150/pages/16450546/SWE-067+-+Verify+Implementation.</li>
+<li><strong><a class="source-citation" href="audit/source-reference-register/index.html#source-ext-nasa-ivv">[EXT-NASA-IVV]</a></strong> NASA SWEHB. <em>NASA-STD-8739.8B 4.4.2 IV&amp;V Requirements</em>. https://swehb.nasa.gov/spaces/SITE/pages/122388487/8739.8B+4.4.2+IV+V+Requirements.</li>
+<li><strong><a class="source-citation" href="audit/source-reference-register/index.html#source-ext-nasa-ivv-req">[EXT-NASA-IVV-REQ]</a></strong> NASA SWEHB. <em>Software Assurance and Software Safety requirements</em>. https://swehb.nasa.gov/spaces/SITE/pages/129991998/8739.8A+Ch+4+SOFTWARE+ASSURANCE+AND+SOFTWARE+SAFETY+REQUIREMENTS.</li>
+<li><strong><a class="source-citation" href="audit/source-reference-register/index.html#source-ext-mkdocs-themes">[EXT-MKDOCS-THEMES]</a></strong> MkDocs. <em>Developing Themes</em>. https://www.mkdocs.org/dev-guide/themes/.</li>
+<li><strong><a class="source-citation" href="audit/source-reference-register/index.html#source-ext-ncs-aims">[EXT-NCS-AIMS]</a></strong> Nature Portfolio. <em>Nature Computational Science: Aims &amp; Scope</em>. https://www.nature.com/natcomputsci/about/aims.</li>
+<li><strong><a class="source-citation" href="audit/source-reference-register/index.html#source-ext-ncs-policy">[EXT-NCS-POLICY]</a></strong> Nature Portfolio. <em>Nature Computational Science: Editorial Policies</em>. https://www.nature.com/natcomputsci/editorial-policies.</li>
+<li><strong><a class="source-citation" href="audit/source-reference-register/index.html#source-ext-nature-code">[EXT-NATURE-CODE]</a></strong> Nature Portfolio. <em>Initial submission: Computer code</em>. https://www.nature.com/nature/for-authors/initial-submission.</li>
+<li><strong><a class="source-citation" href="audit/source-reference-register/index.html#source-ext-nature-comp-repro">[EXT-NATURE-COMP-REPRO]</a></strong> Nature Communications. <em>Guidance on reproducibility for papers using computational tools</em>. https://www.nature.com/documents/Computational_tools_reporting_guidelines.pdf.</li>
+<li><strong><a class="source-citation" href="audit/source-reference-register/index.html#source-ext-nature-metrics">[EXT-NATURE-METRICS]</a></strong> Nature Portfolio. <em>Journal Metrics</em>. https://www.nature.com/nature-portfolio/about-journals/journal-metrics.</li>
 </ul>
-<h3 id="303-external-source-use-and-freshness-statement">30.3 External-source use and freshness statement<a class="headerlink" href="#303-external-source-use-and-freshness-statement" title="Permanent link">¶</a></h3>
-<p>External standards, handbooks, peer-reviewed methods, platform documentation, and journal guidance inform rationale, implementation controls, and publication-facing practice. They do not replace MM certified authorities.</p>
-<p>For a <strong>living source</strong>, the successor register records an access identity/date and requires freshness review plus prospective impact analysis before any changed guidance alters a requirement. For ISO/IEC/IEEE standards, only public metadata/abstracts are relied upon unless licensed normative text is separately admitted. Citation of NASA, ISO/IEC/IEEE, NIST, W3C, Google, FAIR4RS, IEEE, JCGM, R Core, Nature Portfolio, or any other body does not establish compliance, endorsement, affiliation, or certification.</p>
-<p>The complete corrected source inventory is also published under <strong>Audit &amp; Traceability → Source &amp; reference register</strong>.</p>
+<h3 id="303-external-source-use-and-freshness-statement">30.3 External-source use and freshness statement<a class="headerlink" href="#303-external-source-use-and-freshness-statement" title="Permanent link">&para;</a></h3>
+<p>Standards, scientific literature, platform manuals, and journal policies inform the project's engineering choices and reporting practices. The certified MM authorities remain the operative sources for project-specific obligations.</p>
+<p>Living online guidance is identified by access date and relevant version or snapshot when those properties are available. Changes to that guidance require a fresh impact assessment before they affect a certified project requirement. Referencing NASA, ISO, IEC, IEEE, the National Institute of Standards and Technology (NIST), the W3C, the FAIR Principles for Research Software (FAIR4RS), Google, the Joint Committee for Guides in Metrology, R Core, or Nature Portfolio does not constitute external compliance or institutional endorsement.</p>
+<p>The <a href="audit/source-reference-register/">source and reference register</a> provides the full controlled citation inventory, including the distinction between historical sources and later contextual additions. Its source status is evidence about a reference's identity, not certification of compliance.</p>
 <hr/>
-<h2 id="terminal-document-state">Terminal document state<a class="headerlink" href="#terminal-document-state" title="Permanent link">¶</a></h2>
+<h2 id="terminal-document-state">Historical v1.0.2 source-control state<a class="headerlink" href="#terminal-document-state" title="Permanent link">&para;</a></h2>
+<p class="editorial-context">The following unchanged block records the original v1.0.2 prepublication Gate. It does not state the current release decision or the next action for version 1.0.3.</p>
 <pre><code class="language-text">DOCUMENT=MM_SCIENTIFIC_SOFTWARE_DEVELOPMENT_METHODOLOGY_v1.0.2.md
 DOCUMENT_CLASS=CONTROLLED_HUMAN_READABLE_METHODOLOGICAL_DERIVATIVE_REVIEW_CANDIDATE
 PARENT_METHODOLOGY_V1_0_1_PRESERVED=true
@@ -1056,6 +1054,6 @@ NEXT_ALLOWED=SEPARATELY_QUALIFIED_INDEPENDENT_CONTENT_CONSERVATION_AND_PUBLICATI
 STOP=true
 </code></pre></main>
 </div>
-<footer class="site-footer"><div class="wrap"><span>MM methodology v1.0.2 · non-normative documentation derivative</span><span>Certified authorities prevail · no runtime authorization</span><nav aria-label="Site legal information" class="site-legal-nav"><a href="legal/privacy/index.html">Privacy notice</a><span aria-hidden="true">·</span><a href="legal/copyright-licensing/index.html">Copyright &amp; licensing</a></nav><div class="site-contact-links" role="group" aria-label="Contact channels"><div>Academic correspondence: <a href="mailto:rhallim.michael@usp.br">rhallim.michael@usp.br</a></div><div>Privacy &amp; legal inquiries: <a href="mailto:rhallim.michael@gmail.com">rhallim.michael@gmail.com</a></div></div></div></footer>
+<footer class="site-footer"><div class="wrap"><span>MM methodology v1.0.3; non-normative documentation. Published predecessor: v1.0.2.</span><span>Certified authorities prevail &middot; no runtime authorization</span><nav aria-label="Site legal information" class="site-legal-nav"><a href="legal/privacy/index.html">Privacy notice</a><span aria-hidden="true">&middot;</span><a href="legal/copyright-licensing/index.html">Copyright &amp; licensing</a></nav><div aria-label="Contact channels" class="site-contact-links" role="group"><div>Academic correspondence: <a href="mailto:rhallim.michael@usp.br">rhallim.michael@usp.br</a></div><div>Privacy &amp; legal inquiries: <a href="mailto:rhallim.michael@gmail.com">rhallim.michael@gmail.com</a></div></div></div></footer>
 </body>
 </html>
