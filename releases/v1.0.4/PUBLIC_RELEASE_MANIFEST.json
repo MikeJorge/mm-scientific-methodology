@@ -1,0 +1,271 @@
+{
+  "schema": "MM_CONTROL7_A0_VERSION_SPECIFIC_PUBLIC_RELEASE_MANIFEST_v1.0.0",
+  "record_class": "FROZEN_PREPUBLICATION_ARTIFACT_MANIFEST",
+  "prepared_at_utc_date": "2026-11-19",
+  "repository": "MikeJorge/mm-scientific-methodology",
+  "scientific_version": "1.0.4",
+  "version_field_note": "Legacy manifest field retained for verifier compatibility; this is a methodology edition, not a new scientific model version.",
+  "publication_executed": false,
+  "publication_state_note": "Preparation state, immutable. A separate observed release receipt must establish any later publication.",
+  "parent_publication": {
+    "version": "1.0.3",
+    "size_bytes": 750541,
+    "sha256": "63a548ef7ffc405280cd39331d360f3f6427b269bd67a22c904be88aec8e6cbd"
+  },
+  "site_release": {
+    "filename": "MM_METHODOLOGY_V104_EN_US_SITE_v1.0.0.zip",
+    "repository_path": "releases/v1.0.4/MM_METHODOLOGY_V104_EN_US_SITE_v1.0.0.zip",
+    "size_bytes": 787968,
+    "sha256": "554b4b862373825151f181726dc66234ee9978f4c5ef8bff44f34f5d992e73f3",
+    "entries": 33,
+    "expected_git_tree_sha1": "6fc861b5d410de174daea1cb53e3430e15de7bf3",
+    "regular_file_mode": "100644",
+    "site_url": "https://mikejorge.github.io/mm-scientific-methodology/",
+    "tree_evidence_scope": "LOCALLY_COMPUTED_EXPECTED_TREE_NOT_OBSERVED_DEPLOYMENT"
+  },
+  "learning_addition": {
+    "new_pages": 3,
+    "total_html_pages": 20,
+    "certified_DM_records_unchanged": 197,
+    "synthetic_comparisons_passed": 44,
+    "synthetic_comparisons_total": 44,
+    "external_developer_evaluation": "NOT_RUN",
+    "human_participants_observed": 0,
+    "empirical_adoption_effectiveness": "NOT_ESTABLISHED",
+    "real_world_model_validation": "NOT_ESTABLISHED"
+  },
+  "browser_scope": "Targeted author QA of exact candidate copy in Chromium frames: 1200x900 desktop and 390x844 mobile; three new pages in light/dark and two changed entry pages in light. No physical-device claim or repeated historical ER09 campaign.",
+  "files": [
+    {
+      "path": ".nojekyll",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "mode": "100644"
+    },
+    {
+      "path": "architecture-figure/index.html",
+      "size_bytes": 14577,
+      "sha256": "7cb26a42d0d52dad14b510056397815dc6b6e8ddc8a2817c6bbde5ba3a9220a5",
+      "git_blob_sha1": "c84ce22e9be00b7ad5cba90e2dd1fc02a733eec3",
+      "mode": "100644"
+    },
+    {
+      "path": "assets/figures/mm-development-architecture-v1.0.3.pdf",
+      "size_bytes": 36867,
+      "sha256": "994df91b223a2a72a19dc1897c4e2e30d9f7c51520afa7354756665ac7abb070",
+      "git_blob_sha1": "09a65edd851a3bf3aa8aa6d30ead963cb9f52d76",
+      "mode": "100644"
+    },
+    {
+      "path": "assets/figures/mm-development-architecture-v1.0.3.png",
+      "size_bytes": 483863,
+      "sha256": "cb3b797333b6d819bef2274e4ee92c081fca315f90c6d0bc5aad5c908b7b1bb9",
+      "git_blob_sha1": "47f75a122e51635ef32823da29f5fc7ab57d4baa",
+      "mode": "100644"
+    },
+    {
+      "path": "assets/figures/mm-development-architecture-v1.0.3.svg",
+      "size_bytes": 50028,
+      "sha256": "fcd00d37b821cdae8a106bf863d11311f7e9dd90700cef690ded9850706d6625",
+      "git_blob_sha1": "c8ec4ad29d11d953f707e62ba136acdfec63ed57",
+      "mode": "100644"
+    },
+    {
+      "path": "assets/figures/mm-local-execution-adapter-v1.0.6.pdf",
+      "size_bytes": 61763,
+      "sha256": "8fa10c936bc545c55aa315f5471f7a09b7e19f9bb0292143344f5844870bfded",
+      "git_blob_sha1": "976bfc21acbe4bfb7f338a7c113eae98adea23b8",
+      "mode": "100644"
+    },
+    {
+      "path": "assets/figures/mm-local-execution-adapter-v1.0.6.svg",
+      "size_bytes": 39143,
+      "sha256": "eef2e70870c211d5343aacf491543d41873b5e4c60e60d3cd9b6feab2e69845a",
+      "git_blob_sha1": "1107f1f4aff2f2adec2b046a64e5f86ffea953b1",
+      "mode": "100644"
+    },
+    {
+      "path": "assets/learning/mm-vv-flow-desktop.svg",
+      "size_bytes": 3159,
+      "sha256": "d1f6b2e7a0213ee8a3d534236e587c67954a9028e4de88edb8c618e0f754d9d1",
+      "git_blob_sha1": "0252edc0a233bcd6e3fe34d3f16aa6e14e9e2c23",
+      "mode": "100644"
+    },
+    {
+      "path": "assets/learning/mm-vv-flow-mobile.svg",
+      "size_bytes": 2785,
+      "sha256": "64afd654bf1ea78932137b728f4b39807f1579919895163162ddbbc196e42011",
+      "git_blob_sha1": "4c29e79d6c1d767bacb6ac5f7e7bcda8c9279b0d",
+      "mode": "100644"
+    },
+    {
+      "path": "assets/mm-learning.css",
+      "size_bytes": 2861,
+      "sha256": "d7c77d9505a025274cbd78e20640b6e29e25b04652f716a5f4d63f45d0215dbe",
+      "git_blob_sha1": "32ac1045e8c2d56d7eab123137c80eafbd21d2f1",
+      "mode": "100644"
+    },
+    {
+      "path": "assets/mm.css",
+      "size_bytes": 10124,
+      "sha256": "e2651ca7e364e9e7264747306da502e3ae76218c389a4e3f7bfefa5ea5160bc3",
+      "git_blob_sha1": "471552ab0d956cbefe490ee9540ff7c2a7e5134d",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/architecture-manual-crosswalk/index.html",
+      "size_bytes": 24420,
+      "sha256": "851e7be1e8ee8f49132e9fade510853c271c9055f04ea0df9c775b9f59d4a63d",
+      "git_blob_sha1": "cb09f3d42ab940ba696be3d8154eb0b7b28b7d58",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/audience-pathways/index.html",
+      "size_bytes": 9496,
+      "sha256": "ea3fae59f27c7d11fc37fcf7ff0a0b234002abd8775dd0f28dd3eea4da6030d0",
+      "git_blob_sha1": "49b065eb393a4fce135100898ad3b63c46f5bc22",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/certified-identities/index.html",
+      "size_bytes": 10045,
+      "sha256": "2c8c1abd4780e6208c8c01f2c0325b21cb236f8ef6f4b6acae9edd9e054cca3d",
+      "git_blob_sha1": "b6b3dc80e77889a4c261515f50f07062f2825e88",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/conservation-crosswalk/index.html",
+      "size_bytes": 31445,
+      "sha256": "569e5e10af422056bf2bcaf2d533e12887094a63915c7b8356a491833cbb359e",
+      "git_blob_sha1": "1b67a26f9b4786efa717e7950d61379c904702af",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/evidence-overlay/index.html",
+      "size_bytes": 19024,
+      "sha256": "fb82a2b913b8d8733eb16210148f9644aeead368698ba13588ddf92c170b667c",
+      "git_blob_sha1": "3ef5163a278e4efddef93a6f758ab6fdb134a827",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/glossary/index.html",
+      "size_bytes": 31105,
+      "sha256": "3d34963d8453c7a15d8d8edb0fd68c54b8cb2376377238b0f48493e1ec0ed8bb",
+      "git_blob_sha1": "f2a86e34c00df61b4c9a556e07244ad4e10abe61",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/historical-assurance-lessons/index.html",
+      "size_bytes": 9444,
+      "sha256": "c617c07234197052d4242f447335f001dc98d7c298be2159d8363a9c56ba7479",
+      "git_blob_sha1": "20764f85aaadee940247fc411749b7f197ddc934",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/historical-build-qa/index.html",
+      "size_bytes": 7892,
+      "sha256": "d0a5ba6c0bb092a9c3edf25f6f29608db188f8e977b7b889693872bd3a32e919",
+      "git_blob_sha1": "18e5fe601538fcb068264bd9a4382d1aab47ea21",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/index.html",
+      "size_bytes": 10813,
+      "sha256": "32139310e030d31772d16cfe83727951bfd3a92a32ac6ea80760978308b016a8",
+      "git_blob_sha1": "7a0340ace018bf9a3150a5dd59f731b8e4bc07f2",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/manual-requirements/index.html",
+      "size_bytes": 359457,
+      "sha256": "a68a7e1e45a8438144dc5d102030cb2892613d6e10df0a5bde02ad75c6993d66",
+      "git_blob_sha1": "df3ec373e54de04e9982736fadd99b29800651a1",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/playbooks-checklists/index.html",
+      "size_bytes": 30686,
+      "sha256": "a4be86df2a3e1f4edc395fbd3237b7de46aef4dca5e66776952c330f4b9a9a22",
+      "git_blob_sha1": "38393ed2a239d65372e5f8ab979f3b6cc51c1c87",
+      "mode": "100644"
+    },
+    {
+      "path": "audit/source-reference-register/index.html",
+      "size_bytes": 18709,
+      "sha256": "c105036b3d57179add3ba5f3392a894261a6ef7bc79db197dc54df0e451887cb",
+      "git_blob_sha1": "cf0fae646f9a5111132e48cfc7a0bc5369ff8c71",
+      "mode": "100644"
+    },
+    {
+      "path": "downloads/MM_VV_LEARNING_AND_FRESH_READER_KIT_v1.0.0.zip",
+      "size_bytes": 17577,
+      "sha256": "8f20af6630df7ca32b35a9792e734fc60a7b0b5e4200645ec99a2a0bc674c012",
+      "git_blob_sha1": "c761838be5f8655a02248014302bf989e3c19c20",
+      "mode": "100644"
+    },
+    {
+      "path": "downloads/mm-methodology-v1.0.2-reproducibility-supplement.zip",
+      "size_bytes": 77416,
+      "sha256": "f1acba06eadfa3aa19bed8eb16798b9d9edb09f977e942dedbd6461e1180c4a9",
+      "git_blob_sha1": "b745516a119505326cfd0112d456d2d1e19d5a72",
+      "mode": "100644"
+    },
+    {
+      "path": "index.html",
+      "size_bytes": 106566,
+      "sha256": "8b059fa9a58b89c900f3b01b4c3557924d9c7205ad883a77b08c4b3fa063f5b4",
+      "git_blob_sha1": "11b98e91e2e07388d837162a41c3ec768c984a54",
+      "mode": "100644"
+    },
+    {
+      "path": "learn/independent-walkthrough/index.html",
+      "size_bytes": 13077,
+      "sha256": "cb9991edebebb635e6b10e95fe48c1d2ca881282ef521ae4a1eb04fd899f5379",
+      "git_blob_sha1": "1fb6936f1353ffa6754e8f7dbe37385d6e2b6824",
+      "mode": "100644"
+    },
+    {
+      "path": "learn/verification-validation/index.html",
+      "size_bytes": 11930,
+      "sha256": "6e62a11bfb77e179074605e2719be8ddc015c3002d9af9440b2a0a8698e90dae",
+      "git_blob_sha1": "44040293a967eece5b9a5d3a77a973fe87fe57d8",
+      "mode": "100644"
+    },
+    {
+      "path": "learn/worked-example/index.html",
+      "size_bytes": 14833,
+      "sha256": "509f71435a9c8892847c9fcd51a37de094599ae7948f8131505dcca6904e9785",
+      "git_blob_sha1": "dd19fcb0587f4a9b556135cacd0893bcab8bf126",
+      "mode": "100644"
+    },
+    {
+      "path": "legal/copyright-licensing/index.html",
+      "size_bytes": 13156,
+      "sha256": "7ef8e43cd22f160093e31ae3a7e3373476c7af5056723608d6264781b3306038",
+      "git_blob_sha1": "288a379651a242b1c44757578442880b33dbb0d2",
+      "mode": "100644"
+    },
+    {
+      "path": "legal/privacy/index.html",
+      "size_bytes": 12957,
+      "sha256": "cb6b42730b9d8277fd06aa7f7a5811d945b9d368061e43a43783581777ebf81a",
+      "git_blob_sha1": "0180fa1c04a8e247c11d01f65bffdf241728c188",
+      "mode": "100644"
+    },
+    {
+      "path": "local-execution-adapter/index.html",
+      "size_bytes": 17370,
+      "sha256": "fe6305063edc8dcb826c98d97fbbe2e90dc707fff319d96778de01d28f94d31e",
+      "git_blob_sha1": "e9ac02f37c607dd21d042bdff38a47f513290bc6",
+      "mode": "100644"
+    },
+    {
+      "path": "sitemap.xml",
+      "size_bytes": 2152,
+      "sha256": "dd6e0cbaf9f78015e944953fbf3f2b1893578276eb35f030dcc3870579b7daea",
+      "git_blob_sha1": "878c96f54ff3c09527f2e118f6665973bb64f150",
+      "mode": "100644"
+    }
+  ]
+}
